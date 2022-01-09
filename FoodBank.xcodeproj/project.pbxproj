@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C459278B5DA400870EB6 /* UIButton+reshape.swift */; };
+		9E84C45D278B5FD300870EB6 /* UITextField+cornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C45C278B5FD300870EB6 /* UITextField+cornerShape.swift */; };
+		9E84C45F278B637700870EB6 /* UIButton+turnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C45E278B637700870EB6 /* UIButton+turnButton.swift */; };
 		9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */; };
 		9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A4278ADFE8003E469A /* String+index.swift */; };
 		9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A8278AED54003E469A /* LoginVC.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E84C459278B5DA400870EB6 /* UIButton+reshape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+reshape.swift"; sourceTree = "<group>"; };
+		9E84C45C278B5FD300870EB6 /* UITextField+cornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+cornerShape.swift"; sourceTree = "<group>"; };
+		9E84C45E278B637700870EB6 /* UIButton+turnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+turnButton.swift"; sourceTree = "<group>"; };
 		9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+drawRoundedEdge.swift"; sourceTree = "<group>"; };
 		9E9AD0A1278ADADA003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		9E9AD0A2278ADADB003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -90,9 +96,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E84C458278B5D9100870EB6 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C459278B5DA400870EB6 /* UIButton+reshape.swift */,
+				9E84C45E278B637700870EB6 /* UIButton+turnButton.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		9E84C45B278B5FBC00870EB6 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C45C278B5FD300870EB6 /* UITextField+cornerShape.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 		9E9AD09A278AD8D0003E469A /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C45B278B5FBC00870EB6 /* UITextField */,
+				9E84C458278B5D9100870EB6 /* UIButton */,
 				9E9AD0A3278ADFDC003E469A /* String */,
 				9E9AD09B278AD8D6003E469A /* UIView */,
 			);
@@ -335,7 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */,
 				9E9B9972278AD5E900C16586 /* ViewController.swift in Sources */,
+				9E84C45F278B637700870EB6 /* UIButton+turnButton.swift in Sources */,
+				9E84C45D278B5FD300870EB6 /* UITextField+cornerShape.swift in Sources */,
 				9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */,
 				9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */,
 				9E9B9978278AD5E900C16586 /* FoodBank.xcdatamodeld in Sources */,

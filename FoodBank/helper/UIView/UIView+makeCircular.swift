@@ -9,8 +9,11 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func makeCircular() {
-        self.layer.cornerRadius = min(self.frame.size.height, self.frame.size.width) / 2.0
-        self.clipsToBounds = true
+    //UIScreen.main.bounds.width
+    func makeCircular(width:CGFloat) {
+        let newWidth:CGFloat = width*1.6
+        self.frame = CGRect(x: 0,y: 0,width: newWidth,height: newWidth)
+         self.layer.cornerRadius = newWidth/2
+        
     }
 }

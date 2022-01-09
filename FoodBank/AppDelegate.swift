@@ -8,6 +8,9 @@
 import UIKit
 import CoreData
 
+let userDefaults = UserDefaults.standard
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

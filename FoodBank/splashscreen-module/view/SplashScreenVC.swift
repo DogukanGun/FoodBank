@@ -33,7 +33,8 @@ class SplashScreenVC:UIViewController{
     //F8742A
     
     private func editBottomSheetButton(){
-        button.layer.cornerRadius = splashScreenVariable.bottomSheetButtonCornerRadious
+        button.reshapeButton()
+//        button.layer.cornerRadius = splashScreenVariable.bottomSheetButtonCornerRadious
     }
 
     private func editBottomSheetTitle(){
