@@ -90,7 +90,7 @@ and stay healthy</string>
                         <outlet property="button" destination="sT1-ch-RJf" id="WFh-bL-nhF"/>
                         <outlet property="image" destination="VgZ-96-iH6" id="6H2-bh-oiF"/>
                         <outlet property="titleOfBottomSheet" destination="yrf-AU-Rhv" id="3CE-jm-uXM"/>
-                        <segue destination="2EZ-e5-jha" kind="modal" identifier="LoginVC" id="eMX-Ty-8Mr"/>
+                        <segue destination="2EZ-e5-jha" kind="show" identifier="LoginVC" id="eMX-Ty-8Mr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,11 +102,11 @@ and stay healthy</string>
             <objects>
                 <viewController id="2EZ-e5-jha" customClass="LoginVC" customModule="FoodBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EH2-xn-3hX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNy-F3-J91">
-                                <rect key="frame" x="300.5" y="204" width="83.5" height="38"/>
+                                <rect key="frame" x="300.5" y="209.5" width="83.5" height="38"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="LOGIN">
@@ -116,8 +116,12 @@ and stay healthy</string>
                                     <action selector="faceIdButtonPressed:" destination="2EZ-e5-jha" eventType="touchUpInside" id="bMR-8e-8Uu"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Wwi-93-moi">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="labelColor"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJZ-Qf-tPi">
-                                <rect key="frame" x="307.5" y="375.5" width="116.5" height="38"/>
+                                <rect key="frame" x="307.5" y="395" width="116.5" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="fi2-xb-qKD"/>
                                 </constraints>
@@ -131,7 +135,7 @@ and stay healthy</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEN-Vu-lxg">
-                                <rect key="frame" x="290" y="598" width="104" height="38"/>
+                                <rect key="frame" x="290" y="646.5" width="104" height="38"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="CALL US">
@@ -142,24 +146,24 @@ and stay healthy</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vg-7B-IXO">
-                                <rect key="frame" x="-300" y="84" width="673.5" height="674"/>
+                                <rect key="frame" x="-350" y="89.5" width="717" height="717"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="0w8-cz-mps">
-                                        <rect key="frame" x="320" y="180" width="303.5" height="314"/>
+                                        <rect key="frame" x="370" y="180" width="297" height="357"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="753-MW-QaQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="303.5" height="71.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="297" height="85.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <color key="textColor" name="PrimaryColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ic-hV-Dph">
-                                                <rect key="frame" x="0.0" y="121.5" width="303.5" height="71"/>
+                                                <rect key="frame" x="0.0" y="135.5" width="297" height="86"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dK-xg-4Zw">
-                                                <rect key="frame" x="0.0" y="242.5" width="303.5" height="71.5"/>
+                                                <rect key="frame" x="0.0" y="271.5" width="297" height="85.5"/>
                                                 <color key="backgroundColor" name="PrimaryColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -179,7 +183,7 @@ and stay healthy</string>
                                     <constraint firstAttribute="trailing" secondItem="0w8-cz-mps" secondAttribute="trailing" constant="50" id="R3B-M8-zvp"/>
                                     <constraint firstAttribute="bottom" secondItem="0w8-cz-mps" secondAttribute="bottom" constant="180" id="gqh-zy-ZLF"/>
                                     <constraint firstItem="0w8-cz-mps" firstAttribute="top" secondItem="2vg-7B-IXO" secondAttribute="top" constant="180" id="q81-Vy-afw"/>
-                                    <constraint firstItem="0w8-cz-mps" firstAttribute="leading" secondItem="2vg-7B-IXO" secondAttribute="leading" constant="320" id="tMl-BE-TUw"/>
+                                    <constraint firstItem="0w8-cz-mps" firstAttribute="leading" secondItem="2vg-7B-IXO" secondAttribute="leading" constant="370" id="tMl-BE-TUw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -187,12 +191,14 @@ and stay healthy</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QJZ-Qf-tPi" firstAttribute="top" secondItem="753-MW-QaQ" secondAttribute="bottom" constant="40" id="1Fh-cU-lyW"/>
-                            <constraint firstItem="2vg-7B-IXO" firstAttribute="leading" secondItem="zqX-nA-pU4" secondAttribute="leading" constant="-300" id="3RF-7c-lnR"/>
+                            <constraint firstItem="2vg-7B-IXO" firstAttribute="leading" secondItem="zqX-nA-pU4" secondAttribute="leading" constant="-350" id="3RF-7c-lnR"/>
                             <constraint firstItem="LEN-Vu-lxg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zqX-nA-pU4" secondAttribute="leading" symbolic="YES" id="5mk-tz-B1e"/>
                             <constraint firstItem="2vg-7B-IXO" firstAttribute="centerY" secondItem="EH2-xn-3hX" secondAttribute="centerY" id="92p-ge-N9c"/>
                             <constraint firstItem="iNy-F3-J91" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zqX-nA-pU4" secondAttribute="leading" symbolic="YES" id="CQr-tu-xRU"/>
+                            <constraint firstItem="Wwi-93-moi" firstAttribute="centerY" secondItem="EH2-xn-3hX" secondAttribute="centerY" id="FrB-kh-Wuk"/>
                             <constraint firstItem="9dK-xg-4Zw" firstAttribute="bottom" secondItem="LEN-Vu-lxg" secondAttribute="top" constant="-20" id="PZu-bD-qFG"/>
                             <constraint firstItem="iNy-F3-J91" firstAttribute="top" secondItem="753-MW-QaQ" secondAttribute="top" constant="-60" id="Xyh-ll-wda"/>
+                            <constraint firstItem="Wwi-93-moi" firstAttribute="centerX" secondItem="EH2-xn-3hX" secondAttribute="centerX" id="etY-97-tQI"/>
                             <constraint firstItem="QJZ-Qf-tPi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zqX-nA-pU4" secondAttribute="leading" symbolic="YES" id="fDI-Fv-Y58"/>
                             <constraint firstItem="zqX-nA-pU4" firstAttribute="trailing" secondItem="LEN-Vu-lxg" secondAttribute="trailing" constant="20" id="jF4-nH-78s"/>
                             <constraint firstItem="zqX-nA-pU4" firstAttribute="trailing" secondItem="iNy-F3-J91" secondAttribute="trailing" constant="30" id="kTr-bc-fpm"/>
@@ -204,6 +210,7 @@ and stay healthy</string>
                     <connections>
                         <outlet property="callUsButton" destination="LEN-Vu-lxg" id="bTI-Hu-hmU"/>
                         <outlet property="faceIdButton" destination="iNy-F3-J91" id="wMc-Pr-596"/>
+                        <outlet property="loadingIndicator" destination="Wwi-93-moi" id="vqI-uQ-Z9a"/>
                         <outlet property="loginButton" destination="9dK-xg-4Zw" id="gIf-4H-nAH"/>
                         <outlet property="loginTitle" destination="753-MW-QaQ" id="5RE-IG-tIz"/>
                         <outlet property="loginUsername" destination="9Ic-hV-Dph" id="VPP-eG-O1l"/>
@@ -216,17 +223,23 @@ and stay healthy</string>
             </objects>
             <point key="canvasLocation" x="1794" y="72"/>
         </scene>
-        <!--View Controller-->
+        <!--MainpageVC-->
         <scene sceneID="dEl-Xu-ejk">
             <objects>
-                <viewController id="71v-iG-iHl" sceneMemberID="viewController">
+                <viewController id="71v-iG-iHl" customClass="MainpageVC" customModule="FoodBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z8B-nK-cCn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="LrF-NR-jfX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VVq-Qi-ZXQ"/>
+                    <navigationItem key="navigationItem" id="VVq-Qi-ZXQ">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="tBl-ju-5P2">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="71v-iG-iHl" id="7tL-AH-sBl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upk-Ja-Owe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,7 +248,7 @@ and stay healthy</string>
         <!--Navigation Controller-->
         <scene sceneID="fP4-xR-c4Z">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D5w-5D-LBF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D5w-5D-LBF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p0j-r3-MIV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -253,7 +266,7 @@ and stay healthy</string>
         <!--Tab Bar Controller-->
         <scene sceneID="rfl-km-3hk">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gwe-tY-5Ee" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gwe-tY-5Ee" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Mm-k0-n31">
                         <autoresizingMask key="autoresizingMask"/>
@@ -292,6 +305,9 @@ and stay healthy</string>
         <namedColor name="PrimaryColor">
             <color red="0.875" green="0.090000003576278687" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

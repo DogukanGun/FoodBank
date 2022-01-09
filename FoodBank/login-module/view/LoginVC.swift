@@ -24,6 +24,7 @@ class LoginVC:UIViewController{
     
     var loginVariable = LoginVariable()
     
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var loginTitle: UILabel!
     @IBOutlet weak var callUsButton: UIButton!
@@ -42,10 +43,17 @@ class LoginVC:UIViewController{
     @IBAction func startApplication(_ sender: Any) {
         
         if let text = loginUsername.text ,text == "" || text.rangeOfCharacter(from: loginVariable.numberSet) != nil {
-            
+            errorDialog(title: "Wrong Name", errorMessage: "Please control the username", okayButtonText: "Okay")
         }
-
-        userDefaults.set(loginUsername.text, forKey: "username")
+        mainWrapper.addSubview(loadingIndicator)
+        mainWrapper.bringSubviewToFront(loadingIndicator)
+        loadingIndicator.startAnimating()
+        let seconds = 3.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            userDefaults.set(self.loginUsername.text, forKey: Constants.userDefaultsUsername)
+            self.changeRootView()
+        }
+        
     }
     
     @IBAction func callUsButtonPressed(_ sender: Any) {
@@ -66,6 +74,7 @@ class LoginVC:UIViewController{
 
 extension LoginVC{
     private func editButton(){
+        navigationItem.hidesBackButton = true
         loginButton.reshapeButton()
         registerButton.turnButton(ratio: loginVariable.registerButtonAngle)
         callUsButton.turnButton(ratio: loginVariable.callUsButtonAngle)
@@ -75,11 +84,20 @@ extension LoginVC{
     }
     private func editBackground(){
         if let image = UIImage(named: "BackgroundImage"){
-            let imageView = UIImageView(frame: CGRect(x: 0, y: -20, width: mainWrapper.bounds.width, height: mainWrapper.bounds.height))
+            let imageView = UIImageView(frame: CGRect(x: 0, y: -20, width: mainWrapper.bounds.width, height: mainWrapper.bounds.height+40))
             imageView.contentMode = .scaleAspectFit
             imageView.image = image
             mainWrapper.addSubview(imageView)
             self.mainWrapper.sendSubviewToBack(imageView)
         }
+        loadingIndicator.stopAnimating()
     }
+    
+    private func changeRootView(){
+        let storyboard = UIStoryboard(name: Constants.mainStoryboardName, bundle: nil)
+        let mainTabBarController = storyboard.instantiateViewController(identifier: Constants.mainpageName)
+           
+          (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+    }
+    
 }

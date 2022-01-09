@@ -10,13 +10,15 @@
 		9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C459278B5DA400870EB6 /* UIButton+reshape.swift */; };
 		9E84C45D278B5FD300870EB6 /* UITextField+cornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C45C278B5FD300870EB6 /* UITextField+cornerShape.swift */; };
 		9E84C45F278B637700870EB6 /* UIButton+turnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C45E278B637700870EB6 /* UIButton+turnButton.swift */; };
+		9E84C462278B72A900870EB6 /* Diaglog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C461278B72A900870EB6 /* Diaglog.swift */; };
+		9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C465278B7CAB00870EB6 /* MainpageVC.swift */; };
+		9E84C469278B7F1600870EB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C468278B7F1600870EB6 /* Constants.swift */; };
 		9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */; };
 		9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A4278ADFE8003E469A /* String+index.swift */; };
 		9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A8278AED54003E469A /* LoginVC.swift */; };
 		9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0AA278AF0CA003E469A /* UIView+makeCircular.swift */; };
 		9E9B996E278AD5E900C16586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B996D278AD5E900C16586 /* AppDelegate.swift */; };
 		9E9B9970278AD5E900C16586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B996F278AD5E900C16586 /* SceneDelegate.swift */; };
-		9E9B9972278AD5E900C16586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9971278AD5E900C16586 /* ViewController.swift */; };
 		9E9B9975278AD5E900C16586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B9973278AD5E900C16586 /* Main.storyboard */; };
 		9E9B9978278AD5E900C16586 /* FoodBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9976278AD5E900C16586 /* FoodBank.xcdatamodeld */; };
 		9E9B997A278AD5EB00C16586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B9979278AD5EB00C16586 /* Assets.xcassets */; };
@@ -48,6 +50,9 @@
 		9E84C459278B5DA400870EB6 /* UIButton+reshape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+reshape.swift"; sourceTree = "<group>"; };
 		9E84C45C278B5FD300870EB6 /* UITextField+cornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+cornerShape.swift"; sourceTree = "<group>"; };
 		9E84C45E278B637700870EB6 /* UIButton+turnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+turnButton.swift"; sourceTree = "<group>"; };
+		9E84C461278B72A900870EB6 /* Diaglog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diaglog.swift; sourceTree = "<group>"; };
+		9E84C465278B7CAB00870EB6 /* MainpageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainpageVC.swift; sourceTree = "<group>"; };
+		9E84C468278B7F1600870EB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+drawRoundedEdge.swift"; sourceTree = "<group>"; };
 		9E9AD0A1278ADADA003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		9E9AD0A2278ADADB003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -57,7 +62,6 @@
 		9E9B996A278AD5E900C16586 /* FoodBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9B996D278AD5E900C16586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E9B996F278AD5E900C16586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E9B9971278AD5E900C16586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E9B9974278AD5E900C16586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E9B9977278AD5E900C16586 /* FoodBank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodBank.xcdatamodel; sourceTree = "<group>"; };
 		9E9B9979278AD5EB00C16586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,9 +117,43 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		9E84C460278B729900870EB6 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C461278B72A900870EB6 /* Diaglog.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		9E84C463278B7C9A00870EB6 /* mainpage-module */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C464278B7CA200870EB6 /* view */,
+			);
+			path = "mainpage-module";
+			sourceTree = "<group>";
+		};
+		9E84C464278B7CA200870EB6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C465278B7CAB00870EB6 /* MainpageVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9E84C467278B7F0900870EB6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C468278B7F1600870EB6 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		9E9AD09A278AD8D0003E469A /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C467278B7F0900870EB6 /* Constants */,
+				9E84C460278B729900870EB6 /* Dialog */,
 				9E84C45B278B5FBC00870EB6 /* UITextField */,
 				9E84C458278B5D9100870EB6 /* UIButton */,
 				9E9AD0A3278ADFDC003E469A /* String */,
@@ -180,12 +218,12 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C463278B7C9A00870EB6 /* mainpage-module */,
 				9E9AD0A6278AED40003E469A /* login-module */,
 				9E9AD09A278AD8D0003E469A /* helper */,
 				9E9B99A0278AD75000C16586 /* splashscreen-module */,
 				9E9B996D278AD5E900C16586 /* AppDelegate.swift */,
 				9E9B996F278AD5E900C16586 /* SceneDelegate.swift */,
-				9E9B9971278AD5E900C16586 /* ViewController.swift */,
 				9E9B9973278AD5E900C16586 /* Main.storyboard */,
 				9E9B9979278AD5EB00C16586 /* Assets.xcassets */,
 				9E9B997B278AD5EB00C16586 /* LaunchScreen.storyboard */,
@@ -360,8 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
+				9E84C462278B72A900870EB6 /* Diaglog.swift in Sources */,
 				9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */,
-				9E9B9972278AD5E900C16586 /* ViewController.swift in Sources */,
 				9E84C45F278B637700870EB6 /* UIButton+turnButton.swift in Sources */,
 				9E84C45D278B5FD300870EB6 /* UITextField+cornerShape.swift in Sources */,
 				9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */,
@@ -370,6 +409,7 @@
 				9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */,
 				9E9B996E278AD5E900C16586 /* AppDelegate.swift in Sources */,
 				9E9B99A3278AD76E00C16586 /* SplashScreenVC.swift in Sources */,
+				9E84C469278B7F1600870EB6 /* Constants.swift in Sources */,
 				9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */,
 				9E9B9970278AD5E900C16586 /* SceneDelegate.swift in Sources */,
 			);
