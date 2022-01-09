@@ -1,24 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D5w-5D-LBF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash ScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashScreenVC" customModule="FoodBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash Screen-1" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-96-iH6">
+                                <rect key="frame" x="0.0" y="-50" width="414" height="627"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8C-oA-hQw">
+                                <rect key="frame" x="0.0" y="459" width="414" height="403"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="D6v-rp-R7u">
+                                        <rect key="frame" x="32" y="70" width="350" height="301"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrf-AU-Rhv">
+                                                <rect key="frame" x="39" y="0.0" width="272.5" height="120.5"/>
+                                                <string key="text">We Provide Healthy
+Food In Covid-19</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlF-Ub-y0J">
+                                                <rect key="frame" x="67.5" y="140.5" width="215.5" height="75"/>
+                                                <string key="text">Eat Healthy food at covid-19
+and stay healthy</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-ch-RJf">
+                                                <rect key="frame" x="89" y="235.5" width="172" height="65.5"/>
+                                                <color key="backgroundColor" name="PrimaryColor"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Get  Started">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BlF-Ub-y0J" firstAttribute="height" secondItem="D6v-rp-R7u" secondAttribute="height" multiplier="0.25" id="0gu-XN-deD"/>
+                                            <constraint firstItem="yrf-AU-Rhv" firstAttribute="height" secondItem="D6v-rp-R7u" secondAttribute="height" multiplier="0.4" id="hDk-Td-NMX"/>
+                                            <constraint firstItem="sT1-ch-RJf" firstAttribute="width" secondItem="BlF-Ub-y0J" secondAttribute="width" multiplier="0.8" id="irE-18-k8g"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="D6v-rp-R7u" firstAttribute="top" secondItem="M8C-oA-hQw" secondAttribute="top" constant="70" id="3aC-Md-E68"/>
+                                    <constraint firstAttribute="bottom" secondItem="D6v-rp-R7u" secondAttribute="bottom" constant="32" id="MEI-RC-kGU"/>
+                                    <constraint firstAttribute="trailing" secondItem="D6v-rp-R7u" secondAttribute="trailing" constant="32" id="slI-81-gSU"/>
+                                    <constraint firstItem="D6v-rp-R7u" firstAttribute="leading" secondItem="M8C-oA-hQw" secondAttribute="leading" constant="32" id="zQa-as-gxz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M8C-oA-hQw" secondAttribute="trailing" id="1rE-Nj-gQM"/>
+                            <constraint firstItem="M8C-oA-hQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P9a-AT-YyE"/>
+                            <constraint firstItem="M8C-oA-hQw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="R12-sX-vxD"/>
+                            <constraint firstItem="VgZ-96-iH6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-50" id="T4S-9N-ZkQ"/>
+                            <constraint firstItem="VgZ-96-iH6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="TDX-Rq-ic0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M8C-oA-hQw" secondAttribute="bottom" id="bEX-PX-zjr"/>
+                            <constraint firstItem="VgZ-96-iH6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iRD-UG-JY6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VgZ-96-iH6" secondAttribute="trailing" id="mO6-aR-xm3"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Cqc-l9-QZJ"/>
+                    <connections>
+                        <outlet property="bottomSheet" destination="M8C-oA-hQw" id="tJh-sN-wsy"/>
+                        <outlet property="button" destination="sT1-ch-RJf" id="WFh-bL-nhF"/>
+                        <outlet property="image" destination="VgZ-96-iH6" id="6H2-bh-oiF"/>
+                        <outlet property="titleOfBottomSheet" destination="yrf-AU-Rhv" id="3CE-jm-uXM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="71.651785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fP4-xR-c4Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D5w-5D-LBF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p0j-r3-MIV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JGq-yb-eCx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ViZ-vE-cfx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="71.651785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Splash Screen-1" width="769" height="1148"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.99215686274509807" green="0.78823529411764703" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */; };
+		9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A4278ADFE8003E469A /* String+index.swift */; };
 		9E9B996E278AD5E900C16586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B996D278AD5E900C16586 /* AppDelegate.swift */; };
 		9E9B9970278AD5E900C16586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B996F278AD5E900C16586 /* SceneDelegate.swift */; };
 		9E9B9972278AD5E900C16586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9971278AD5E900C16586 /* ViewController.swift */; };
@@ -17,6 +19,7 @@
 		9E9B9988278AD5EB00C16586 /* FoodBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9987278AD5EB00C16586 /* FoodBankTests.swift */; };
 		9E9B9992278AD5EB00C16586 /* FoodBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9991278AD5EB00C16586 /* FoodBankUITests.swift */; };
 		9E9B9994278AD5EB00C16586 /* FoodBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9993278AD5EB00C16586 /* FoodBankUITestsLaunchTests.swift */; };
+		9E9B99A3278AD76E00C16586 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B99A2278AD76E00C16586 /* SplashScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+drawRoundedEdge.swift"; sourceTree = "<group>"; };
+		9E9AD0A1278ADADA003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		9E9AD0A2278ADADB003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9E9AD0A4278ADFE8003E469A /* String+index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+index.swift"; sourceTree = "<group>"; };
 		9E9B996A278AD5E900C16586 /* FoodBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9B996D278AD5E900C16586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E9B996F278AD5E900C16586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		9E9B998D278AD5EB00C16586 /* FoodBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9B9991278AD5EB00C16586 /* FoodBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBankUITests.swift; sourceTree = "<group>"; };
 		9E9B9993278AD5EB00C16586 /* FoodBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E9B99A2278AD76E00C16586 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E9AD09A278AD8D0003E469A /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				9E9AD0A3278ADFDC003E469A /* String */,
+				9E9AD09B278AD8D6003E469A /* UIView */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		9E9AD09B278AD8D6003E469A /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		9E9AD0A3278ADFDC003E469A /* String */ = {
+			isa = PBXGroup;
+			children = (
+				9E9AD0A4278ADFE8003E469A /* String+index.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		9E9B9961278AD5E900C16586 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +134,8 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
+				9E9AD09A278AD8D0003E469A /* helper */,
+				9E9B99A0278AD75000C16586 /* splashscreen-module */,
 				9E9B996D278AD5E900C16586 /* AppDelegate.swift */,
 				9E9B996F278AD5E900C16586 /* SceneDelegate.swift */,
 				9E9B9971278AD5E900C16586 /* ViewController.swift */,
@@ -128,6 +163,22 @@
 				9E9B9993278AD5EB00C16586 /* FoodBankUITestsLaunchTests.swift */,
 			);
 			path = FoodBankUITests;
+			sourceTree = "<group>";
+		};
+		9E9B99A0278AD75000C16586 /* splashscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B99A1278AD76100C16586 /* view */,
+			);
+			path = "splashscreen-module";
+			sourceTree = "<group>";
+		};
+		9E9B99A1278AD76100C16586 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9E9B99A2278AD76E00C16586 /* SplashScreenVC.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +267,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 9E9B9961278AD5E900C16586;
 			productRefGroup = 9E9B996B278AD5E900C16586 /* Products */;
@@ -262,8 +314,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9B9972278AD5E900C16586 /* ViewController.swift in Sources */,
+				9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */,
 				9E9B9978278AD5E900C16586 /* FoodBank.xcdatamodeld in Sources */,
 				9E9B996E278AD5E900C16586 /* AppDelegate.swift in Sources */,
+				9E9B99A3278AD76E00C16586 /* SplashScreenVC.swift in Sources */,
+				9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */,
 				9E9B9970278AD5E900C16586 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +360,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E9B9974278AD5E900C16586 /* Base */,
+				9E9AD0A1278ADADA003E469A /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -313,6 +369,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E9B997C278AD5EB00C16586 /* Base */,
+				9E9AD0A2278ADADB003E469A /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -385,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -459,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,7 +545,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
