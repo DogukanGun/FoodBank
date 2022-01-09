@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash Screen-1" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-96-iH6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash Screen-1" translatesAutoresizingMaskIntoConstraints="NO" id="VgZ-96-iH6">
                                 <rect key="frame" x="0.0" y="-50" width="414" height="627"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8C-oA-hQw">
@@ -45,11 +45,14 @@ and stay healthy</string>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-ch-RJf">
                                                 <rect key="frame" x="89" y="235.5" width="172" height="65.5"/>
                                                 <color key="backgroundColor" name="PrimaryColor"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Get  Started">
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ltb-f2-Du3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -87,11 +90,44 @@ and stay healthy</string>
                         <outlet property="button" destination="sT1-ch-RJf" id="WFh-bL-nhF"/>
                         <outlet property="image" destination="VgZ-96-iH6" id="6H2-bh-oiF"/>
                         <outlet property="titleOfBottomSheet" destination="yrf-AU-Rhv" id="3CE-jm-uXM"/>
+                        <segue destination="2EZ-e5-jha" kind="modal" identifier="LoginVC" id="eMX-Ty-8Mr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="71.651785714285708"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="UuX-Dr-9pV">
+            <objects>
+                <viewController id="2EZ-e5-jha" customClass="LoginVC" customModule="FoodBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EH2-xn-3hX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vg-7B-IXO">
+                                <rect key="frame" x="-20" y="210.5" width="284" height="421"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zqX-nA-pU4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2vg-7B-IXO" firstAttribute="leading" secondItem="zqX-nA-pU4" secondAttribute="leading" constant="-20" id="3RF-7c-lnR"/>
+                            <constraint firstItem="2vg-7B-IXO" firstAttribute="centerY" secondItem="EH2-xn-3hX" secondAttribute="centerY" id="92p-ge-N9c"/>
+                            <constraint firstItem="zqX-nA-pU4" firstAttribute="trailing" secondItem="2vg-7B-IXO" secondAttribute="trailing" constant="150" id="SCl-Sc-c0N"/>
+                            <constraint firstItem="2vg-7B-IXO" firstAttribute="height" secondItem="EH2-xn-3hX" secondAttribute="height" multiplier="0.5" id="lDr-DS-b05"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mgm-x5-SvX"/>
+                    <connections>
+                        <outlet property="loginWrapper" destination="2vg-7B-IXO" id="M1h-Rn-kKZ"/>
+                        <outlet property="mainWrapper" destination="EH2-xn-3hX" id="UAd-MD-itQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsv-bD-hQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fP4-xR-c4Z">
@@ -113,9 +149,9 @@ and stay healthy</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Splash Screen-1" width="769" height="1148"/>
+        <image name="Splash Screen-1" width="809" height="1119"/>
         <namedColor name="PrimaryColor">
-            <color red="0.99215686274509807" green="0.78823529411764703" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.87450980392156863" green="0.090196078431372548" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

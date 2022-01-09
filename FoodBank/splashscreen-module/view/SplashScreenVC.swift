@@ -29,6 +29,8 @@ class SplashScreenVC:UIViewController{
         editBottomSheetTitle()
         editBottomSheetButton()
     }
+    //DF1723
+    //F8742A
     
     private func editBottomSheetButton(){
         button.layer.cornerRadius = splashScreenVariable.bottomSheetButtonCornerRadious
@@ -46,5 +48,8 @@ class SplashScreenVC:UIViewController{
             mutableString.addAttributes([NSAttributedString.Key.foregroundColor : UIColor(named: "PrimaryColor")], range: NSRange(location: startIndex, length: keyWord.count))
             titleOfBottomSheet.attributedText = mutableString
         }
+    }
+    @IBAction func goButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "LoginVC", sender: nil)
     }
 }
