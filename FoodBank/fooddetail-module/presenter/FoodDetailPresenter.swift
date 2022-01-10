@@ -9,10 +9,7 @@ import Foundation
 
 class FoodDetailPresenter:ViewToPresenterFoodDetailProtocol{
     var interactor: PresenterToInteractorFoodDetailProtocol?
-    
     func addBasket(product: Product) {
         interactor?.addBasket(product: product)
     }
-    
-    
 }

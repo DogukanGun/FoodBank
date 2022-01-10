@@ -65,8 +65,8 @@ class FoodDetailVC:UIViewController{
     
     
     @IBAction func addCardButtonPressed(_ sender: Any) {
-        if let food = food, totalFoodAmount != 0 {
-            food.totalAmount = totalFoodAmount
+        if let food = food,let totalAmountText = totalFoodAmount.text, let totalAmount = Int(totalAmountText), totalAmount != 0 {
+            food.totalAmount = totalAmount
             presenter?.addBasket(product: food)
         }
     }
