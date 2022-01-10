@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="FoodBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qry-bp-8CQ">
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="170"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fb3-09-YuA">
+                                <rect key="frame" x="10" y="10" width="144" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="ou5-js-kMF">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="105"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjE-CS-K4X">
+                                        <rect key="frame" x="0.0" y="115" width="144" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ou5-js-kMF" firstAttribute="height" secondItem="Fb3-09-YuA" secondAttribute="height" multiplier="0.7" id="9iW-PU-el1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fb3-09-YuA" secondAttribute="trailing" constant="10" id="Avr-RN-dca"/>
+                            <constraint firstItem="Fb3-09-YuA" firstAttribute="leading" secondItem="Qry-bp-8CQ" secondAttribute="leading" constant="10" id="CvE-3e-rrA"/>
+                            <constraint firstItem="Fb3-09-YuA" firstAttribute="top" secondItem="Qry-bp-8CQ" secondAttribute="top" constant="10" id="EJw-TY-L6q"/>
+                            <constraint firstAttribute="bottom" secondItem="Fb3-09-YuA" secondAttribute="bottom" constant="10" id="U7n-yA-MXW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Qry-bp-8CQ" secondAttribute="bottom" id="4sS-mz-Kjx"/>
+                <constraint firstItem="Qry-bp-8CQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Pc-Q7-0VT"/>
+                <constraint firstAttribute="trailing" secondItem="Qry-bp-8CQ" secondAttribute="trailing" id="DPC-4D-hIE"/>
+                <constraint firstItem="Qry-bp-8CQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qhg-5n-yQw"/>
+            </constraints>
+            <size key="customSize" width="164" height="170"/>
+            <point key="canvasLocation" x="220.28985507246378" y="107.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="burger" width="48" height="48"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

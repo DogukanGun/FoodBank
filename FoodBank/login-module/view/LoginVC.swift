@@ -23,9 +23,9 @@ struct LoginVariable{
 class LoginVC:UIViewController{
     
     var loginVariable = LoginVariable()
+    var presenter:ViewToPresenterLoginPageProtocol? = nil
     
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    
     @IBOutlet weak var loginTitle: UILabel!
     @IBOutlet weak var callUsButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
@@ -36,6 +36,7 @@ class LoginVC:UIViewController{
     @IBOutlet var mainWrapper: UIView!
     
     override func viewDidLoad() {
+        LoginPageRouter.createModule(ref: self)
         editBackground()
         editButton()
     }
@@ -50,14 +51,18 @@ class LoginVC:UIViewController{
         loadingIndicator.startAnimating()
         let seconds = 3.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            userDefaults.set(self.loginUsername.text, forKey: Constants.userDefaultsUsername)
             self.changeRootView()
         }
         
     }
     
     @IBAction func callUsButtonPressed(_ sender: Any) {
-        
+        guard let telephoneNumber = URL(string: "tel://" + Constants.telephoneNumber) else { return }
+        if UIApplication.shared.canOpenURL(telephoneNumber) {
+            UIApplication.shared.open(telephoneNumber)
+        } else {
+            print("Can't open url on this device")
+        }
     }
     
     @IBAction func registerButtonPressed(_ sender: Any) {            loginButton.setTitle(loginVariable.registerButtonText, for: .normal)
