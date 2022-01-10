@@ -11,12 +11,13 @@ struct CategoryWrapperTableViewCellVariable{
     let cellIdentifier = "CategoryCollectionViewCell"
     let cellNibName = "CategoryCollectionViewCell"
     let itemSpace = CGFloat(10)
+    var indexPath:IndexPath? = nil
     let itemPerRow = CGFloat(3)
 }
 
 class CategoryWrapperTableViewCell: UITableViewCell {
 
-    let variables = CategoryWrapperTableViewCellVariable()
+    var variables = CategoryWrapperTableViewCellVariable()
     var categoryList = [Category(categoryName: "Pizza"),Category(categoryName: "Burger"),Category(categoryName: "Drink")]
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     override func awakeFromNib() {
@@ -48,8 +49,21 @@ extension CategoryWrapperTableViewCell:UICollectionViewDelegate,UICollectionView
         cell.refresh(category: category)
         return cell
     }
-   
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let selectedIndexPath = variables.indexPath{
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: variables.cellIdentifier, for: selectedIndexPath) as? CategoryCollectionViewCell else{
+                return
+            }
+            cell.backgroundColor = UIColor.systemGray5
+        }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: variables.cellIdentifier, for: indexPath) as? CategoryCollectionViewCell else{
+            return
+        }
+        cell.wrapper.backgroundColor = UIColor(named: "SecondaryColarLight")
+        variables.indexPath = indexPath
+    }
+      
     private func desingCollectionView(){
         let design = UICollectionViewFlowLayout()
         design.minimumInteritemSpacing = variables.itemSpace

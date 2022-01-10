@@ -26,8 +26,14 @@
 		9E84C48C278C677400870EB6 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C48A278C677400870EB6 /* ProductTableViewCell.swift */; };
 		9E84C48D278C677400870EB6 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E84C48B278C677400870EB6 /* ProductTableViewCell.xib */; };
 		9E84C490278C6D6500870EB6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C48F278C6D6500870EB6 /* Category.swift */; };
-		9E84C492278C6F9E00870EB6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C491278C6F9E00870EB6 /* Product.swift */; };
-		9E84C499278C7C9F00870EB6 /* FoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C498278C7C9F00870EB6 /* FoodResponse.swift */; };
+		9E84C499278C7C9F00870EB6 /* GetFoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C498278C7C9F00870EB6 /* GetFoodResponse.swift */; };
+		9E84C49B278C914300870EB6 /* MainpageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C49A278C914300870EB6 /* MainpageProtocols.swift */; };
+		9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C49C278C9A9F00870EB6 /* MainpagePresenter.swift */; };
+		9E84C49F278C9DEF00870EB6 /* MainpageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C49E278C9DEF00870EB6 /* MainpageInteractor.swift */; };
+		9E84C4A2278C9E2400870EB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9E84C4A1278C9E2400870EB6 /* Alamofire */; };
+		9E84C4A5278C9E3300870EB6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9E84C4A4278C9E3300870EB6 /* Kingfisher */; };
+		9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4A6278C9EE600870EB6 /* Network.swift */; };
+		9E84C4A9278CA47800870EB6 /* MainpageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4A8278CA47800870EB6 /* MainpageRouter.swift */; };
 		9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */; };
 		9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A4278ADFE8003E469A /* String+index.swift */; };
 		9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A8278AED54003E469A /* LoginVC.swift */; };
@@ -81,8 +87,12 @@
 		9E84C48A278C677400870EB6 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		9E84C48B278C677400870EB6 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		9E84C48F278C6D6500870EB6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		9E84C491278C6F9E00870EB6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		9E84C498278C7C9F00870EB6 /* FoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodResponse.swift; sourceTree = "<group>"; };
+		9E84C498278C7C9F00870EB6 /* GetFoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFoodResponse.swift; sourceTree = "<group>"; };
+		9E84C49A278C914300870EB6 /* MainpageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainpageProtocols.swift; sourceTree = "<group>"; };
+		9E84C49C278C9A9F00870EB6 /* MainpagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainpagePresenter.swift; sourceTree = "<group>"; };
+		9E84C49E278C9DEF00870EB6 /* MainpageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainpageInteractor.swift; sourceTree = "<group>"; };
+		9E84C4A6278C9EE600870EB6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9E84C4A8278CA47800870EB6 /* MainpageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainpageRouter.swift; sourceTree = "<group>"; };
 		9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+drawRoundedEdge.swift"; sourceTree = "<group>"; };
 		9E9AD0A1278ADADA003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		9E9AD0A2278ADADB003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -110,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E84C4A5278C9E3300870EB6 /* Kingfisher in Frameworks */,
+				9E84C4A2278C9E2400870EB6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				9E84C468278B7F1600870EB6 /* Constants.swift */,
+				9E84C4A6278C9EE600870EB6 /* Network.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -292,7 +305,6 @@
 			children = (
 				9E84C497278C7C9300870EB6 /* response */,
 				9E84C48F278C6D6500870EB6 /* Category.swift */,
-				9E84C491278C6F9E00870EB6 /* Product.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -300,6 +312,7 @@
 		9E84C493278C7B9700870EB6 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C49C278C9A9F00870EB6 /* MainpagePresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -307,6 +320,7 @@
 		9E84C494278C7B9C00870EB6 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C49E278C9DEF00870EB6 /* MainpageInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -314,6 +328,7 @@
 		9E84C495278C7BA300870EB6 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C49A278C914300870EB6 /* MainpageProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -321,6 +336,7 @@
 		9E84C496278C7BAA00870EB6 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C4A8278CA47800870EB6 /* MainpageRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -328,7 +344,7 @@
 		9E84C497278C7C9300870EB6 /* response */ = {
 			isa = PBXGroup;
 			children = (
-				9E84C498278C7C9F00870EB6 /* FoodResponse.swift */,
+				9E84C498278C7C9F00870EB6 /* GetFoodResponse.swift */,
 			);
 			path = response;
 			sourceTree = "<group>";
@@ -471,6 +487,10 @@
 			dependencies = (
 			);
 			name = FoodBank;
+			packageProductDependencies = (
+				9E84C4A1278C9E2400870EB6 /* Alamofire */,
+				9E84C4A4278C9E3300870EB6 /* Kingfisher */,
+			);
 			productName = FoodBank;
 			productReference = 9E9B996A278AD5E900C16586 /* FoodBank.app */;
 			productType = "com.apple.product-type.application";
@@ -544,6 +564,10 @@
 				tr,
 			);
 			mainGroup = 9E9B9961278AD5E900C16586;
+			packageReferences = (
+				9E84C4A0278C9E2400870EB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9E84C4A3278C9E3300870EB6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 9E9B996B278AD5E900C16586 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -592,7 +616,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E84C471278C604A00870EB6 /* LoginPagePresenter.swift in Sources */,
+				9E84C49B278C914300870EB6 /* MainpageProtocols.swift in Sources */,
 				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
+				9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */,
 				9E84C47E278C618E00870EB6 /* HeaderTableViewCell.swift in Sources */,
 				9E84C462278B72A900870EB6 /* Diaglog.swift in Sources */,
 				9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */,
@@ -603,13 +629,15 @@
 				9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */,
 				9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */,
 				9E9B9978278AD5E900C16586 /* FoodBank.xcdatamodeld in Sources */,
+				9E84C4A9278CA47800870EB6 /* MainpageRouter.swift in Sources */,
 				9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */,
-				9E84C499278C7C9F00870EB6 /* FoodResponse.swift in Sources */,
+				9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */,
+				9E84C499278C7C9F00870EB6 /* GetFoodResponse.swift in Sources */,
+				9E84C49F278C9DEF00870EB6 /* MainpageInteractor.swift in Sources */,
 				9E9B996E278AD5E900C16586 /* AppDelegate.swift in Sources */,
 				9E84C490278C6D6500870EB6 /* Category.swift in Sources */,
 				9E84C473278C607300870EB6 /* LoginPageInteractor.swift in Sources */,
 				9E9B99A3278AD76E00C16586 /* SplashScreenVC.swift in Sources */,
-				9E84C492278C6F9E00870EB6 /* Product.swift in Sources */,
 				9E84C483278C65AE00870EB6 /* CategoryWrapperTableViewCell.swift in Sources */,
 				9E84C469278B7F1600870EB6 /* Constants.swift in Sources */,
 				9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */,
@@ -977,6 +1005,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E84C4A0278C9E2400870EB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9E84C4A3278C9E3300870EB6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E84C4A1278C9E2400870EB6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E84C4A0278C9E2400870EB6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9E84C4A4278C9E3300870EB6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E84C4A3278C9E3300870EB6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9E9B9976278AD5E900C16586 /* FoodBank.xcdatamodeld */ = {

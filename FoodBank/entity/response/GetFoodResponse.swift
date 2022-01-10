@@ -7,18 +7,18 @@
 
 import Foundation
 
-class FoodResponse: Codable {
-    let yemekler: [Yemekler]
+class GetFoodResponse: Codable {
+    let yemekler: [Product]
     let success: Int
 
-    init(yemekler: [Yemekler], success: Int) {
+    init(yemekler: [Product], success: Int) {
         self.yemekler = yemekler
         self.success = success
     }
 }
 
 // MARK: - Yemekler
-class Yemekler: Codable {
+class Product: Codable {
     let yemekID, yemekAdi, yemekResimAdi, yemekFiyat: String
 
     enum CodingKeys: String, CodingKey {

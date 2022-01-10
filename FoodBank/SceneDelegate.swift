@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func checkUser(){
         let storyboard = UIStoryboard(name: Constants.mainStoryboardName, bundle: nil)
-        if userDefaults.string(forKey: "username") != nil {
+        if userDefaults.string(forKey: Constants.userDefaultsUsername) != nil {
             let mainTabBarController = storyboard.instantiateViewController(identifier: Constants.mainpageName)
                 window?.rootViewController = mainTabBarController
         } else {

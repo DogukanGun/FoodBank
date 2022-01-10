@@ -43,13 +43,17 @@ class LoginVC:UIViewController{
     
     @IBAction func startApplication(_ sender: Any) {
         
-        if let text = loginUsername.text ,text == "" || text.rangeOfCharacter(from: loginVariable.numberSet) != nil {
+        guard let text = loginUsername.text else{
+            return
+        }
+        if text == "" || text.rangeOfCharacter(from: loginVariable.numberSet) != nil {
             errorDialog(title: "Wrong Name", errorMessage: "Please control the username", okayButtonText: "Okay")
         }
         mainWrapper.addSubview(loadingIndicator)
         mainWrapper.bringSubviewToFront(loadingIndicator)
         loadingIndicator.startAnimating()
         let seconds = 3.0
+        presenter?.saveName(name: text)
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             self.changeRootView()
         }

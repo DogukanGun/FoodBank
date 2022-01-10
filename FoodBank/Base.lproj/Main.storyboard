@@ -234,7 +234,7 @@ and stay healthy</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T6J-fK-ah8">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HB2-jG-9Bb">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HB2-jG-9Bb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
@@ -265,6 +265,22 @@ and stay healthy</string>
             </objects>
             <point key="canvasLocation" x="5881.1594202898559" y="193.52678571428569"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xA8-O2-Bm3">
+            <objects>
+                <viewController id="0hC-q9-H4T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ozi-IN-ZRj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="chX-ky-pUy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MeY-P0-ldU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYy-iv-Gg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5881" y="922"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="fP4-xR-c4Z">
             <objects>
@@ -294,17 +310,18 @@ and stay healthy</string>
                     </tabBar>
                     <connections>
                         <segue destination="guv-e4-yHf" kind="relationship" relationship="viewControllers" id="mRN-s3-CB5"/>
+                        <segue destination="Msk-UL-G6m" kind="relationship" relationship="viewControllers" id="VKs-ll-MB2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfZ-8b-Z1B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4060.8695652173915" y="193.52678571428569"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="lvh-DU-XQr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="guv-e4-yHf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="swo-tN-rXP"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="swo-tN-rXP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TfS-0G-d4x">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -319,9 +336,29 @@ and stay healthy</string>
             </objects>
             <point key="canvasLocation" x="4971.0144927536239" y="193.52678571428569"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="nZC-Kl-y8t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Msk-UL-G6m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="iHM-WA-lnu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IZv-ka-htf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0hC-q9-H4T" kind="relationship" relationship="rootViewController" id="vTc-D1-jDJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiO-Ld-HN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4971" y="922"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Splash Screen-1" width="809" height="1119"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <namedColor name="PrimaryColor">
             <color red="0.875" green="0.090000003576278687" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

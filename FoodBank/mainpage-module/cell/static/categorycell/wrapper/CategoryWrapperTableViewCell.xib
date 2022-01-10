@@ -20,14 +20,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQn-9B-WPL">
                         <rect key="frame" x="10" y="10" width="326" height="190"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlQ-Ys-CnH">
-                                <rect key="frame" x="5" y="5" width="316" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EDt-oF-F35">
-                                <rect key="frame" x="5" y="39" width="316" height="151"/>
+                                <rect key="frame" x="5" y="0.0" width="316" height="190"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UwV-iH-fwt">
                                     <size key="itemSize" width="128" height="128"/>
@@ -40,11 +34,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="EDt-oF-F35" secondAttribute="trailing" constant="5" id="Gsf-TT-NqC"/>
-                            <constraint firstItem="EDt-oF-F35" firstAttribute="top" secondItem="LlQ-Ys-CnH" secondAttribute="bottom" constant="10" id="HQh-2E-CKR"/>
-                            <constraint firstItem="LlQ-Ys-CnH" firstAttribute="top" secondItem="rQn-9B-WPL" secondAttribute="top" constant="5" id="Hmb-NZ-02Q"/>
-                            <constraint firstItem="LlQ-Ys-CnH" firstAttribute="leading" secondItem="rQn-9B-WPL" secondAttribute="leading" constant="5" id="Y8Q-PG-fUk"/>
+                            <constraint firstItem="EDt-oF-F35" firstAttribute="top" secondItem="rQn-9B-WPL" secondAttribute="top" id="W8P-LR-SQr"/>
                             <constraint firstAttribute="bottom" secondItem="EDt-oF-F35" secondAttribute="bottom" id="ZJ5-QC-jAW"/>
-                            <constraint firstAttribute="trailing" secondItem="LlQ-Ys-CnH" secondAttribute="trailing" constant="5" id="iQS-o2-u5Z"/>
                             <constraint firstItem="EDt-oF-F35" firstAttribute="leading" secondItem="rQn-9B-WPL" secondAttribute="leading" constant="5" id="xLC-hB-Eb8"/>
                         </constraints>
                     </view>
