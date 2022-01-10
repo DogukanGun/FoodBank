@@ -28,11 +28,17 @@ class FoodDetailVC:UIViewController{
     
     var food:Product? = nil
     let variables = FoodDetailVariable()
+    var presenter:ViewToPresenterFoodDetailProtocol? = nil
     
     override func viewDidLoad() {
         incrementButton.reshapeButton()
         decrementButton.reshapeButton()
         editButton()
+        setFood()
+        FoodDetailRouter.createModule(ref: self)
+    }
+    
+    private func setFood(){
         if let food = food {
             foodPrice.text = food.yemekFiyat
             foodName.text = food.yemekAdi
@@ -59,6 +65,10 @@ class FoodDetailVC:UIViewController{
     
     
     @IBAction func addCardButtonPressed(_ sender: Any) {
+        if let food = food, totalFoodAmount != 0 {
+            food.totalAmount = totalFoodAmount
+            presenter?.addBasket(product: food)
+        }
     }
     @IBAction func incrementFoodAmount(_ sender: Any) {
         if let totalAmountText = totalFoodAmount.text,let totalAmount = Int(totalAmountText){

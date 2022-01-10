@@ -24,6 +24,7 @@ class Product: Codable {
     let detail:String? = nil
     let totalCalorie:Int? = nil
     let transportHour:Double? = nil
+    var totalAmount = 0
 
     enum CodingKeys: String, CodingKey {
         case yemekID = "yemek_id"
