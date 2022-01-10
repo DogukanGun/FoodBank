@@ -20,6 +20,10 @@ class GetFoodResponse: Codable {
 // MARK: - Yemekler
 class Product: Codable {
     let yemekID, yemekAdi, yemekResimAdi, yemekFiyat: String
+    let rate:Double? = nil
+    let detail:String? = nil
+    let totalCalorie:Int? = nil
+    let transportHour:Double? = nil
 
     enum CodingKeys: String, CodingKey {
         case yemekID = "yemek_id"

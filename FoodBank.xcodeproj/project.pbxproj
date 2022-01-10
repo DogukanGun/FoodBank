@@ -34,6 +34,7 @@
 		9E84C4A5278C9E3300870EB6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9E84C4A4278C9E3300870EB6 /* Kingfisher */; };
 		9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4A6278C9EE600870EB6 /* Network.swift */; };
 		9E84C4A9278CA47800870EB6 /* MainpageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4A8278CA47800870EB6 /* MainpageRouter.swift */; };
+		9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4AC278CAFA500870EB6 /* FoodDetailVC.swift */; };
 		9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */; };
 		9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A4278ADFE8003E469A /* String+index.swift */; };
 		9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A8278AED54003E469A /* LoginVC.swift */; };
@@ -93,6 +94,7 @@
 		9E84C49E278C9DEF00870EB6 /* MainpageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainpageInteractor.swift; sourceTree = "<group>"; };
 		9E84C4A6278C9EE600870EB6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9E84C4A8278CA47800870EB6 /* MainpageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainpageRouter.swift; sourceTree = "<group>"; };
+		9E84C4AC278CAFA500870EB6 /* FoodDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailVC.swift; sourceTree = "<group>"; };
 		9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+drawRoundedEdge.swift"; sourceTree = "<group>"; };
 		9E9AD0A1278ADADA003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		9E9AD0A2278ADADB003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -349,6 +351,22 @@
 			path = response;
 			sourceTree = "<group>";
 		};
+		9E84C4AA278CAF8D00870EB6 /* fooddetail-module */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C4AB278CAF9B00870EB6 /* view */,
+			);
+			path = "fooddetail-module";
+			sourceTree = "<group>";
+		};
+		9E84C4AB278CAF9B00870EB6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C4AC278CAFA500870EB6 /* FoodDetailVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		9E9AD09A278AD8D0003E469A /* helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +440,7 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C4AA278CAF8D00870EB6 /* fooddetail-module */,
 				9E84C48E278C6D5800870EB6 /* entity */,
 				9E84C463278B7C9A00870EB6 /* mainpage-module */,
 				9E9AD0A6278AED40003E469A /* login-module */,
@@ -618,6 +637,7 @@
 				9E84C471278C604A00870EB6 /* LoginPagePresenter.swift in Sources */,
 				9E84C49B278C914300870EB6 /* MainpageProtocols.swift in Sources */,
 				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
+				9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */,
 				9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */,
 				9E84C47E278C618E00870EB6 /* HeaderTableViewCell.swift in Sources */,
 				9E84C462278B72A900870EB6 /* Diaglog.swift in Sources */,

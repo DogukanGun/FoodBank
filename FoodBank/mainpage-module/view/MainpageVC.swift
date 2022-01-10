@@ -19,6 +19,7 @@ struct MainpageVariable{
     let categoryCellHeight = CGFloat(210)
     let productCellHeight = CGFloat(250)
     let sectionNumber = 3
+    let segueIdentifierToFoodDetail = "FoodDetailVC"
 }
 
 class MainpageVC:UIViewController{
@@ -106,6 +107,12 @@ extension MainpageVC:UITableViewDelegate,UITableViewDataSource{
             
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 2{
+            let product = products[indexPath.row]
+            performSegue(withIdentifier: variables.segueIdentifierToFoodDetail, sender: product)
+        }
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return variables.sectionNumber
     }
@@ -130,4 +137,14 @@ extension MainpageVC:PresenterToViewMainpageProtocol{
             self.mainpageTableView.reloadData()
         }
     } 
+}
+
+extension MainpageVC{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == variables.segueIdentifierToFoodDetail{
+            let vc = segue.destination as! FoodDetailVC
+            let product = sender as! Product
+            vc.food = product
+        }
+    }
 }
