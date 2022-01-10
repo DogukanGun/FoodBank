@@ -7,10 +7,23 @@
 
 import UIKit
 
+struct CategoryWrapperTableViewCellVariable{
+    let cellIdentifier = "CategoryCollectionViewCell"
+    let cellNibName = "CategoryCollectionViewCell"
+    let itemSpace = CGFloat(10)
+    let itemPerRow = CGFloat(3)
+}
+
 class CategoryWrapperTableViewCell: UITableViewCell {
 
+    let variables = CategoryWrapperTableViewCellVariable()
+    var categoryList = [Category(categoryName: "Pizza"),Category(categoryName: "Burger"),Category(categoryName: "Drink")]
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        categoryCollectionView.delegate = self
+        categoryCollectionView.dataSource = self
+        categoryCollectionView.register(UINib(nibName: variables.cellNibName, bundle: nil), forCellWithReuseIdentifier: variables.cellIdentifier)
         // Initialization code
     }
 
@@ -21,3 +34,31 @@ class CategoryWrapperTableViewCell: UITableViewCell {
     }
     
 }
+
+extension CategoryWrapperTableViewCell:UICollectionViewDelegate,UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categoryList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: variables.cellIdentifier, for: indexPath) as? CategoryCollectionViewCell else{
+            return UICollectionViewCell()
+        }
+        let category = categoryList[indexPath.row]
+        cell.refresh(category: category)
+        return cell
+    }
+   
+    
+    private func desingCollectionView(){
+        let design = UICollectionViewFlowLayout()
+        design.minimumInteritemSpacing = variables.itemSpace
+        let width = self.categoryCollectionView.frame.size.width
+        let cellWidth = (width - (variables.itemSpace*CGFloat(2)))/variables.itemPerRow
+        design.itemSize = CGSize(width: cellWidth, height: self.categoryCollectionView.frame.size.height)
+        categoryCollectionView.collectionViewLayout = design
+    }
+}
+  
+
+

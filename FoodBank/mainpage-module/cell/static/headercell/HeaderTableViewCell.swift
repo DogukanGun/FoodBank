@@ -7,20 +7,29 @@
 
 import UIKit
 
+struct HeaderTableViewCellVariable{
+    let wrapperCornerRadious = CGFloat(20)
+}
+
 class HeaderTableViewCell: UITableViewCell {
 
+    let variables = HeaderTableViewCellVariable()
+    @IBOutlet weak var orderNowButton: UIButton!
+    @IBOutlet weak var wrapper: UIView!
     @IBOutlet weak var headerTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         changeColorOfText()
+        wrapper.layer.cornerRadius = variables.wrapperCornerRadious
+        orderNowButton.reshapeButton()
     }
 
     private func changeColorOfText(){
         let mutableString = NSMutableAttributedString(string: headerTitle.text!, attributes:nil)
-        var keyWord = "Delivery"
+        var keyWord = "Food"
         let langStr = Locale.current.languageCode
         if langStr != "en"{
-            keyWord = "Teslim"
+            keyWord = "Yemek"
         }
         let startIndex = headerTitle.text?.index(of: keyWord)
         if let startIndex = startIndex?.encodedOffset  {
