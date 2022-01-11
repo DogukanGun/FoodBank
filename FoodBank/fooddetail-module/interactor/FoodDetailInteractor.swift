@@ -6,15 +6,22 @@
 //
 
 import Foundation
+import Alamofire
 
 class FoodDetailInteractor:PresenterToInteractorFoodDetailProtocol{
-    let context = appDelegate.persistentContainer.viewContext
+    var presenter: InteractorToPresenterFoodDetailProtocol?
+    
     func addBasket(product: Product) {
-        let food = Food(context: context)
-        food.foodName = product.yemekAdi
-        food.foodId = product.yemekID
-        food.totalPrice = product.yemekFiyat
-        food.foodImageName = product.yemekResimAdi
-        food.totalAmount = Int16(product.totalAmount)
+        guard let addFoodRequest = AddFoodMapper.convertFrom(product: product) else {
+            return
+        }
+        AF.request(Network.addFood, method: .post, parameters: addFoodRequest.getParameter()).response { data in
+            if let response = data.response ,response.statusCode<300 && response.statusCode>199{
+                self.presenter?.foodAddingResponse(response:"")
+            }else{
+                self.presenter?.foodAddingResponse(response: "\(addFoodRequest.yemek_adi!) could not be added to your card")
+            }
+        }
+        
     } 
 }

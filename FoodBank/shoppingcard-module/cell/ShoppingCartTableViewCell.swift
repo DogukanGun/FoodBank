@@ -56,7 +56,7 @@ class ShoppingCartTableViewCell: UITableViewCell {
             nameLabel.text = food.yemek_adi ?? ""
             foodAmountLabel.text = String(totalAmount)
             DispatchQueue.main.async {
-                self.foodImage.kf.setImage(with: URL(string: Network.imageOfFood + food.yemek_adi!.lowercased()+".png"))
+                self.foodImage.kf.setImage(with: URL(string: Network.imageOfFood + food.yemek_adi!.lowercased().replacingOccurrences(of: " ", with: "")+".png"))
 
             }
             self.food = food

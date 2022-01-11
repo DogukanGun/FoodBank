@@ -9,10 +9,21 @@ import Foundation
 
 protocol ViewToPresenterFoodDetailProtocol{
     var interactor:PresenterToInteractorFoodDetailProtocol? {get set}
+    var view:PresenterToViewFoodDetailProtocol? {get set}
     func addBasket(product:Product)
 }
+
 protocol PresenterToInteractorFoodDetailProtocol{
+    var presenter:InteractorToPresenterFoodDetailProtocol? {get set}
     func addBasket(product:Product)
+}
+
+protocol InteractorToPresenterFoodDetailProtocol{
+    func foodAddingResponse(response:String)
+}
+
+protocol PresenterToViewFoodDetailProtocol{
+    func foodAddingResponse(response:String)
 }
 
 protocol PresenterToRouterFoodDetailProtocol{

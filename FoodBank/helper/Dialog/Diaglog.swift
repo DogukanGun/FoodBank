@@ -14,11 +14,11 @@ protocol DialogButtonPressed{
 
 extension UIViewController{
 
-    func confirmationDialog(title:String,message:String,okayButtonText:String,cancelButtonText:String?,okayButtonResult:DialogButtonPressed)
+    func confirmationDialog(title:String,message:String,okayButtonText:String,cancelButtonText:String?,okayButtonResult:DialogButtonPressed?)
     {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: okayButtonText, style: .cancel) { action in
-            okayButtonResult.buttonPressed()
+            okayButtonResult?.buttonPressed()
         }
         alert.addAction(action)
         
@@ -28,7 +28,7 @@ extension UIViewController{
         }
         
         let actionCancel = UIAlertAction(title: cancelButtonText, style: .default) { action in
-            okayButtonResult.buttonPressed()
+            okayButtonResult?.buttonPressed()
         }
 
         alert.addAction(actionCancel)

@@ -62,8 +62,9 @@ class FoodDetailVC:UIViewController{
     }
     
     @IBAction func decrementFoodAmount(_ sender: Any) {
-        if let totalAmountText = totalFoodAmount.text,let totalAmount = Int(totalAmountText){
+        if let totalAmountText = totalFoodAmount.text,let totalAmount = Int(totalAmountText),totalAmount != 0{
             totalFoodAmount.text = String(totalAmount-variables.incOrDecAmount)
+            food?.totalAmount-=variables.incOrDecAmount
         }
     }
     
@@ -77,7 +78,14 @@ class FoodDetailVC:UIViewController{
     @IBAction func incrementFoodAmount(_ sender: Any) {
         if let totalAmountText = totalFoodAmount.text,let totalAmount = Int(totalAmountText){
             totalFoodAmount.text = String(totalAmount+variables.incOrDecAmount)
+            food?.totalAmount+=variables.incOrDecAmount
         }
     }
     
+}
+
+extension FoodDetailVC:PresenterToViewFoodDetailProtocol{
+    func foodAddingResponse(response: String) {
+        confirmationDialog(title: "Food Added", message: response, okayButtonText: "Okay", cancelButtonText: nil, okayButtonResult: nil)
+    } 
 }
