@@ -13,14 +13,18 @@ struct ProductTableViewCellVariable{
 }
 
 class ProductTableViewCell: UITableViewCell {
-
-    var variables = ProductTableViewCellVariable()
+    
     @IBOutlet weak var wrapper: UIView!
     @IBOutlet weak var foodRate: UILabel!
     @IBOutlet weak var foodPrice: UILabel!
     @IBOutlet weak var foodTitle: UILabel!
     @IBOutlet weak var addBasketButton: UIButton!
     @IBOutlet weak var foodImage: UIImageView!
+    
+    var variables = ProductTableViewCellVariable()
+    var delegate:ProductTableViewCellDelegate? = nil
+    var product:Product? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         wrapper.layer.cornerRadius = variables.cellRadious
@@ -31,6 +35,12 @@ class ProductTableViewCell: UITableViewCell {
         addBasketButton.layer.mask = maskLayer 
     }
 
+    @IBAction func addBasketButtonPressed(_ sender: Any) {
+        if let product = product {
+            product.totalAmount+=1
+            delegate?.addProduct(product: product)
+        }
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -41,6 +51,12 @@ class ProductTableViewCell: UITableViewCell {
         foodPrice.text = "\(product.yemekFiyat) TL"
         let random = Double.random(in: 1...5)
         foodRate.text = String(Double(round(10 * random) / 10))
+        self.product = product
     }
     
+}
+
+
+protocol ProductTableViewCellDelegate{
+    func addProduct(product:Product)
 }

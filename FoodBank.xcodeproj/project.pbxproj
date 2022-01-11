@@ -46,6 +46,11 @@
 		9E84C4CD278CD44100870EB6 /* ShoppingCartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4CC278CD44100870EB6 /* ShoppingCartRouter.swift */; };
 		9E84C4CF278CD44B00870EB6 /* ShoppingCartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4CE278CD44B00870EB6 /* ShoppingCartInteractor.swift */; };
 		9E84C4D1278CD45700870EB6 /* ShoppingCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4D0278CD45700870EB6 /* ShoppingCartPresenter.swift */; };
+		9E84C4D3278D841500870EB6 /* GetShoppingCartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4D2278D841500870EB6 /* GetShoppingCartResponse.swift */; };
+		9E84C4D7278D87C100870EB6 /* AddFoodToShoppingCardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4D6278D87C100870EB6 /* AddFoodToShoppingCardRequest.swift */; };
+		9E84C4DA278D8BB700870EB6 /* AddFoodMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4D9278D8BB700870EB6 /* AddFoodMapper.swift */; };
+		9E84C4DC278D9F2B00870EB6 /* DeleteFoodRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4DB278D9F2B00870EB6 /* DeleteFoodRequest.swift */; };
+		9E84C4DE278DE56000870EB6 /* DeleteFoodMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C4DD278DE56000870EB6 /* DeleteFoodMapper.swift */; };
 		9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */; };
 		9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A4278ADFE8003E469A /* String+index.swift */; };
 		9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9AD0A8278AED54003E469A /* LoginVC.swift */; };
@@ -117,6 +122,11 @@
 		9E84C4CC278CD44100870EB6 /* ShoppingCartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartRouter.swift; sourceTree = "<group>"; };
 		9E84C4CE278CD44B00870EB6 /* ShoppingCartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartInteractor.swift; sourceTree = "<group>"; };
 		9E84C4D0278CD45700870EB6 /* ShoppingCartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartPresenter.swift; sourceTree = "<group>"; };
+		9E84C4D2278D841500870EB6 /* GetShoppingCartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShoppingCartResponse.swift; sourceTree = "<group>"; };
+		9E84C4D6278D87C100870EB6 /* AddFoodToShoppingCardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodToShoppingCardRequest.swift; sourceTree = "<group>"; };
+		9E84C4D9278D8BB700870EB6 /* AddFoodMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodMapper.swift; sourceTree = "<group>"; };
+		9E84C4DB278D9F2B00870EB6 /* DeleteFoodRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFoodRequest.swift; sourceTree = "<group>"; };
+		9E84C4DD278DE56000870EB6 /* DeleteFoodMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFoodMapper.swift; sourceTree = "<group>"; };
 		9E9AD09F278AD900003E469A /* UIView+drawRoundedEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+drawRoundedEdge.swift"; sourceTree = "<group>"; };
 		9E9AD0A1278ADADA003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		9E9AD0A2278ADADB003E469A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -327,6 +337,8 @@
 		9E84C48E278C6D5800870EB6 /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				9E84C4D8278D8BA600870EB6 /* mapper */,
+				9E84C4D5278D87A800870EB6 /* request */,
 				9E84C497278C7C9300870EB6 /* response */,
 				9E84C48F278C6D6500870EB6 /* Category.swift */,
 			);
@@ -369,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				9E84C498278C7C9F00870EB6 /* GetFoodResponse.swift */,
+				9E84C4D2278D841500870EB6 /* GetShoppingCartResponse.swift */,
 			);
 			path = response;
 			sourceTree = "<group>";
@@ -485,6 +498,24 @@
 				9E84C4C5278CCAAA00870EB6 /* ShoppingCartTableViewCell.xib */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		9E84C4D5278D87A800870EB6 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C4D6278D87C100870EB6 /* AddFoodToShoppingCardRequest.swift */,
+				9E84C4DB278D9F2B00870EB6 /* DeleteFoodRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		9E84C4D8278D8BA600870EB6 /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9E84C4D9278D8BB700870EB6 /* AddFoodMapper.swift */,
+				9E84C4DD278DE56000870EB6 /* DeleteFoodMapper.swift */,
+			);
+			path = mapper;
 			sourceTree = "<group>";
 		};
 		9E9AD09A278AD8D0003E469A /* helper */ = {
@@ -756,7 +787,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E84C4D3278D841500870EB6 /* GetShoppingCartResponse.swift in Sources */,
+				9E84C4DE278DE56000870EB6 /* DeleteFoodMapper.swift in Sources */,
 				9E84C471278C604A00870EB6 /* LoginPagePresenter.swift in Sources */,
+				9E84C4DC278D9F2B00870EB6 /* DeleteFoodRequest.swift in Sources */,
 				9E84C49B278C914300870EB6 /* MainpageProtocols.swift in Sources */,
 				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
 				9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */,
@@ -765,6 +799,7 @@
 				9E84C462278B72A900870EB6 /* Diaglog.swift in Sources */,
 				9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */,
 				9E84C45F278B637700870EB6 /* UIButton+turnButton.swift in Sources */,
+				9E84C4D7278D87C100870EB6 /* AddFoodToShoppingCardRequest.swift in Sources */,
 				9E84C475278C60AF00870EB6 /* LoginPageRouter.swift in Sources */,
 				9E84C48C278C677400870EB6 /* ProductTableViewCell.swift in Sources */,
 				9E84C45D278B5FD300870EB6 /* UITextField+cornerShape.swift in Sources */,
@@ -776,6 +811,7 @@
 				9E84C4A9278CA47800870EB6 /* MainpageRouter.swift in Sources */,
 				9E84C4BC278CC41E00870EB6 /* FoodDetailPresenter.swift in Sources */,
 				9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */,
+				9E84C4DA278D8BB700870EB6 /* AddFoodMapper.swift in Sources */,
 				9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */,
 				9E84C499278C7C9F00870EB6 /* GetFoodResponse.swift in Sources */,
 				9E84C4C6278CCAAA00870EB6 /* ShoppingCartTableViewCell.swift in Sources */,

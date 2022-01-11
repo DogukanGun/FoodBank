@@ -102,6 +102,7 @@ extension MainpageVC:UITableViewDelegate,UITableViewDataSource{
             }
             let product = products[indexPath.row]
             cell.refresh(product: product)
+            cell.delegate = self
             cell.selectionStyle = .none
             return cell
             
@@ -131,6 +132,10 @@ extension MainpageVC:UITableViewDelegate,UITableViewDataSource{
 }
  
 extension MainpageVC:PresenterToViewMainpageProtocol{
+    func foodAddingResponse(response: String) {
+        errorDialog(title: "Adding Food", errorMessage: response, okayButtonText: "Okay")
+    }
+    
     func sendData(products: [Product]) {
         self.products = products
         DispatchQueue.main.async {
@@ -148,3 +153,14 @@ extension MainpageVC{
         }
     }
 }
+
+extension MainpageVC:ProductTableViewCellDelegate{
+    func addProduct(product: Product) {
+        let addFoodRequest = AddFoodMapper.convertFrom(product: product)
+        if let addFoodRequest = addFoodRequest {
+            presenter?.addFoodToShoppingCart(shoppingCardItem: addFoodRequest)
+        }
+    } 
+}
+
+

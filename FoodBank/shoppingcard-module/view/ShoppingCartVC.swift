@@ -11,6 +11,7 @@ import UIKit
 struct ShoppingCartVariable{
     let cellIdentifier = "ShoppingCartTableViewCell"
     let cellNibName = "ShoppingCartTableViewCell"
+    let minumumDeliveryPriceForFree = 50.0
 }
 
 class ShoppingCartVC:UIViewController{
@@ -21,18 +22,36 @@ class ShoppingCartVC:UIViewController{
     @IBOutlet weak var procudeToCheckoutButton: UIButton!
     @IBOutlet weak var shoppingListTableView: UITableView!
     
-    var shoppingList = [Product]()
+    private var deletedItemIndexPath:IndexPath? = nil
+    var shoppingList = [ShoppingCart]()
+    var stableShoppingList = [ShoppingCart]()
     let variables = ShoppingCartVariable()
     var presenter:ViewToPresenterShoppingCartProtocol?
     
     override func viewDidLoad() {
         procudeToCheckoutButton.reshapeButton()
         shoppingListTableView.register(UINib(nibName: variables.cellNibName, bundle: nil), forCellReuseIdentifier: variables.cellIdentifier)
+        shoppingListTableView.delegate = self
+        shoppingListTableView.dataSource = self
         ShoppingCartRouter.createModule(ref: self)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList: stableShoppingList)
+        subtotalLabel.text = "0"
+        deliveryFeeLabel.text = "0"
+        totalMoneyLabel.text = "0"
+        taxLabel.text = "0"
+    } 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let username = userDefaults.string(forKey: Constants.userDefaultsUsername) else{
+            return
+        }
+        presenter?.getShoppingList(userId: username)
     }
     
     @IBAction func procudeToCheckoutButtonPressed(_ sender: Any) {
-        presenter?.updateShoppingList(shoppingList: shoppingList)
+        presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList:stableShoppingList)
     }
 }
 
@@ -47,22 +66,83 @@ extension ShoppingCartVC:UITableViewDelegate,UITableViewDataSource{
         }
         let shoppingItem = shoppingList[indexPath.row]
         cell.refresh(food: shoppingItem)
-        return cell 
+        cell.indexPath = indexPath
+        cell.shoppingCardDelegate = self
+        cell.selectionStyle = .none
+        changePrice(shoppingItem: shoppingItem)
+        return cell
+    }
+    
+    private func changePrice(shoppingItem:ShoppingCart?){
+        if let shoppingItem = shoppingItem,let subtotalText = subtotalLabel.text,let subtotal = Double(subtotalText),let itemPriceText = shoppingItem.yemek_fiyat,let itemPrice = Double(itemPriceText){
+            let newPrice = Double(subtotal+itemPrice)
+            var deliveryPrice = Double(newPrice*5/100)
+            let taxPrice = Double(newPrice*8/100)
+            subtotalLabel.text = "\(String(newPrice))"
+            if newPrice > variables.minumumDeliveryPriceForFree{
+                deliveryFeeLabel.text = "0"
+                deliveryPrice = 0
+            }else{
+                deliveryFeeLabel.text = "\(String(deliveryPrice))"
+            }
+            taxLabel.text = "\(String(taxPrice))"
+            totalMoneyLabel.text = "\(String(Double(newPrice)+taxPrice+deliveryPrice))"
+        }else{
+            subtotalLabel.text = "0"
+            deliveryFeeLabel.text = "0"
+            taxLabel.text = "0"
+            totalMoneyLabel.text = "0"
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        true
     }
     
 }
 
 extension ShoppingCartVC:ShoppingCardDelegate{
-    func deleteButtonPressed(foodId: String) {
-        presenter?.deleteProductFromShoppingList(productId: foodId)
+    func changePrice(newShoppingCart: ShoppingCart) {
+        changePrice(shoppingItem: newShoppingCart)
+        for index in 0...shoppingList.count-1{
+            if shoppingList[index].yemek_adi ?? "" == newShoppingCart.yemek_adi ?? ""{
+                shoppingList[index] = newShoppingCart
+            }
+        }
+    }
+    
+    func deleteButtonPressed(foodId: String,indexPath:IndexPath) {
+        changePrice(shoppingItem: nil)
+        self.deletedItemIndexPath = indexPath
+        let deleteProductRequest = DeleteFoodRequest(productId: foodId)
+        presenter?.deleteProductFromShoppingList(deleteFoodRequest: deleteProductRequest)
     } 
 }
 extension ShoppingCartVC:PresenterToViewShoppingCartProtocol{
-    func returnShoppingList(shoppingList: [Product]) {
+    func returnDeleteResponse(response: Bool) {
+        if response,let indexPath = deletedItemIndexPath{
+            shoppingList.remove(at: indexPath.row)
+            shoppingListTableView.reloadData()
+        }else{
+            errorDialog(title: "Oppss", errorMessage: "Food couldn't be deleted", okayButtonText: "Okay")
+        }
+    }
+    
+    func returnShoppingList(shoppingList: [ShoppingCart]) {
         self.shoppingList = shoppingList
+        self.stableShoppingList = copyArray(from: shoppingList)
         DispatchQueue.main.async {
             self.shoppingListTableView.reloadData()
         }
+    }
+    
+    private func copyArray(from l1:[ShoppingCart])->[ShoppingCart]{
+        var l2 = [ShoppingCart]()
+        for i in l1{
+            let shoppingCart = ShoppingCart(sepet_yemek_id: i.sepet_yemek_id!, yemek_adi: i.yemek_adi!, yemek_resim_adi: i.yemek_resim_adi!, yemek_fiyat: i.yemek_fiyat!, yemek_siparis_adet: i.yemek_siparis_adet!, kullanici_adi: i.kullanici_adi!)
+            l2.append(shoppingCart)
+        }
+        return l2
     }
     
     

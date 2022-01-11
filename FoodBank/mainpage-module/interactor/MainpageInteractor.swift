@@ -9,7 +9,18 @@ import Foundation
 import Alamofire
 
 class MainpageInteractor:PresenterToInteractorMainpageProtocol{
+    
     var presenter: InteractorToPresenterMainpageProtocol?
+    
+    func addFoodToShoppingCart(shoppingCardItem: AddFoodToShoppingCartRequest) {
+        AF.request(Network.addFood, method: .post, parameters: shoppingCardItem.getParameter()).response { data in
+            if let response = data.response ,response.statusCode<300 && response.statusCode>199{
+                self.presenter?.foodAddingResponse(response:"")
+            }else{
+                self.presenter?.foodAddingResponse(response: "\(shoppingCardItem.yemek_adi!) could not be added to your card")
+            }
+        }
+    }
     
     func getData() {
         AF.request(Network.allFoods, method: .get).response { data in

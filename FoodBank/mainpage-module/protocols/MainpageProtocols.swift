@@ -11,17 +11,21 @@ protocol ViewToPresenterMainpageProtocol{
     var interactor:PresenterToInteractorMainpageProtocol? {get set}
     var view:PresenterToViewMainpageProtocol? {get set}
     func getData()
+    func addFoodToShoppingCart(shoppingCardItem:AddFoodToShoppingCartRequest)
 }
 protocol PresenterToInteractorMainpageProtocol{
     var presenter:InteractorToPresenterMainpageProtocol? {get set}
     func getData()
+    func addFoodToShoppingCart(shoppingCardItem:AddFoodToShoppingCartRequest)
 }
 
 protocol InteractorToPresenterMainpageProtocol{
     func sendData(products:[Product])
+    func foodAddingResponse(response:String)
 }
 protocol PresenterToViewMainpageProtocol{
     func sendData(products:[Product])
+    func foodAddingResponse(response:String)
 }
 
 protocol PresenterToRouterMainpageProtocol{

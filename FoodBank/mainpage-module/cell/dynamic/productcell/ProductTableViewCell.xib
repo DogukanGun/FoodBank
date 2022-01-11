@@ -89,6 +89,9 @@
                                 <color key="backgroundColor" name="SecondaryColar"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="addBasketButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M69-KJ-OTy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>

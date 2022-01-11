@@ -9,6 +9,7 @@ import Foundation
 
 struct Network{
     static let allFoods = "http://kasimadalan.pe.hu/yemekler/tumYemekleriGetir.php"
+    static let getFoodsInBasket = "http://kasimadalan.pe.hu/yemekler/sepettekiYemekleriGetir.php"
     static let addFood = "http://kasimadalan.pe.hu/yemekler/sepeteYemekEkle.php"
     static let deleteFood = "http://kasimadalan.pe.hu/yemekler/sepettenYemekSil.php"
     static let imageOfFood = "http://kasimadalan.pe.hu/yemekler/resimler/"

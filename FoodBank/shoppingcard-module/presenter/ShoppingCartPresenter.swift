@@ -13,22 +13,26 @@ class ShoppingCartPresenter:ViewToPresenterShoppingCartProtocol{
     
     var view: PresenterToViewShoppingCartProtocol?
     
-    func deleteProductFromShoppingList(productId: String) {
-        interactor?.deleteProductFromShoppingList(productId: productId)
+    func deleteProductFromShoppingList(deleteFoodRequest: DeleteFoodRequest) {
+        interactor?.deleteProductFromShoppingList(deleteFoodRequest: deleteFoodRequest)
     }
     
     func getShoppingList(userId: String) {
         interactor?.getShoppingList(userId: userId)
     }
     
-    func updateShoppingList(shoppingList: [Product]) {
-        interactor?.updateShoppingList(shoppingList: shoppingList)
+    func updateShoppingList(newShoppingList: [ShoppingCart],oldShoppingList:[ShoppingCart]) {
+        interactor?.updateShoppingList(newShoppingList: newShoppingList,oldShoppingList: oldShoppingList)
     }
     
 }
 
 extension ShoppingCartPresenter:InteractorToPresenterShoppingCartProtocol{
-    func returnShoppingList(shoppingList: [Product]) {
+    func returnDeleteResponse(response: Bool) {
+        view?.returnDeleteResponse(response: response)
+    }
+    
+    func returnShoppingList(shoppingList: [ShoppingCart]) {
         view?.returnShoppingList(shoppingList: shoppingList)
     } 
 }
