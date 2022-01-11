@@ -15,6 +15,7 @@ class HeaderTableViewCell: UITableViewCell {
 
     let variables = HeaderTableViewCellVariable()
     @IBOutlet weak var orderNowButton: UIButton!
+    var delegate:HeaderTableViewCellDelegate?
     @IBOutlet weak var wrapper: UIView!
     @IBOutlet weak var headerTitle: UILabel!
     override func awakeFromNib() {
@@ -43,5 +44,10 @@ class HeaderTableViewCell: UITableViewCell {
     }
     
     @IBAction func orderNowButtonPressed(_ sender: Any) {
+        delegate?.buttonPressed()
     }
+}
+
+protocol HeaderTableViewCellDelegate{
+    func buttonPressed()
 }

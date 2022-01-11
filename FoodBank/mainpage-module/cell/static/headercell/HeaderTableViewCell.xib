@@ -91,7 +91,7 @@ Delivery Food</string>
             <color red="0.875" green="0.090000003576278687" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryColarLight">
-            <color red="0.91030943393707275" green="0.75037431716918945" blue="0.42757397890090942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.91000008583068848" green="0.75" blue="0.42800000309944153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

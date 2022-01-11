@@ -20,6 +20,7 @@ struct MainpageVariable{
     let productCellHeight = CGFloat(250)
     let sectionNumber = 3
     let segueIdentifierToFoodDetail = "FoodDetailVC"
+    let segueIdentifierToFoodList = "FoodListVC"
 }
 
 class MainpageVC:UIViewController{
@@ -86,6 +87,7 @@ extension MainpageVC:UITableViewDelegate,UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: variables.headerCell, for: indexPath) as? HeaderTableViewCell else{
                 return UITableViewCell()
             }
+            cell.delegate = self
             cell.selectionStyle = .none
             return cell
             
@@ -125,7 +127,6 @@ extension MainpageVC:UITableViewDelegate,UITableViewDataSource{
 
         }else{
             return variables.productCellHeight
-
         }
     }
     
@@ -150,6 +151,10 @@ extension MainpageVC{
             let vc = segue.destination as! FoodDetailVC
             let product = sender as! Product
             vc.food = product
+        }else if segue.identifier == variables.segueIdentifierToFoodList{
+            let vc = segue.destination as! FoodListVC
+            let filterType = sender as! FoodListFilter
+            vc.foodListFilter = filterType
         }
     }
 }
@@ -163,4 +168,11 @@ extension MainpageVC:ProductTableViewCellDelegate{
     } 
 }
 
+extension MainpageVC:HeaderTableViewCellDelegate{
+    func buttonPressed() {
+        performSegue(withIdentifier: variables.segueIdentifierToFoodList, sender: FoodListFilter.All)
+    }
+    
+    
+}
 

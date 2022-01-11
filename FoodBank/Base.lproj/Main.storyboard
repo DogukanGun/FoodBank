@@ -261,11 +261,51 @@ and stay healthy</string>
                     <connections>
                         <outlet property="mainpageTableView" destination="HB2-jG-9Bb" id="fwX-Fn-s72"/>
                         <segue destination="Env-u3-6mc" kind="show" identifier="FoodDetailVC" id="xhP-5V-L8T"/>
+                        <segue destination="24c-ot-IRR" kind="show" identifier="FoodListVC" id="dHU-6x-C4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upk-Ja-Owe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5881.1594202898559" y="193.52678571428569"/>
+        </scene>
+        <!--Food ListVC-->
+        <scene sceneID="Uax-RN-WS3">
+            <objects>
+                <viewController id="24c-ot-IRR" customClass="FoodListVC" customModule="FoodBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="36O-3V-k5u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jdu-QN-QDd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MlO-82-crL">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T5H-B9-l7a"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T5H-B9-l7a" firstAttribute="trailing" secondItem="Jdu-QN-QDd" secondAttribute="trailing" id="OZd-o7-1oZ"/>
+                            <constraint firstItem="Jdu-QN-QDd" firstAttribute="leading" secondItem="T5H-B9-l7a" secondAttribute="leading" id="ZhT-50-ZPb"/>
+                            <constraint firstItem="Jdu-QN-QDd" firstAttribute="top" secondItem="T5H-B9-l7a" secondAttribute="top" id="hyi-q3-gNf"/>
+                            <constraint firstItem="T5H-B9-l7a" firstAttribute="bottom" secondItem="Jdu-QN-QDd" secondAttribute="bottom" id="jAc-Ax-orI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MHS-KG-WFS"/>
+                    <connections>
+                        <outlet property="foodListCollectionView" destination="Jdu-QN-QDd" id="Tad-rT-NxS"/>
+                        <segue destination="Env-u3-6mc" kind="show" identifier="FoodDetailVC" id="H6F-Dm-plN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCP-7H-zdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6887" y="-485"/>
         </scene>
         <!--Food DetailVC-->
         <scene sceneID="Ped-qh-s7Z">
@@ -282,19 +322,19 @@ and stay healthy</string>
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="625"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKh-Nt-bwh">
-                                                <rect key="frame" x="20" y="0.0" width="374" height="1190.5"/>
+                                                <rect key="frame" x="20" y="0.0" width="374" height="1067.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l7n-yj-ZWA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="1190.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="1067.5"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salad" translatesAutoresizingMaskIntoConstraints="NO" id="h7U-fl-9PY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="473"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="350"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="473" id="z4N-6F-pAC"/>
+                                                                    <constraint firstAttribute="height" constant="350" id="z4N-6F-pAC"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWc-ZY-zUm">
-                                                                <rect key="frame" x="0.0" y="493" width="374" height="100"/>
+                                                                <rect key="frame" x="0.0" y="370" width="374" height="100"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Kqh-6X-Frk">
                                                                         <rect key="frame" x="0.0" y="0.0" width="224.5" height="100"/>
@@ -365,13 +405,13 @@ and stay healthy</string>
                                                                 </constraints>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03c-qQ-Hv7">
-                                                                <rect key="frame" x="0.0" y="613" width="374" height="507.5"/>
+                                                                <rect key="frame" x="0.0" y="490" width="374" height="507.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKg-Qs-CND">
                                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="507.5"/>
-                                                                        <mutableString key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                                                        <string key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</mutableString>
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</string>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -386,7 +426,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                                 </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ueA-4I-y3C">
-                                                                <rect key="frame" x="0.0" y="1140.5" width="374" height="50"/>
+                                                                <rect key="frame" x="0.0" y="1017.5" width="374" height="50"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-hz-txN">
                                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="50"/>
@@ -518,7 +558,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4VV-uo-5QO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6886.9565217391309" y="193.52678571428569"/>
+            <point key="canvasLocation" x="7826" y="194"/>
         </scene>
         <!--Shopping CartVC-->
         <scene sceneID="xA8-O2-Bm3">
@@ -735,6 +775,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gwe-tY-5Ee" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Mm-k0-n31">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -786,6 +827,9 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             <point key="canvasLocation" x="4971" y="922"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="H6F-Dm-plN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Splash Screen-1" width="809" height="1119"/>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
@@ -798,10 +842,10 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             <color red="0.875" green="0.090000003576278687" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryColar">
-            <color red="0.97254901960784312" green="0.45490196078431372" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97299998998641968" green="0.45500001311302185" blue="0.16500000655651093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryColarLight">
-            <color red="0.91030943393707275" green="0.75037431716918945" blue="0.42757397890090942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.91000008583068848" green="0.75" blue="0.42800000309944153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

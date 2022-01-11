@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 struct FoodDetailVariable{
     let incOrDecAmount = 1
@@ -42,6 +43,9 @@ class FoodDetailVC:UIViewController{
         if let food = food {
             foodPrice.text = food.yemekFiyat
             foodName.text = food.yemekAdi
+            DispatchQueue.main.async {
+                self.foodImage.kf.setImage(with:URL(string: Network.imageOfFood+food.yemekResimAdi))
+            }
             if let detail = food.detail, let rate = food.rate, let transportHour = food.transportHour{
                 deliverTime.text = String(transportHour)
                 foodRate.text = String(rate)

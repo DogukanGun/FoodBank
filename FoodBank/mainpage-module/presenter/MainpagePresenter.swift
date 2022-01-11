@@ -28,6 +28,10 @@ extension MainpagePresenter:InteractorToPresenterMainpageProtocol{
     }
     
     func sendData(products: [Product]) {
-        view?.sendData(products: products)
+        var newProducts = [Product]()
+        for index in 0...products.count/3 {
+            newProducts.append(products[index])
+        }
+        view?.sendData(products: newProducts)
     }
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E327D57278E0CF000356646 /* FoodListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D55278E0CF000356646 /* FoodListCollectionViewCell.swift */; };
+		9E327D58278E0CF000356646 /* FoodListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E327D56278E0CF000356646 /* FoodListCollectionViewCell.xib */; };
+		9E327D5A278E0EC100356646 /* FoodListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D59278E0EC100356646 /* FoodListVC.swift */; };
+		9E327D5C278E0F6F00356646 /* FoodListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D5B278E0F6F00356646 /* FoodListProtocols.swift */; };
+		9E327D5E278E0FC100356646 /* FoodListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D5D278E0FC100356646 /* FoodListRouter.swift */; };
+		9E327D60278E0FE500356646 /* FoodListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D5F278E0FE500356646 /* FoodListInteractor.swift */; };
+		9E327D62278E100500356646 /* FoodListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D61278E100500356646 /* FoodListPresenter.swift */; };
+		9E327D65278E12B200356646 /* FoodListFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D64278E12B200356646 /* FoodListFilter.swift */; };
 		9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C459278B5DA400870EB6 /* UIButton+reshape.swift */; };
 		9E84C45D278B5FD300870EB6 /* UITextField+cornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C45C278B5FD300870EB6 /* UITextField+cornerShape.swift */; };
 		9E84C45F278B637700870EB6 /* UIButton+turnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E84C45E278B637700870EB6 /* UIButton+turnButton.swift */; };
@@ -85,6 +93,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E327D55278E0CF000356646 /* FoodListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E327D56278E0CF000356646 /* FoodListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodListCollectionViewCell.xib; sourceTree = "<group>"; };
+		9E327D59278E0EC100356646 /* FoodListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListVC.swift; sourceTree = "<group>"; };
+		9E327D5B278E0F6F00356646 /* FoodListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListProtocols.swift; sourceTree = "<group>"; };
+		9E327D5D278E0FC100356646 /* FoodListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListRouter.swift; sourceTree = "<group>"; };
+		9E327D5F278E0FE500356646 /* FoodListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListInteractor.swift; sourceTree = "<group>"; };
+		9E327D61278E100500356646 /* FoodListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListPresenter.swift; sourceTree = "<group>"; };
+		9E327D64278E12B200356646 /* FoodListFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListFilter.swift; sourceTree = "<group>"; };
 		9E84C459278B5DA400870EB6 /* UIButton+reshape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+reshape.swift"; sourceTree = "<group>"; };
 		9E84C45C278B5FD300870EB6 /* UITextField+cornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+cornerShape.swift"; sourceTree = "<group>"; };
 		9E84C45E278B637700870EB6 /* UIButton+turnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+turnButton.swift"; sourceTree = "<group>"; };
@@ -176,6 +192,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E327D4E278E0CAB00356646 /* foodlist-module */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D54278E0CD800356646 /* cell */,
+				9E327D53278E0CD000356646 /* protocols */,
+				9E327D52278E0CCA00356646 /* router */,
+				9E327D51278E0CC500356646 /* interactor */,
+				9E327D50278E0CBF00356646 /* presenter */,
+				9E327D4F278E0CBB00356646 /* view */,
+			);
+			path = "foodlist-module";
+			sourceTree = "<group>";
+		};
+		9E327D4F278E0CBB00356646 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D59278E0EC100356646 /* FoodListVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9E327D50278E0CBF00356646 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D61278E100500356646 /* FoodListPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		9E327D51278E0CC500356646 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D5F278E0FE500356646 /* FoodListInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		9E327D52278E0CCA00356646 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D5D278E0FC100356646 /* FoodListRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		9E327D53278E0CD000356646 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D5B278E0F6F00356646 /* FoodListProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		9E327D54278E0CD800356646 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D55278E0CF000356646 /* FoodListCollectionViewCell.swift */,
+				9E327D56278E0CF000356646 /* FoodListCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		9E327D63278E12A300356646 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				9E327D64278E12B200356646 /* FoodListFilter.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
 		9E84C458278B5D9100870EB6 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +423,7 @@
 		9E84C48E278C6D5800870EB6 /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				9E327D63278E12A300356646 /* enum */,
 				9E84C4D8278D8BA600870EB6 /* mapper */,
 				9E84C4D5278D87A800870EB6 /* request */,
 				9E84C497278C7C9300870EB6 /* response */,
@@ -591,6 +678,7 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
+				9E327D4E278E0CAB00356646 /* foodlist-module */,
 				9E84C4BD278CC9FC00870EB6 /* shoppingcard-module */,
 				9E84C4AA278CAF8D00870EB6 /* fooddetail-module */,
 				9E84C48E278C6D5800870EB6 /* entity */,
@@ -761,6 +849,7 @@
 				9E84C4C7278CCAAA00870EB6 /* ShoppingCartTableViewCell.xib in Resources */,
 				9E84C48D278C677400870EB6 /* ProductTableViewCell.xib in Resources */,
 				9E84C484278C65AE00870EB6 /* CategoryWrapperTableViewCell.xib in Resources */,
+				9E327D58278E0CF000356646 /* FoodListCollectionViewCell.xib in Resources */,
 				9E9B997A278AD5EB00C16586 /* Assets.xcassets in Resources */,
 				9E9B9975278AD5E900C16586 /* Main.storyboard in Resources */,
 			);
@@ -795,14 +884,18 @@
 				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
 				9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */,
 				9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */,
+				9E327D5E278E0FC100356646 /* FoodListRouter.swift in Sources */,
 				9E84C47E278C618E00870EB6 /* HeaderTableViewCell.swift in Sources */,
 				9E84C462278B72A900870EB6 /* Diaglog.swift in Sources */,
+				9E327D62278E100500356646 /* FoodListPresenter.swift in Sources */,
 				9E84C45A278B5DA500870EB6 /* UIButton+reshape.swift in Sources */,
 				9E84C45F278B637700870EB6 /* UIButton+turnButton.swift in Sources */,
+				9E327D5A278E0EC100356646 /* FoodListVC.swift in Sources */,
 				9E84C4D7278D87C100870EB6 /* AddFoodToShoppingCardRequest.swift in Sources */,
 				9E84C475278C60AF00870EB6 /* LoginPageRouter.swift in Sources */,
 				9E84C48C278C677400870EB6 /* ProductTableViewCell.swift in Sources */,
 				9E84C45D278B5FD300870EB6 /* UITextField+cornerShape.swift in Sources */,
+				9E327D60278E0FE500356646 /* FoodListInteractor.swift in Sources */,
 				9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */,
 				9E84C4B8278CC40D00870EB6 /* FoodDetailRouter.swift in Sources */,
 				9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */,
@@ -824,10 +917,13 @@
 				9E84C4BA278CC41700870EB6 /* FoodDetailInteractor.swift in Sources */,
 				9E84C4CD278CD44100870EB6 /* ShoppingCartRouter.swift in Sources */,
 				9E9B99A3278AD76E00C16586 /* SplashScreenVC.swift in Sources */,
+				9E327D65278E12B200356646 /* FoodListFilter.swift in Sources */,
 				9E84C483278C65AE00870EB6 /* CategoryWrapperTableViewCell.swift in Sources */,
 				9E84C469278B7F1600870EB6 /* Constants.swift in Sources */,
 				9E84C4C9278CCF8E00870EB6 /* ShoppingCartVC.swift in Sources */,
+				9E327D57278E0CF000356646 /* FoodListCollectionViewCell.swift in Sources */,
 				9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */,
+				9E327D5C278E0F6F00356646 /* FoodListProtocols.swift in Sources */,
 				9E84C46F278C5FAB00870EB6 /* LoginPageProtocols.swift in Sources */,
 				9E84C488278C661F00870EB6 /* CategoryCollectionViewCell.swift in Sources */,
 				9E84C4B6278CC37800870EB6 /* FoodDetailProtocols.swift in Sources */,

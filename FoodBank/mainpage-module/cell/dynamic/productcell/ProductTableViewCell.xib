@@ -85,7 +85,7 @@
                                 <rect key="frame" x="223" y="-45" width="198" height="148"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-zY-YSy">
-                                <rect key="frame" x="369.5" y="148" width="41.5" height="32"/>
+                                <rect key="frame" x="368.5" y="148" width="41.5" height="33"/>
                                 <color key="backgroundColor" name="SecondaryColar"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
@@ -97,13 +97,13 @@
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="C2f-aQ-bYy" firstAttribute="leading" secondItem="VoZ-iR-anM" secondAttribute="trailing" constant="10" id="9zz-7w-Vp5"/>
-                            <constraint firstAttribute="trailing" secondItem="DAK-zY-YSy" secondAttribute="trailing" constant="-5" id="FIr-NV-uXG"/>
+                            <constraint firstAttribute="trailing" secondItem="DAK-zY-YSy" secondAttribute="trailing" constant="-4" id="FIr-NV-uXG"/>
                             <constraint firstItem="VoZ-iR-anM" firstAttribute="width" secondItem="NeP-Ii-dno" secondAttribute="width" multiplier="0.5" id="Pgl-8x-RRD"/>
                             <constraint firstAttribute="bottom" secondItem="VoZ-iR-anM" secondAttribute="bottom" constant="10" id="U07-Ff-eEc"/>
                             <constraint firstItem="VoZ-iR-anM" firstAttribute="leading" secondItem="NeP-Ii-dno" secondAttribute="leading" constant="10" id="Wgj-xV-IK9"/>
                             <constraint firstItem="VoZ-iR-anM" firstAttribute="top" secondItem="NeP-Ii-dno" secondAttribute="top" constant="10" id="adH-zw-x2n"/>
                             <constraint firstItem="DAK-zY-YSy" firstAttribute="top" secondItem="C2f-aQ-bYy" secondAttribute="bottom" constant="45" id="cen-nq-JV4"/>
-                            <constraint firstAttribute="bottom" secondItem="DAK-zY-YSy" secondAttribute="bottom" id="chG-Jq-ONa"/>
+                            <constraint firstAttribute="bottom" secondItem="DAK-zY-YSy" secondAttribute="bottom" constant="-1" id="chG-Jq-ONa"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -134,7 +134,7 @@
         <image name="salad" width="148" height="148"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="SecondaryColar">
-            <color red="0.97254901960784312" green="0.45490196078431372" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.97299998998641968" green="0.45500001311302185" blue="0.16500000655651093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import Kingfisher
 
 struct ShoppingCartTableViewCellVariable{
     let cellRadious = CGFloat(20)
@@ -54,6 +55,10 @@ class ShoppingCartTableViewCell: UITableViewCell {
             priceLabel.text = String(totalPrice * totalAmount)
             nameLabel.text = food.yemek_adi ?? ""
             foodAmountLabel.text = String(totalAmount)
+            DispatchQueue.main.async {
+                self.foodImage.kf.setImage(with: URL(string: Network.imageOfFood + food.yemek_adi!.lowercased()+".png"))
+
+            }
             self.food = food
         } 
     }

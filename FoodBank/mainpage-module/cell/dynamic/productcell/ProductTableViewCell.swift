@@ -49,6 +49,7 @@ class ProductTableViewCell: UITableViewCell {
     func refresh(product:Product){
         foodTitle.text = product.yemekAdi
         foodPrice.text = "\(product.yemekFiyat) TL"
+        foodImage.kf.setImage(with: URL(string: Network.imageOfFood + product.yemekResimAdi.lowercased()))
         let random = Double.random(in: 1...5)
         foodRate.text = String(Double(round(10 * random) / 10))
         self.product = product
