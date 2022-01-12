@@ -9,8 +9,10 @@ import Foundation
 
 class Category{
     var categoryName:String?
+    var filter:FoodListFilter?
     
-    init(categoryName:String){
+    init(categoryName:String,filter:FoodListFilter?){
         self.categoryName = categoryName
+        self.filter = filter
     }
 }

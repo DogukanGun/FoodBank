@@ -17,8 +17,9 @@ struct CategoryWrapperTableViewCellVariable{
 
 class CategoryWrapperTableViewCell: UITableViewCell {
 
+    var delegate:CategoryWrapperTableViewCellDelegate?
     var variables = CategoryWrapperTableViewCellVariable()
-    var categoryList = [Category(categoryName: "Pizza"),Category(categoryName: "Burger"),Category(categoryName: "Drink")]
+    var categoryList = [Category(categoryName: "Dessert",filter: .Dessert),Category(categoryName: "Burger",filter: .Food),Category(categoryName: "Drink",filter: .Drink)]
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,17 +52,8 @@ extension CategoryWrapperTableViewCell:UICollectionViewDelegate,UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let selectedIndexPath = variables.indexPath{
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: variables.cellIdentifier, for: selectedIndexPath) as? CategoryCollectionViewCell else{
-                return
-            }
-            cell.backgroundColor = UIColor.systemGray5
-        }
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: variables.cellIdentifier, for: indexPath) as? CategoryCollectionViewCell else{
-            return
-        }
-        cell.wrapper.backgroundColor = UIColor(named: "SecondaryColarLight")
-        variables.indexPath = indexPath
+        let category = categoryList[indexPath.row]
+        delegate?.cellClicked(category: category)
     }
       
     private func desingCollectionView(){
@@ -74,5 +66,8 @@ extension CategoryWrapperTableViewCell:UICollectionViewDelegate,UICollectionView
     }
 }
   
+protocol CategoryWrapperTableViewCellDelegate{
+    func cellClicked(category:Category)
+}
 
 

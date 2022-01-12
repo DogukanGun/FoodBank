@@ -77,7 +77,6 @@ class ShoppingCartTableViewCell: UITableViewCell {
                     foodAmountLabel.text = String(newAmount)
                     priceLabel.text = String(newPrice)
                     food.yemek_siparis_adet = String(newAmount)
-                    food.yemek_fiyat = String(newPrice)
                     shoppingCardDelegate?.changePrice(newShoppingCart: food)
                 }
             }else{
@@ -97,7 +96,6 @@ class ShoppingCartTableViewCell: UITableViewCell {
                 foodAmountLabel.text = newAmount
                 priceLabel.text = newPrice
                 food.yemek_siparis_adet = String(newAmount)
-                food.yemek_fiyat = String(newPrice)
                 shoppingCardDelegate?.changePrice(newShoppingCart:food)
             }
             

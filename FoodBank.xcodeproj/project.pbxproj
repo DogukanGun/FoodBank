@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1530D0278EDED3009CDBDB /* String+filterFoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1530CF278EDED3009CDBDB /* String+filterFoods.swift */; };
 		9E327D57278E0CF000356646 /* FoodListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D55278E0CF000356646 /* FoodListCollectionViewCell.swift */; };
 		9E327D58278E0CF000356646 /* FoodListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E327D56278E0CF000356646 /* FoodListCollectionViewCell.xib */; };
 		9E327D5A278E0EC100356646 /* FoodListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E327D59278E0EC100356646 /* FoodListVC.swift */; };
@@ -73,6 +74,14 @@
 		9E9B9992278AD5EB00C16586 /* FoodBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9991278AD5EB00C16586 /* FoodBankUITests.swift */; };
 		9E9B9994278AD5EB00C16586 /* FoodBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B9993278AD5EB00C16586 /* FoodBankUITestsLaunchTests.swift */; };
 		9E9B99A3278AD76E00C16586 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9B99A2278AD76E00C16586 /* SplashScreenVC.swift */; };
+		9ED29448278EFF1800704A82 /* AddSplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29447278EFF1800704A82 /* AddSplashScreenVC.swift */; };
+		9ED2944A278F006700704A82 /* AddType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29449278F006700704A82 /* AddType.swift */; };
+		9ED2944E278F14C900704A82 /* AddCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2944D278F14C900704A82 /* AddCardVC.swift */; };
+		9ED29454278F74B700704A82 /* AddCardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29453278F74B700704A82 /* AddCardProtocols.swift */; };
+		9ED29456278F74EB00704A82 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29455278F74EB00704A82 /* CreditCard.swift */; };
+		9ED29458278F759800704A82 /* AddCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29457278F759800704A82 /* AddCardRouter.swift */; };
+		9ED2945A278F75BB00704A82 /* AddCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29459278F75BB00704A82 /* AddCardPresenter.swift */; };
+		9ED2945C278F760B00704A82 /* AddCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2945B278F760B00704A82 /* AddCardInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E1530CF278EDED3009CDBDB /* String+filterFoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+filterFoods.swift"; sourceTree = "<group>"; };
 		9E327D55278E0CF000356646 /* FoodListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCollectionViewCell.swift; sourceTree = "<group>"; };
 		9E327D56278E0CF000356646 /* FoodListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodListCollectionViewCell.xib; sourceTree = "<group>"; };
 		9E327D59278E0EC100356646 /* FoodListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListVC.swift; sourceTree = "<group>"; };
@@ -163,6 +173,14 @@
 		9E9B9991278AD5EB00C16586 /* FoodBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBankUITests.swift; sourceTree = "<group>"; };
 		9E9B9993278AD5EB00C16586 /* FoodBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9E9B99A2278AD76E00C16586 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		9ED29447278EFF1800704A82 /* AddSplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSplashScreenVC.swift; sourceTree = "<group>"; };
+		9ED29449278F006700704A82 /* AddType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddType.swift; sourceTree = "<group>"; };
+		9ED2944D278F14C900704A82 /* AddCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardVC.swift; sourceTree = "<group>"; };
+		9ED29453278F74B700704A82 /* AddCardProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardProtocols.swift; sourceTree = "<group>"; };
+		9ED29455278F74EB00704A82 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		9ED29457278F759800704A82 /* AddCardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardRouter.swift; sourceTree = "<group>"; };
+		9ED29459278F75BB00704A82 /* AddCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardPresenter.swift; sourceTree = "<group>"; };
+		9ED2945B278F760B00704A82 /* AddCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				9E327D64278E12B200356646 /* FoodListFilter.swift */,
+				9ED29449278F006700704A82 /* AddType.swift */,
 			);
 			path = enum;
 			sourceTree = "<group>";
@@ -428,6 +447,7 @@
 				9E84C4D5278D87A800870EB6 /* request */,
 				9E84C497278C7C9300870EB6 /* response */,
 				9E84C48F278C6D6500870EB6 /* Category.swift */,
+				9ED29455278F74EB00704A82 /* CreditCard.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -630,6 +650,7 @@
 		9E9AD0A3278ADFDC003E469A /* String */ = {
 			isa = PBXGroup;
 			children = (
+				9E1530CF278EDED3009CDBDB /* String+filterFoods.swift */,
 				9E9AD0A4278ADFE8003E469A /* String+index.swift */,
 			);
 			path = String;
@@ -678,6 +699,9 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
+				9ED2944B278F14B000704A82 /* New Group */,
+				9ED29446278EFEC600704A82 /* addsplashscreen-module */,
+				9ED29442278EFE7100704A82 /* addcard-module */,
 				9E327D4E278E0CAB00356646 /* foodlist-module */,
 				9E84C4BD278CC9FC00870EB6 /* shoppingcard-module */,
 				9E84C4AA278CAF8D00870EB6 /* fooddetail-module */,
@@ -728,6 +752,81 @@
 				9E9B99A2278AD76E00C16586 /* SplashScreenVC.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		9ED29442278EFE7100704A82 /* addcard-module */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29452278F745000704A82 /* protocols */,
+				9ED29451278F744A00704A82 /* router */,
+				9ED29450278F744400704A82 /* interactor */,
+				9ED2944F278F743E00704A82 /* presenter */,
+				9ED2944C278F14C200704A82 /* view */,
+			);
+			path = "addcard-module";
+			sourceTree = "<group>";
+		};
+		9ED29443278EFE7800704A82 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29447278EFF1800704A82 /* AddSplashScreenVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9ED29446278EFEC600704A82 /* addsplashscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29443278EFE7800704A82 /* view */,
+			);
+			path = "addsplashscreen-module";
+			sourceTree = "<group>";
+		};
+		9ED2944B278F14B000704A82 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9ED2944C278F14C200704A82 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9ED2944D278F14C900704A82 /* AddCardVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9ED2944F278F743E00704A82 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29459278F75BB00704A82 /* AddCardPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		9ED29450278F744400704A82 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9ED2945B278F760B00704A82 /* AddCardInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		9ED29451278F744A00704A82 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29457278F759800704A82 /* AddCardRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		9ED29452278F745000704A82 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29453278F74B700704A82 /* AddCardProtocols.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -880,9 +979,11 @@
 				9E84C4DE278DE56000870EB6 /* DeleteFoodMapper.swift in Sources */,
 				9E84C471278C604A00870EB6 /* LoginPagePresenter.swift in Sources */,
 				9E84C4DC278D9F2B00870EB6 /* DeleteFoodRequest.swift in Sources */,
+				9ED29456278F74EB00704A82 /* CreditCard.swift in Sources */,
 				9E84C49B278C914300870EB6 /* MainpageProtocols.swift in Sources */,
 				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
 				9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */,
+				9ED29448278EFF1800704A82 /* AddSplashScreenVC.swift in Sources */,
 				9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */,
 				9E327D5E278E0FC100356646 /* FoodListRouter.swift in Sources */,
 				9E84C47E278C618E00870EB6 /* HeaderTableViewCell.swift in Sources */,
@@ -901,6 +1002,7 @@
 				9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */,
 				9E9B9978278AD5E900C16586 /* FoodBank.xcdatamodeld in Sources */,
 				9E84C4D1278CD45700870EB6 /* ShoppingCartPresenter.swift in Sources */,
+				9ED2945C278F760B00704A82 /* AddCardInteractor.swift in Sources */,
 				9E84C4A9278CA47800870EB6 /* MainpageRouter.swift in Sources */,
 				9E84C4BC278CC41E00870EB6 /* FoodDetailPresenter.swift in Sources */,
 				9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */,
@@ -908,6 +1010,8 @@
 				9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */,
 				9E84C499278C7C9F00870EB6 /* GetFoodResponse.swift in Sources */,
 				9E84C4C6278CCAAA00870EB6 /* ShoppingCartTableViewCell.swift in Sources */,
+				9ED29458278F759800704A82 /* AddCardRouter.swift in Sources */,
+				9ED29454278F74B700704A82 /* AddCardProtocols.swift in Sources */,
 				9E84C49F278C9DEF00870EB6 /* MainpageInteractor.swift in Sources */,
 				9E84C4CF278CD44B00870EB6 /* ShoppingCartInteractor.swift in Sources */,
 				9E9B996E278AD5E900C16586 /* AppDelegate.swift in Sources */,
@@ -921,8 +1025,12 @@
 				9E84C483278C65AE00870EB6 /* CategoryWrapperTableViewCell.swift in Sources */,
 				9E84C469278B7F1600870EB6 /* Constants.swift in Sources */,
 				9E84C4C9278CCF8E00870EB6 /* ShoppingCartVC.swift in Sources */,
+				9ED2944E278F14C900704A82 /* AddCardVC.swift in Sources */,
 				9E327D57278E0CF000356646 /* FoodListCollectionViewCell.swift in Sources */,
 				9E9AD0A5278ADFE8003E469A /* String+index.swift in Sources */,
+				9ED2945A278F75BB00704A82 /* AddCardPresenter.swift in Sources */,
+				9E1530D0278EDED3009CDBDB /* String+filterFoods.swift in Sources */,
+				9ED2944A278F006700704A82 /* AddType.swift in Sources */,
 				9E327D5C278E0F6F00356646 /* FoodListProtocols.swift in Sources */,
 				9E84C46F278C5FAB00870EB6 /* LoginPageProtocols.swift in Sources */,
 				9E84C488278C661F00870EB6 /* CategoryCollectionViewCell.swift in Sources */,

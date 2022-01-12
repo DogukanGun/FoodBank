@@ -95,6 +95,7 @@ extension MainpageVC:UITableViewDelegate,UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: variables.categoryWrapperCell, for: indexPath) as? CategoryWrapperTableViewCell else{
                 return UITableViewCell()
             }
+            cell.delegate = self
             cell.selectionStyle = .none
             return cell
             
@@ -172,7 +173,14 @@ extension MainpageVC:HeaderTableViewCellDelegate{
     func buttonPressed() {
         performSegue(withIdentifier: variables.segueIdentifierToFoodList, sender: FoodListFilter.All)
     }
-    
-    
+}
+
+extension MainpageVC:CategoryWrapperTableViewCellDelegate{
+    func cellClicked(category: Category) {
+        guard let filter = category.filter else {
+            return
+        }
+        performSegue(withIdentifier: variables.segueIdentifierToFoodList, sender: filter)
+    }
 }
 

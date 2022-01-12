@@ -12,6 +12,7 @@ struct ShoppingCartVariable{
     let cellIdentifier = "ShoppingCartTableViewCell"
     let cellNibName = "ShoppingCartTableViewCell"
     let minumumDeliveryPriceForFree = 50.0
+    let segueToAddSplashScreen = "AddSplashScreenVC"
 }
 
 class ShoppingCartVC:UIViewController{
@@ -52,6 +53,15 @@ class ShoppingCartVC:UIViewController{
     
     @IBAction func procudeToCheckoutButtonPressed(_ sender: Any) {
         presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList:stableShoppingList)
+        performSegue(withIdentifier: variables.segueToAddSplashScreen, sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == variables.segueToAddSplashScreen{
+            let vc = segue.destination as! AddSplashScreenVC
+            vc.type = AddType.AddCard
+            print("deded")
+        }
     }
 }
 
@@ -69,13 +79,12 @@ extension ShoppingCartVC:UITableViewDelegate,UITableViewDataSource{
         cell.indexPath = indexPath
         cell.shoppingCardDelegate = self
         cell.selectionStyle = .none
-        changePrice(shoppingItem: shoppingItem)
         return cell
     }
     
     private func changePrice(shoppingItem:ShoppingCart?){
         if let shoppingItem = shoppingItem,let subtotalText = subtotalLabel.text,let subtotal = Double(subtotalText),let itemPriceText = shoppingItem.yemek_fiyat,let itemPrice = Double(itemPriceText){
-            let newPrice = Double(subtotal+itemPrice)
+            let newPrice = Double(Double(shoppingItem.yemek_siparis_adet!)!*itemPrice)
             var deliveryPrice = Double(newPrice*5/100)
             let taxPrice = Double(newPrice*8/100)
             subtotalLabel.text = "\(String(newPrice))"
@@ -131,6 +140,9 @@ extension ShoppingCartVC:PresenterToViewShoppingCartProtocol{
     func returnShoppingList(shoppingList: [ShoppingCart]) {
         self.shoppingList = shoppingList
         self.stableShoppingList = copyArray(from: shoppingList)
+        for i in shoppingList{
+            changePrice(shoppingItem: i)
+        }
         DispatchQueue.main.async {
             self.shoppingListTableView.reloadData()
         }

@@ -9,7 +9,7 @@ import Foundation
 
 enum FoodListFilter{
     case All
-    case Desert
+    case Dessert
     case Food
     case Drink
 }
