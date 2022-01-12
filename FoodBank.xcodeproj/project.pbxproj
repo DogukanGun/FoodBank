@@ -82,6 +82,17 @@
 		9ED29458278F759800704A82 /* AddCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29457278F759800704A82 /* AddCardRouter.swift */; };
 		9ED2945A278F75BB00704A82 /* AddCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29459278F75BB00704A82 /* AddCardPresenter.swift */; };
 		9ED2945C278F760B00704A82 /* AddCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2945B278F760B00704A82 /* AddCardInteractor.swift */; };
+		9ED29463278F7AA400704A82 /* ChooseCreditCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29462278F7AA400704A82 /* ChooseCreditCardVC.swift */; };
+		9ED29465278F7EB100704A82 /* ChooseCreditCardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29464278F7EB100704A82 /* ChooseCreditCardProtocols.swift */; };
+		9ED29467278F7F8600704A82 /* ChooseCreditCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29466278F7F8600704A82 /* ChooseCreditCardRouter.swift */; };
+		9ED29469278F7F9100704A82 /* ChooseCreditCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29468278F7F9100704A82 /* ChooseCreditCardInteractor.swift */; };
+		9ED2946B278F7F9F00704A82 /* ChooseCreditCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2946A278F7F9F00704A82 /* ChooseCreditCardPresenter.swift */; };
+		9ED2946F278F819800704A82 /* ChooseCreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2946D278F819800704A82 /* ChooseCreditCardTableViewCell.swift */; };
+		9ED29470278F819800704A82 /* ChooseCreditCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2946E278F819800704A82 /* ChooseCreditCardTableViewCell.xib */; };
+		9ED29475278F8F7C00704A82 /* PurchaseMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29474278F8F7C00704A82 /* PurchaseMadeVC.swift */; };
+		9ED29478278F914400704A82 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9ED29477278F914400704A82 /* Lottie */; };
+		9ED2947D278F918200704A82 /* motorbike.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2947B278F918200704A82 /* motorbike.json */; };
+		9ED2947F278F931600704A82 /* purchase-made.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2947E278F931600704A82 /* purchase-made.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +192,16 @@
 		9ED29457278F759800704A82 /* AddCardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardRouter.swift; sourceTree = "<group>"; };
 		9ED29459278F75BB00704A82 /* AddCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardPresenter.swift; sourceTree = "<group>"; };
 		9ED2945B278F760B00704A82 /* AddCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardInteractor.swift; sourceTree = "<group>"; };
+		9ED29462278F7AA400704A82 /* ChooseCreditCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreditCardVC.swift; sourceTree = "<group>"; };
+		9ED29464278F7EB100704A82 /* ChooseCreditCardProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreditCardProtocols.swift; sourceTree = "<group>"; };
+		9ED29466278F7F8600704A82 /* ChooseCreditCardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreditCardRouter.swift; sourceTree = "<group>"; };
+		9ED29468278F7F9100704A82 /* ChooseCreditCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreditCardInteractor.swift; sourceTree = "<group>"; };
+		9ED2946A278F7F9F00704A82 /* ChooseCreditCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreditCardPresenter.swift; sourceTree = "<group>"; };
+		9ED2946D278F819800704A82 /* ChooseCreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreditCardTableViewCell.swift; sourceTree = "<group>"; };
+		9ED2946E278F819800704A82 /* ChooseCreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseCreditCardTableViewCell.xib; sourceTree = "<group>"; };
+		9ED29474278F8F7C00704A82 /* PurchaseMadeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseMadeVC.swift; sourceTree = "<group>"; };
+		9ED2947B278F918200704A82 /* motorbike.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motorbike.json; sourceTree = "<group>"; };
+		9ED2947E278F931600704A82 /* purchase-made.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "purchase-made.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +211,7 @@
 			files = (
 				9E84C4A5278C9E3300870EB6 /* Kingfisher in Frameworks */,
 				9E84C4A2278C9E2400870EB6 /* Alamofire in Frameworks */,
+				9ED29478278F914400704A82 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +721,9 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
-				9ED2944B278F14B000704A82 /* New Group */,
+				9ED29479278F917300704A82 /* animations */,
+				9ED29471278F8F4C00704A82 /* purchasemade-module */,
+				9ED2944B278F14B000704A82 /* choosecreditcard-module */,
 				9ED29446278EFEC600704A82 /* addsplashscreen-module */,
 				9ED29442278EFE7100704A82 /* addcard-module */,
 				9E327D4E278E0CAB00356646 /* foodlist-module */,
@@ -782,11 +806,17 @@
 			path = "addsplashscreen-module";
 			sourceTree = "<group>";
 		};
-		9ED2944B278F14B000704A82 /* New Group */ = {
+		9ED2944B278F14B000704A82 /* choosecreditcard-module */ = {
 			isa = PBXGroup;
 			children = (
+				9ED2946C278F818000704A82 /* cell */,
+				9ED29461278F7A3A00704A82 /* protocols */,
+				9ED29460278F7A3400704A82 /* router */,
+				9ED2945F278F7A2E00704A82 /* interactor */,
+				9ED2945E278F7A2700704A82 /* presenter */,
+				9ED2945D278F7A2300704A82 /* view */,
 			);
-			path = "New Group";
+			path = "choosecreditcard-module";
 			sourceTree = "<group>";
 		};
 		9ED2944C278F14C200704A82 /* view */ = {
@@ -829,6 +859,80 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		9ED2945D278F7A2300704A82 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29462278F7AA400704A82 /* ChooseCreditCardVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9ED2945E278F7A2700704A82 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9ED2946A278F7F9F00704A82 /* ChooseCreditCardPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		9ED2945F278F7A2E00704A82 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29468278F7F9100704A82 /* ChooseCreditCardInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		9ED29460278F7A3400704A82 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29466278F7F8600704A82 /* ChooseCreditCardRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		9ED29461278F7A3A00704A82 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29464278F7EB100704A82 /* ChooseCreditCardProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		9ED2946C278F818000704A82 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				9ED2946D278F819800704A82 /* ChooseCreditCardTableViewCell.swift */,
+				9ED2946E278F819800704A82 /* ChooseCreditCardTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		9ED29471278F8F4C00704A82 /* purchasemade-module */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29473278F8F5E00704A82 /* view */,
+			);
+			path = "purchasemade-module";
+			sourceTree = "<group>";
+		};
+		9ED29473278F8F5E00704A82 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29474278F8F7C00704A82 /* PurchaseMadeVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9ED29479278F917300704A82 /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				9ED2947E278F931600704A82 /* purchase-made.json */,
+				9ED2947B278F918200704A82 /* motorbike.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -848,6 +952,7 @@
 			packageProductDependencies = (
 				9E84C4A1278C9E2400870EB6 /* Alamofire */,
 				9E84C4A4278C9E3300870EB6 /* Kingfisher */,
+				9ED29477278F914400704A82 /* Lottie */,
 			);
 			productName = FoodBank;
 			productReference = 9E9B996A278AD5E900C16586 /* FoodBank.app */;
@@ -925,6 +1030,7 @@
 			packageReferences = (
 				9E84C4A0278C9E2400870EB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9E84C4A3278C9E3300870EB6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9ED29476278F914400704A82 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 9E9B996B278AD5E900C16586 /* Products */;
 			projectDirPath = "";
@@ -944,7 +1050,10 @@
 			files = (
 				9E84C489278C661F00870EB6 /* CategoryCollectionViewCell.xib in Resources */,
 				9E84C47F278C618E00870EB6 /* HeaderTableViewCell.xib in Resources */,
+				9ED2947F278F931600704A82 /* purchase-made.json in Resources */,
 				9E9B997D278AD5EB00C16586 /* LaunchScreen.storyboard in Resources */,
+				9ED2947D278F918200704A82 /* motorbike.json in Resources */,
+				9ED29470278F819800704A82 /* ChooseCreditCardTableViewCell.xib in Resources */,
 				9E84C4C7278CCAAA00870EB6 /* ShoppingCartTableViewCell.xib in Resources */,
 				9E84C48D278C677400870EB6 /* ProductTableViewCell.xib in Resources */,
 				9E84C484278C65AE00870EB6 /* CategoryWrapperTableViewCell.xib in Resources */,
@@ -980,7 +1089,9 @@
 				9E84C471278C604A00870EB6 /* LoginPagePresenter.swift in Sources */,
 				9E84C4DC278D9F2B00870EB6 /* DeleteFoodRequest.swift in Sources */,
 				9ED29456278F74EB00704A82 /* CreditCard.swift in Sources */,
+				9ED29469278F7F9100704A82 /* ChooseCreditCardInteractor.swift in Sources */,
 				9E84C49B278C914300870EB6 /* MainpageProtocols.swift in Sources */,
+				9ED29463278F7AA400704A82 /* ChooseCreditCardVC.swift in Sources */,
 				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
 				9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */,
 				9ED29448278EFF1800704A82 /* AddSplashScreenVC.swift in Sources */,
@@ -999,12 +1110,14 @@
 				9E327D60278E0FE500356646 /* FoodListInteractor.swift in Sources */,
 				9E9AD0A0278AD900003E469A /* UIView+drawRoundedEdge.swift in Sources */,
 				9E84C4B8278CC40D00870EB6 /* FoodDetailRouter.swift in Sources */,
+				9ED29465278F7EB100704A82 /* ChooseCreditCardProtocols.swift in Sources */,
 				9E9AD0A9278AED54003E469A /* LoginVC.swift in Sources */,
 				9E9B9978278AD5E900C16586 /* FoodBank.xcdatamodeld in Sources */,
 				9E84C4D1278CD45700870EB6 /* ShoppingCartPresenter.swift in Sources */,
 				9ED2945C278F760B00704A82 /* AddCardInteractor.swift in Sources */,
 				9E84C4A9278CA47800870EB6 /* MainpageRouter.swift in Sources */,
 				9E84C4BC278CC41E00870EB6 /* FoodDetailPresenter.swift in Sources */,
+				9ED2946F278F819800704A82 /* ChooseCreditCardTableViewCell.swift in Sources */,
 				9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */,
 				9E84C4DA278D8BB700870EB6 /* AddFoodMapper.swift in Sources */,
 				9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */,
@@ -1019,6 +1132,7 @@
 				9E84C473278C607300870EB6 /* LoginPageInteractor.swift in Sources */,
 				9E84C4CB278CD31700870EB6 /* ShoppingCardProtocol.swift in Sources */,
 				9E84C4BA278CC41700870EB6 /* FoodDetailInteractor.swift in Sources */,
+				9ED29467278F7F8600704A82 /* ChooseCreditCardRouter.swift in Sources */,
 				9E84C4CD278CD44100870EB6 /* ShoppingCartRouter.swift in Sources */,
 				9E9B99A3278AD76E00C16586 /* SplashScreenVC.swift in Sources */,
 				9E327D65278E12B200356646 /* FoodListFilter.swift in Sources */,
@@ -1031,6 +1145,8 @@
 				9ED2945A278F75BB00704A82 /* AddCardPresenter.swift in Sources */,
 				9E1530D0278EDED3009CDBDB /* String+filterFoods.swift in Sources */,
 				9ED2944A278F006700704A82 /* AddType.swift in Sources */,
+				9ED2946B278F7F9F00704A82 /* ChooseCreditCardPresenter.swift in Sources */,
+				9ED29475278F8F7C00704A82 /* PurchaseMadeVC.swift in Sources */,
 				9E327D5C278E0F6F00356646 /* FoodListProtocols.swift in Sources */,
 				9E84C46F278C5FAB00870EB6 /* LoginPageProtocols.swift in Sources */,
 				9E84C488278C661F00870EB6 /* CategoryCollectionViewCell.swift in Sources */,
@@ -1415,6 +1531,14 @@
 				kind = branch;
 			};
 		};
+		9ED29476278F914400704A82 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1427,6 +1551,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9E84C4A3278C9E3300870EB6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		9ED29477278F914400704A82 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ED29476278F914400704A82 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -19,6 +19,12 @@ class AddCardInteractor:PresenterToInteractorAddCardProtocol{
         creditCardEntity.cardExpiryDate = cardExpiryDate
         
         appDelegate.saveContext()
+        
+        
+        if !userDefaults.bool(forKey: Constants.isAddedCard){
+            userDefaults.set(true, forKey: Constants.isAddedCard)
+        }
+        
     }
     
     

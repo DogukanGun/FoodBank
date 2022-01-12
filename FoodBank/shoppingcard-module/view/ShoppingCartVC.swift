@@ -13,6 +13,8 @@ struct ShoppingCartVariable{
     let cellNibName = "ShoppingCartTableViewCell"
     let minumumDeliveryPriceForFree = 50.0
     let segueToAddSplashScreen = "AddSplashScreenVC"
+    let segueToChooseCreditCardScreen = "ChooseCreditCardVC"
+
 }
 
 class ShoppingCartVC:UIViewController{
@@ -53,14 +55,20 @@ class ShoppingCartVC:UIViewController{
     
     @IBAction func procudeToCheckoutButtonPressed(_ sender: Any) {
         presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList:stableShoppingList)
-        performSegue(withIdentifier: variables.segueToAddSplashScreen, sender: nil)
+        if userDefaults.bool(forKey: Constants.isAddedCard){
+            performSegue(withIdentifier: variables.segueToChooseCreditCardScreen, sender: nil)
+        }else{
+            performSegue(withIdentifier: variables.segueToAddSplashScreen, sender: nil)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == variables.segueToAddSplashScreen{
             let vc = segue.destination as! AddSplashScreenVC
-            vc.type = AddType.AddCard
-            print("deded")
+            vc.delegate = self
+        }else if segue.identifier == variables.segueToChooseCreditCardScreen{
+            let vc = segue.destination as! ChooseCreditCardVC
+            vc.shoppingList = shoppingList
         }
     }
 }
@@ -156,6 +164,10 @@ extension ShoppingCartVC:PresenterToViewShoppingCartProtocol{
         }
         return l2
     }
-    
-    
+}
+
+extension ShoppingCartVC:AddSplashScreenDelegate{
+    func cardAdded() {
+        performSegue(withIdentifier: variables.segueToChooseCreditCardScreen, sender: nil)
+    }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 
-enum AddType:Int{
+enum SplashScreen:Int{
     case AddCard = 1001
-    case AddAddress = 1002
+    case Pay = 1002
 }

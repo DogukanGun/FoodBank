@@ -53,6 +53,11 @@ class AddCardVC:UIViewController{
     
     @IBAction func addCardButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        guard let cardNumber = cardNumberTextField.text, let month = monthTextField.text, let year = yearTextField.text else {
+            return
+        }
+        let creditCardDto = CreditCardDto(cardNumber: cardNumber, cardExpiryDate: month+"/"+year)
+        presenter?.saveData(creditCard: creditCardDto)
         delegate?.cardAddPressed()
     }
 }
