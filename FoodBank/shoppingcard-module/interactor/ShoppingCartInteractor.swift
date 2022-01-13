@@ -45,6 +45,7 @@ class ShoppingCartInteractor:PresenterToInteractorShoppingCartProtocol{
                 }
             }catch{
                 print(error.localizedDescription)
+                self.presenter?.returnShoppingList(shoppingList: [])
             }
         } 
     }

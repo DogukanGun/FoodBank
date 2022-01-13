@@ -19,6 +19,11 @@ class PurchaseMadeVC:UIViewController{
         animationView?.frame = view.bounds
         animationView?.loopMode = .repeat(3)
         view.addSubview(animationView!)
-        animationView?.play()
+        animationView?.play(completion: { bool in
+            if bool{
+                self.navigationController?.popToRootViewController(animated: false)
+            }
+        })
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
 }

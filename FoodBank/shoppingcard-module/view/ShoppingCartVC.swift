@@ -30,34 +30,50 @@ class ShoppingCartVC:UIViewController{
     var stableShoppingList = [ShoppingCart]()
     let variables = ShoppingCartVariable()
     var presenter:ViewToPresenterShoppingCartProtocol?
+    var isUpdate = false
     
     override func viewDidLoad() {
+        isUpdate = false
         procudeToCheckoutButton.reshapeButton()
+        tableViewDelegate()
+        ShoppingCartRouter.createModule(ref: self)
+        changeBarColor(color: UIColor.black)
+    }
+    
+    private func tableViewDelegate(){
         shoppingListTableView.register(UINib(nibName: variables.cellNibName, bundle: nil), forCellReuseIdentifier: variables.cellIdentifier)
         shoppingListTableView.delegate = self
         shoppingListTableView.dataSource = self
-        ShoppingCartRouter.createModule(ref: self)
     }
     override func viewWillDisappear(_ animated: Bool) {
-        presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList: stableShoppingList)
+        if !isUpdate{
+            presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList: stableShoppingList)
+            deletePrices()
+        }
+    }
+    
+    private func deletePrices(){
         subtotalLabel.text = "0"
         deliveryFeeLabel.text = "0"
         totalMoneyLabel.text = "0"
         taxLabel.text = "0"
-    } 
+    }
     
     override func viewWillAppear(_ animated: Bool) {
+        isUpdate = false
+        requestData()
+    }
+    private func requestData(){
         guard let username = userDefaults.string(forKey: Constants.userDefaultsUsername) else{
             return
         }
         presenter?.getShoppingList(userId: username)
     }
-    
     @IBAction func procudeToCheckoutButtonPressed(_ sender: Any) {
         presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList:stableShoppingList)
-        if userDefaults.bool(forKey: Constants.isAddedCard){
-            performSegue(withIdentifier: variables.segueToChooseCreditCardScreen, sender: nil)
-        }else{
+        requestData()
+        isUpdate = true
+        if !userDefaults.bool(forKey: Constants.isAddedCard){
             performSegue(withIdentifier: variables.segueToAddSplashScreen, sender: nil)
         }
     }
@@ -147,7 +163,14 @@ extension ShoppingCartVC:PresenterToViewShoppingCartProtocol{
     
     func returnShoppingList(shoppingList: [ShoppingCart]) {
         self.shoppingList = shoppingList
+        if isUpdate{
+            performSegue(withIdentifier: variables.segueToChooseCreditCardScreen, sender: nil)
+            return 
+        }
         self.stableShoppingList = copyArray(from: shoppingList)
+        if shoppingList.isEmpty{
+            deletePrices()
+        }
         for i in shoppingList{
             changePrice(shoppingItem: i)
         }

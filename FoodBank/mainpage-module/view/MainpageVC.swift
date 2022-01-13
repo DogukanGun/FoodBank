@@ -33,8 +33,8 @@ class MainpageVC:UIViewController{
         delegateTableView()
         MainpageRouter.createModule(ref: self)
         presenter?.getData()
+        changeBarColor(color: UIColor.black)
     }
-    
     @IBAction func logoutButtonPressed(_ sender: Any) {
         userDefaults.removeObject(forKey: Constants.userDefaultsUsername)
         changeRootView()

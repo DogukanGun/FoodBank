@@ -93,6 +93,7 @@
 		9ED29478278F914400704A82 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9ED29477278F914400704A82 /* Lottie */; };
 		9ED2947D278F918200704A82 /* motorbike.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2947B278F918200704A82 /* motorbike.json */; };
 		9ED2947F278F931600704A82 /* purchase-made.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2947E278F931600704A82 /* purchase-made.json */; };
+		9ED29484278FA48100704A82 /* UIViewController+changeBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29483278FA48100704A82 /* UIViewController+changeBarColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +203,7 @@
 		9ED29474278F8F7C00704A82 /* PurchaseMadeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseMadeVC.swift; sourceTree = "<group>"; };
 		9ED2947B278F918200704A82 /* motorbike.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motorbike.json; sourceTree = "<group>"; };
 		9ED2947E278F931600704A82 /* purchase-made.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "purchase-made.json"; sourceTree = "<group>"; };
+		9ED29483278FA48100704A82 /* UIViewController+changeBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+changeBarColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -650,6 +652,7 @@
 		9E9AD09A278AD8D0003E469A /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				9ED29482278FA46900704A82 /* UIViewController */,
 				9E84C467278B7F0900870EB6 /* Constants */,
 				9E84C460278B729900870EB6 /* Dialog */,
 				9E84C45B278B5FBC00870EB6 /* UITextField */,
@@ -933,6 +936,14 @@
 			path = animations;
 			sourceTree = "<group>";
 		};
+		9ED29482278FA46900704A82 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9ED29483278FA48100704A82 /* UIViewController+changeBarColor.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1118,6 +1129,7 @@
 				9E84C4A9278CA47800870EB6 /* MainpageRouter.swift in Sources */,
 				9E84C4BC278CC41E00870EB6 /* FoodDetailPresenter.swift in Sources */,
 				9ED2946F278F819800704A82 /* ChooseCreditCardTableViewCell.swift in Sources */,
+				9ED29484278FA48100704A82 /* UIViewController+changeBarColor.swift in Sources */,
 				9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */,
 				9E84C4DA278D8BB700870EB6 /* AddFoodMapper.swift in Sources */,
 				9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */,

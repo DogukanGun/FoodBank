@@ -313,7 +313,7 @@ and stay healthy</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCP-7H-zdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6887" y="-485"/>
+            <point key="canvasLocation" x="7797.1014492753629" y="-485.49107142857139"/>
         </scene>
         <!--Food DetailVC-->
         <scene sceneID="Ped-qh-s7Z">
@@ -1056,24 +1056,24 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gwe-tY-5Ee" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="9Mm-k0-n31">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="9Mm-k0-n31">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="cardColor"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" name="PrimaryColor"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemRedColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="guv-e4-yHf" kind="relationship" relationship="viewControllers" id="mRN-s3-CB5"/>
                         <segue destination="Msk-UL-G6m" kind="relationship" relationship="viewControllers" id="VKs-ll-MB2"/>
-                        <segue destination="pSP-ag-nio" kind="relationship" relationship="viewControllers" id="qBK-pA-7vw"/>
+                        <segue destination="6C4-Ej-G9p" kind="relationship" relationship="viewControllers" id="qBK-pA-7vw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfZ-8b-Z1B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4060.8695652173915" y="193.52678571428569"/>
         </scene>
-        <!--Profile-->
+        <!--View Controller-->
         <scene sceneID="m6H-PC-wE2">
             <objects>
                 <viewController id="pSP-ag-nio" sceneMemberID="viewController">
@@ -1083,11 +1083,11 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                         <viewLayoutGuide key="safeArea" id="fBg-or-vxX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="X4K-2c-Q6P"/>
+                    <navigationItem key="navigationItem" id="kAF-DE-kUY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lU1-Ze-Suz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4937" y="-653"/>
+            <point key="canvasLocation" x="5846.376811594203" y="-653.57142857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="lvh-DU-XQr">
@@ -1098,6 +1098,8 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TfS-0G-d4x">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1117,6 +1119,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IZv-ka-htf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1126,6 +1129,27 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiO-Ld-HN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4971" y="922"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="f07-5o-czd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6C4-Ej-G9p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="X4K-2c-Q6P"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="qMJ-8X-ehp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pSP-ag-nio" kind="relationship" relationship="rootViewController" id="vS3-KO-p01"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogt-re-vzW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4936.231884057971" y="-653.57142857142856"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -1163,6 +1187,9 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
