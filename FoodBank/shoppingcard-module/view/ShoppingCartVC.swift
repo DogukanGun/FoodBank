@@ -73,8 +73,12 @@ class ShoppingCartVC:UIViewController{
         presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList:stableShoppingList)
         requestData()
         isUpdate = true
-        if !userDefaults.bool(forKey: Constants.isAddedCard){
-            performSegue(withIdentifier: variables.segueToAddSplashScreen, sender: nil)
+        if userDefaults.bool(forKey: Constants.isAddedCard){
+            if !shoppingList.isEmpty{
+                performSegue(withIdentifier: variables.segueToAddSplashScreen, sender: nil)
+            }else{
+                errorDialog(title: "Oppss", errorMessage: "Cart is empty", okayButtonText: "Okay")
+            }
         }
     }
     
@@ -191,6 +195,10 @@ extension ShoppingCartVC:PresenterToViewShoppingCartProtocol{
 
 extension ShoppingCartVC:AddSplashScreenDelegate{
     func cardAdded() {
-        performSegue(withIdentifier: variables.segueToChooseCreditCardScreen, sender: nil)
+        if !shoppingList.isEmpty{
+            performSegue(withIdentifier: variables.segueToChooseCreditCardScreen, sender: nil)
+        }else{
+            errorDialog(title: "Oppss", errorMessage: "Cart is empty", okayButtonText: "Okay")
+        }
     }
 }

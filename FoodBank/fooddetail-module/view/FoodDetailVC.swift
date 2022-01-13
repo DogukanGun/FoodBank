@@ -73,6 +73,8 @@ class FoodDetailVC:UIViewController{
         if let food = food,let totalAmountText = totalFoodAmount.text, let totalAmount = Int(totalAmountText), totalAmount != 0 {
             food.totalAmount = totalAmount
             presenter?.addBasket(product: food)
+        }else{
+            errorDialog(title: "Oppss", errorMessage: "Please choose at leats one amount of product", okayButtonText: "Okay")
         }
     }
     @IBAction func incrementFoodAmount(_ sender: Any) {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,10 +49,10 @@ Delivery Food</string>
                                             <constraint firstItem="vI9-1k-fGX" firstAttribute="height" secondItem="1Xq-yI-XFI" secondAttribute="height" multiplier="0.6" id="2gt-dP-CFL"/>
                                         </constraints>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ManInMotorbicycle" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-2z-JXb">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Htj-iZ-cbO">
                                         <rect key="frame" x="169.5" y="0.0" width="191.5" height="116"/>
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                    </imageView>
+                                        <color key="backgroundColor" name="SecondaryColarLight"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="1Xq-yI-XFI" firstAttribute="width" secondItem="Trb-ei-4Kx" secondAttribute="width" multiplier="0.4" id="3OC-4p-nyp"/>
@@ -68,7 +68,7 @@ Delivery Food</string>
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" name="cardColor"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="taN-df-vhf" secondAttribute="bottom" constant="10" id="A8l-9p-fDp"/>
                     <constraint firstItem="taN-df-vhf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dEE-Ec-RcR"/>
@@ -77,7 +77,9 @@ Delivery Food</string>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="cardColor"/>
             <connections>
+                <outlet property="animationWrapper" destination="Htj-iZ-cbO" id="6nb-zK-w1w"/>
                 <outlet property="headerTitle" destination="vI9-1k-fGX" id="Wco-zU-eqw"/>
                 <outlet property="orderNowButton" destination="941-zo-mPJ" id="KT8-TM-ohp"/>
                 <outlet property="wrapper" destination="taN-df-vhf" id="cx6-H6-Ied"/>
@@ -86,12 +88,14 @@ Delivery Food</string>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="ManInMotorbicycle" width="156" height="156"/>
         <namedColor name="PrimaryColor">
             <color red="0.875" green="0.090000003576278687" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryColarLight">
             <color red="0.91000008583068848" green="0.75" blue="0.42800000309944153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cardColor">
+            <color white="0.054901961237192154" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
     </resources>
 </document>

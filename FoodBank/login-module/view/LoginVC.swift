@@ -69,7 +69,8 @@ class LoginVC:UIViewController{
         }
     }
     
-    @IBAction func registerButtonPressed(_ sender: Any) {            loginButton.setTitle(loginVariable.registerButtonText, for: .normal)
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        loginButton.setTitle(loginVariable.registerButtonText, for: .normal)
         loginTitle.text = loginVariable.registerTitleText
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: CGFloat(20), weight: .semibold)
     }

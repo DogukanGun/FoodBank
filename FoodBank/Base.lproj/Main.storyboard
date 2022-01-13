@@ -237,13 +237,14 @@ and stay healthy</string>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HB2-jG-9Bb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="cardColor"/>
                                     </tableView>
                                 </subviews>
+                                <color key="backgroundColor" name="cardColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LrF-NR-jfX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                         <constraints>
                             <constraint firstItem="T6J-fK-ah8" firstAttribute="top" secondItem="LrF-NR-jfX" secondAttribute="top" id="2NX-Ui-XfY"/>
                             <constraint firstItem="T6J-fK-ah8" firstAttribute="leading" secondItem="LrF-NR-jfX" secondAttribute="leading" id="AxL-tQ-JDj"/>
@@ -251,13 +252,7 @@ and stay healthy</string>
                             <constraint firstItem="LrF-NR-jfX" firstAttribute="trailing" secondItem="T6J-fK-ah8" secondAttribute="trailing" id="aBE-px-suo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VVq-Qi-ZXQ">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="tBl-ju-5P2">
-                            <connections>
-                                <action selector="logoutButtonPressed:" destination="71v-iG-iHl" id="7tL-AH-sBl"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="VVq-Qi-ZXQ"/>
                     <connections>
                         <outlet property="mainpageTableView" destination="HB2-jG-9Bb" id="fwX-Fn-s72"/>
                         <segue destination="Env-u3-6mc" kind="show" identifier="FoodDetailVC" id="xhP-5V-L8T"/>
@@ -278,7 +273,7 @@ and stay healthy</string>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jdu-QN-QDd">
                                 <rect key="frame" x="0.0" y="149" width="414" height="664"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="cardColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MlO-82-crL">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -289,11 +284,14 @@ and stay healthy</string>
                             </collectionView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aB2-NQ-y22">
                                 <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" name="cardColor"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T5H-B9-l7a"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                         <constraints>
                             <constraint firstItem="Jdu-QN-QDd" firstAttribute="top" secondItem="aB2-NQ-y22" secondAttribute="bottom" constant="10" id="DvG-5Y-tWQ"/>
                             <constraint firstItem="T5H-B9-l7a" firstAttribute="trailing" secondItem="Jdu-QN-QDd" secondAttribute="trailing" id="OZd-o7-1oZ"/>
@@ -350,7 +348,7 @@ and stay healthy</string>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Salad Pesto Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jr5-Ml-BfZ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="224.5" height="46"/>
                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                                                <nil key="textColor"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-MA-RfT">
@@ -400,7 +398,7 @@ and stay healthy</string>
                                                                                 </subviews>
                                                                             </stackView>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <color key="backgroundColor" name="cardColor"/>
                                                                         <constraints>
                                                                             <constraint firstItem="DVp-zQ-uor" firstAttribute="leading" secondItem="3Ne-x2-fPk" secondAttribute="leading" id="IjA-sI-DrO"/>
                                                                             <constraint firstItem="DVp-zQ-uor" firstAttribute="centerY" secondItem="3Ne-x2-fPk" secondAttribute="centerY" id="kgJ-m4-RmQ"/>
@@ -421,11 +419,11 @@ and stay healthy</string>
 
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</string>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="backgroundColor" name="cardColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="gKg-Qs-CND" secondAttribute="trailing" id="KNd-Li-Bke"/>
                                                                     <constraint firstAttribute="bottom" secondItem="gKg-Qs-CND" secondAttribute="bottom" id="T3p-mp-Bam"/>
@@ -495,7 +493,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="cardColor"/>
                                                 <constraints>
                                                     <constraint firstItem="l7n-yj-ZWA" firstAttribute="top" secondItem="iKh-Nt-bwh" secondAttribute="top" id="74V-ot-vRs"/>
                                                     <constraint firstItem="l7n-yj-ZWA" firstAttribute="leading" secondItem="iKh-Nt-bwh" secondAttribute="leading" id="Bn5-yS-VE7"/>
@@ -504,6 +502,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" name="cardColor"/>
                                         <constraints>
                                             <constraint firstItem="iKh-Nt-bwh" firstAttribute="top" secondItem="WQJ-8x-7O4" secondAttribute="top" id="6Ni-O6-B1l"/>
                                             <constraint firstAttribute="width" secondItem="iKh-Nt-bwh" secondAttribute="width" constant="40" id="L03-If-BTt"/>
@@ -527,7 +526,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="cardColor"/>
                                 <constraints>
                                     <constraint firstItem="iNo-9R-56z" firstAttribute="centerX" secondItem="pt8-hJ-Sri" secondAttribute="centerX" id="Ekf-6T-N5J"/>
                                     <constraint firstItem="iNo-9R-56z" firstAttribute="height" secondItem="pt8-hJ-Sri" secondAttribute="height" multiplier="0.08" id="GvN-5X-Lv9"/>
@@ -566,7 +565,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4VV-uo-5QO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7826" y="194"/>
+            <point key="canvasLocation" x="7797" y="270"/>
         </scene>
         <!--Shopping CartVC-->
         <scene sceneID="xA8-O2-Bm3">
@@ -579,55 +578,55 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Fcr-X2-fiF">
                                 <rect key="frame" x="20" y="88" width="374" height="725"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-4B-Lr8">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="190" estimatedRowHeight="190" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-4B-Lr8">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="337.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="cardColor"/>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyw-QA-vbH">
                                         <rect key="frame" x="0.0" y="387.5" width="374" height="337.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ctO-3q-z3h">
-                                                <rect key="frame" x="32" y="0.0" width="310" height="169"/>
+                                                <rect key="frame" x="32" y="0.0" width="310" height="152"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="53I-gC-EZ4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="155" height="169"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="155" height="152"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHN-KM-UzA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="155" height="56.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="155" height="50.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hH-KG-QAD">
-                                                                <rect key="frame" x="0.0" y="56.5" width="155" height="56"/>
+                                                                <rect key="frame" x="0.0" y="50.5" width="155" height="51"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw2-Sq-9LM">
-                                                                <rect key="frame" x="0.0" y="112.5" width="155" height="56.5"/>
+                                                                <rect key="frame" x="0.0" y="101.5" width="155" height="50.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sGO-KM-vse">
-                                                        <rect key="frame" x="155" y="0.0" width="155" height="169"/>
+                                                        <rect key="frame" x="155" y="0.0" width="155" height="152"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BUs-d0-GsV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="155" height="56.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="155" height="50.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehm-Je-j6C">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="56.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="50.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text=" TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-ca-q9b">
-                                                                        <rect key="frame" x="124" y="0.0" width="31" height="56.5"/>
+                                                                        <rect key="frame" x="124" y="0.0" width="31" height="50.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -636,18 +635,18 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m9D-Rm-2bk">
-                                                                <rect key="frame" x="0.0" y="56.5" width="155" height="56"/>
+                                                                <rect key="frame" x="0.0" y="50.5" width="155" height="51"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brO-Ck-8Lk">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="56"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="51"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text=" TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNY-NW-c71">
-                                                                        <rect key="frame" x="124" y="0.0" width="31" height="56"/>
+                                                                        <rect key="frame" x="124" y="0.0" width="31" height="51"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -656,18 +655,18 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZAR-Cg-v50">
-                                                                <rect key="frame" x="0.0" y="112.5" width="155" height="56.5"/>
+                                                                <rect key="frame" x="0.0" y="101.5" width="155" height="50.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="non-lP-XLV">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="56.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="119" height="50.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text=" TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-SM-GwC">
-                                                                        <rect key="frame" x="124" y="0.0" width="31" height="56.5"/>
+                                                                        <rect key="frame" x="124" y="0.0" width="31" height="50.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -680,12 +679,12 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwb-p4-7k6">
-                                                <rect key="frame" x="32" y="209" width="310" height="25.5"/>
+                                                <rect key="frame" x="32" y="192" width="310" height="25.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0j-RM-ohu">
                                                         <rect key="frame" x="0.0" y="0.0" width="37" height="25.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwS-aM-Xye">
@@ -708,7 +707,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFd-YN-gMe">
-                                                <rect key="frame" x="32" y="266.5" width="310" height="51"/>
+                                                <rect key="frame" x="32" y="249.5" width="310" height="68"/>
                                                 <color key="backgroundColor" name="PrimaryColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -718,7 +717,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="cardColor"/>
                                         <constraints>
                                             <constraint firstItem="YFd-YN-gMe" firstAttribute="top" secondItem="bwb-p4-7k6" secondAttribute="bottom" constant="32" id="1PH-I0-lEh"/>
                                             <constraint firstItem="bwb-p4-7k6" firstAttribute="leading" secondItem="Jyw-QA-vbH" secondAttribute="leading" constant="32" id="4aV-cy-Dih"/>
@@ -728,7 +727,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                             <constraint firstItem="ctO-3q-z3h" firstAttribute="top" secondItem="Jyw-QA-vbH" secondAttribute="top" id="aYA-qO-UbF"/>
                                             <constraint firstAttribute="trailing" secondItem="bwb-p4-7k6" secondAttribute="trailing" constant="32" id="gMU-DS-FeY"/>
                                             <constraint firstAttribute="trailing" secondItem="YFd-YN-gMe" secondAttribute="trailing" constant="32" id="hMD-JT-ALu"/>
-                                            <constraint firstItem="ctO-3q-z3h" firstAttribute="height" secondItem="Jyw-QA-vbH" secondAttribute="height" multiplier="0.5" id="uam-8q-vfs"/>
+                                            <constraint firstItem="ctO-3q-z3h" firstAttribute="height" secondItem="Jyw-QA-vbH" secondAttribute="height" multiplier="0.45" id="uam-8q-vfs"/>
                                             <constraint firstAttribute="trailing" secondItem="ctO-3q-z3h" secondAttribute="trailing" constant="32" id="urG-rI-3AH"/>
                                             <constraint firstItem="bwb-p4-7k6" firstAttribute="top" secondItem="ctO-3q-z3h" secondAttribute="bottom" constant="40" id="wi3-g1-d5B"/>
                                         </constraints>
@@ -737,7 +736,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="chX-ky-pUy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                         <constraints>
                             <constraint firstItem="chX-ky-pUy" firstAttribute="trailing" secondItem="Fcr-X2-fiF" secondAttribute="trailing" constant="20" id="Fk3-iT-310"/>
                             <constraint firstItem="Fcr-X2-fiF" firstAttribute="leading" secondItem="chX-ky-pUy" secondAttribute="leading" constant="20" id="bYY-Eb-EmE"/>
@@ -771,7 +770,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NFs-5y-opW">
                                 <rect key="frame" x="0.0" y="88" width="414" height="603"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="cardColor"/>
                             </tableView>
                             <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvo-kl-9sq">
                                 <rect key="frame" x="20" y="737" width="374" height="44"/>
@@ -787,7 +786,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5JP-Hy-Bpy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                         <constraints>
                             <constraint firstItem="5JP-Hy-Bpy" firstAttribute="trailing" secondItem="NFs-5y-opW" secondAttribute="trailing" id="1mq-Nd-zGZ"/>
                             <constraint firstItem="5JP-Hy-Bpy" firstAttribute="bottom" secondItem="Gvo-kl-9sq" secondAttribute="bottom" constant="32" id="NMs-Q9-agP"/>
@@ -823,7 +822,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MEB-Qc-R28"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="m9A-tk-M6q"/>
                 </viewController>
@@ -869,7 +868,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="10Q-q7-Cfe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                         <constraints>
                             <constraint firstItem="kuf-vK-IF4" firstAttribute="leading" secondItem="10Q-q7-Cfe" secondAttribute="leading" constant="20" id="Kuq-LE-om8"/>
                             <constraint firstItem="10Q-q7-Cfe" firstAttribute="bottom" secondItem="kuf-vK-IF4" secondAttribute="bottom" constant="20" id="Lnv-Es-iwi"/>
@@ -910,7 +909,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                         <subviews>
                                                             <textField opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234 5678 1234 5678" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ed-Wd-8dd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="254" height="34"/>
-                                                                <color key="backgroundColor" name="cardColor"/>
+                                                                <color key="backgroundColor" name="SecondaryColar"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="34" id="lOV-i9-JcD"/>
                                                                 </constraints>
@@ -923,7 +922,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                                 <subviews>
                                                                     <textField opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTs-z9-9YY">
                                                                         <rect key="frame" x="0.0" y="0.0" width="76" height="34"/>
-                                                                        <color key="backgroundColor" name="cardColor"/>
+                                                                        <color key="backgroundColor" name="SecondaryColar"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" textContentType="cc-number"/>
@@ -936,7 +935,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                                     </label>
                                                                     <textField opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R0Z-Qj-XsJ">
                                                                         <rect key="frame" x="101.5" y="0.0" width="76.5" height="34"/>
-                                                                        <color key="backgroundColor" name="cardColor"/>
+                                                                        <color key="backgroundColor" name="SecondaryColar"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" textContentType="cc-number"/>
@@ -944,7 +943,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma2-sf-6Gn">
                                                                         <rect key="frame" x="178" y="6" width="76" height="20.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                        <color key="textColor" name="SecondaryColar"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -960,7 +959,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z86-0P-A29">
                                                                         <rect key="frame" x="0.0" y="0.0" width="137" height="40"/>
-                                                                        <color key="backgroundColor" name="cardColor"/>
+                                                                        <color key="backgroundColor" name="SecondaryColar"/>
                                                                     </view>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCard" translatesAutoresizingMaskIntoConstraints="NO" id="q37-QS-zrm">
                                                                         <rect key="frame" x="137" y="0.0" width="117" height="40"/>
@@ -973,7 +972,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" name="cardColor"/>
+                                                <color key="backgroundColor" name="SecondaryColar"/>
                                                 <constraints>
                                                     <constraint firstItem="xV6-92-ak3" firstAttribute="centerX" secondItem="8B0-e2-4wH" secondAttribute="centerX" id="7QX-vL-NsJ"/>
                                                     <constraint firstItem="xV6-92-ak3" firstAttribute="top" secondItem="8B0-e2-4wH" secondAttribute="top" constant="50" id="Anx-LF-0nC"/>
@@ -995,7 +994,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="cardColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="8B0-e2-4wH" secondAttribute="bottom" constant="300" id="2SE-sK-0aJ"/>
                                             <constraint firstAttribute="trailing" secondItem="O5Q-oS-WVW" secondAttribute="trailing" constant="40" id="Gcc-fF-2nc"/>
@@ -1008,10 +1007,11 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" name="cardColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9KF-j8-XgY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="AWk-wq-XDR" secondAttribute="trailing" id="9KA-Sf-CbJ"/>
                             <constraint firstItem="AWk-wq-XDR" firstAttribute="top" secondItem="9KF-j8-XgY" secondAttribute="top" id="KJa-lT-gsr"/>
@@ -1073,17 +1073,41 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             </objects>
             <point key="canvasLocation" x="4060.8695652173915" y="193.52678571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Track OrderVC-->
         <scene sceneID="m6H-PC-wE2">
             <objects>
-                <viewController id="pSP-ag-nio" sceneMemberID="viewController">
+                <viewController id="pSP-ag-nio" customClass="TrackOrderVC" customModule="FoodBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H5Q-Pm-fk2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="37H-fF-K1i">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="H6I-Lf-8By">
+                                <rect key="frame" x="182" y="381.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="869-dY-OWm"/>
+                                    <constraint firstAttribute="height" constant="50" id="yV5-F5-Fwz"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fBg-or-vxX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="37H-fF-K1i" firstAttribute="top" secondItem="fBg-or-vxX" secondAttribute="top" id="0ol-Kx-I69"/>
+                            <constraint firstItem="37H-fF-K1i" firstAttribute="leading" secondItem="H5Q-Pm-fk2" secondAttribute="leading" id="565-nE-3rm"/>
+                            <constraint firstItem="fBg-or-vxX" firstAttribute="bottom" secondItem="37H-fF-K1i" secondAttribute="bottom" id="Aio-sN-mVn"/>
+                            <constraint firstItem="fBg-or-vxX" firstAttribute="trailing" secondItem="37H-fF-K1i" secondAttribute="trailing" id="c0L-RP-1XW"/>
+                            <constraint firstItem="H6I-Lf-8By" firstAttribute="centerY" secondItem="H5Q-Pm-fk2" secondAttribute="centerY" id="dsm-jI-sKq"/>
+                            <constraint firstItem="H6I-Lf-8By" firstAttribute="centerX" secondItem="H5Q-Pm-fk2" secondAttribute="centerX" id="ghh-gW-hef"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kAF-DE-kUY"/>
+                    <connections>
+                        <outlet property="indicator" destination="H6I-Lf-8By" id="HQh-SI-dTS"/>
+                        <outlet property="mapKit" destination="37H-fF-K1i" id="VvL-Ix-qWL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lU1-Ze-Suz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1130,11 +1154,11 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             </objects>
             <point key="canvasLocation" x="4971" y="922"/>
         </scene>
-        <!--Profile-->
+        <!--Track Order-->
         <scene sceneID="f07-5o-czd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6C4-Ej-G9p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="X4K-2c-Q6P"/>
+                    <tabBarItem key="tabBarItem" title="Track Order" image="map.fill" catalog="system" id="X4K-2c-Q6P"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="qMJ-8X-ehp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1154,17 +1178,18 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="huU-lc-yRc"/>
-        <segue reference="H6F-Dm-plN"/>
+        <segue reference="xhP-5V-L8T"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" name="PrimaryColor"/>
     <resources>
         <image name="Splash Screen-1" width="809" height="1119"/>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
         <image name="clock" width="20" height="20"/>
         <image name="creditCards" width="375" height="812"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="masterCard" width="117" height="70"/>
         <image name="muscle" width="20" height="20"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="salad" width="148" height="148"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="PrimaryColor">
@@ -1177,7 +1202,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             <color red="0.91000008583068848" green="0.75" blue="0.42800000309944153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="cardColor">
-            <color white="0.058608058840036392" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color white="0.054901961237192154" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

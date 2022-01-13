@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUl-zU-J9B">
-                                <rect key="frame" x="258" y="123" width="136" height="31"/>
+                                <rect key="frame" x="258" y="16" width="136" height="122"/>
                                 <color key="backgroundColor" name="PrimaryColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -43,13 +43,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cezzare" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yu-ek-pYK">
                                         <rect key="frame" x="0.0" y="0.0" width="117" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€209" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNJ-7q-UGi">
                                         <rect key="frame" x="0.0" y="39" width="117" height="42.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="systemGray4Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgU-zu-MMN">
@@ -72,8 +72,9 @@
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJV-rs-vtH">
                                                         <rect key="frame" x="39" y="0.0" width="39" height="30.5"/>
+                                                        <color key="backgroundColor" name="cardColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV5-oK-QVu">
@@ -91,7 +92,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="cardColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="1NQ-Wm-4JN" secondAttribute="bottom" id="Etr-5D-jR9"/>
                                             <constraint firstItem="1NQ-Wm-4JN" firstAttribute="leading" secondItem="dgU-zu-MMN" secondAttribute="leading" id="eiN-fb-H4q"/>
@@ -106,21 +107,23 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="cardColor"/>
                         <constraints>
                             <constraint firstItem="eUl-zU-J9B" firstAttribute="leading" secondItem="Z3K-2l-er7" secondAttribute="trailing" constant="16" id="2MC-vK-3II"/>
+                            <constraint firstItem="eUl-zU-J9B" firstAttribute="top" secondItem="4vc-qZ-S8L" secondAttribute="top" constant="16" id="7dI-9m-Z47"/>
                             <constraint firstAttribute="bottom" secondItem="Z3K-2l-er7" secondAttribute="bottom" constant="16" id="BJS-en-pNu"/>
                             <constraint firstItem="Z3K-2l-er7" firstAttribute="width" secondItem="LrY-d5-365" secondAttribute="width" id="EcF-Hi-qZb"/>
                             <constraint firstItem="Z3K-2l-er7" firstAttribute="leading" secondItem="LrY-d5-365" secondAttribute="trailing" constant="8" id="EuP-dZ-2Bx"/>
                             <constraint firstItem="LrY-d5-365" firstAttribute="top" secondItem="4vc-qZ-S8L" secondAttribute="top" constant="16" id="GAV-1R-ndH"/>
                             <constraint firstAttribute="trailing" secondItem="eUl-zU-J9B" secondAttribute="trailing" id="Rc2-PO-oTD"/>
                             <constraint firstItem="Z3K-2l-er7" firstAttribute="top" secondItem="4vc-qZ-S8L" secondAttribute="top" constant="16" id="kyC-Ha-L7L"/>
-                            <constraint firstAttribute="bottom" secondItem="eUl-zU-J9B" secondAttribute="bottom" id="lO8-yx-4XP"/>
+                            <constraint firstAttribute="bottom" secondItem="eUl-zU-J9B" secondAttribute="bottom" constant="16" id="lO8-yx-4XP"/>
                             <constraint firstAttribute="bottom" secondItem="LrY-d5-365" secondAttribute="bottom" constant="16" id="oCC-bc-IfR"/>
                             <constraint firstItem="LrY-d5-365" firstAttribute="leading" secondItem="4vc-qZ-S8L" secondAttribute="leading" id="y4m-e6-KLG"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="cardColor"/>
                 <constraints>
                     <constraint firstItem="4vc-qZ-S8L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="DLo-T9-OoW"/>
                     <constraint firstAttribute="bottom" secondItem="4vc-qZ-S8L" secondAttribute="bottom" constant="16" id="Nxi-mm-l7k"/>
@@ -147,10 +150,13 @@
             <color red="0.875" green="0.090000003576278687" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryColarLight">
-            <color red="0.91030943393707275" green="0.75037431716918945" blue="0.42757397890090942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.91000008583068848" green="0.75" blue="0.42800000309944153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <namedColor name="cardColor">
+            <color white="0.054901961237192154" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

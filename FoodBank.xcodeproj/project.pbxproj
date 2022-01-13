@@ -94,6 +94,12 @@
 		9ED2947D278F918200704A82 /* motorbike.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2947B278F918200704A82 /* motorbike.json */; };
 		9ED2947F278F931600704A82 /* purchase-made.json in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2947E278F931600704A82 /* purchase-made.json */; };
 		9ED29484278FA48100704A82 /* UIViewController+changeBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED29483278FA48100704A82 /* UIViewController+changeBarColor.swift */; };
+		9EED7C5F27904490008BCF59 /* delivery-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7C5E27904490008BCF59 /* delivery-service.json */; };
+		9EED7C61279050DE008BCF59 /* String+heightWithConstrainedWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C60279050DE008BCF59 /* String+heightWithConstrainedWidth.swift */; };
+		9EED7C6527905225008BCF59 /* TableViewSectionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C6327905225008BCF59 /* TableViewSectionHeaderTableViewCell.swift */; };
+		9EED7C6627905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7C6427905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib */; };
+		9EED7C6C27906F72008BCF59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EED7C6A27906F6D008BCF59 /* MapKit.framework */; };
+		9EED7C7227907003008BCF59 /* TrackOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C7127907003008BCF59 /* TrackOrderVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +210,13 @@
 		9ED2947B278F918200704A82 /* motorbike.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motorbike.json; sourceTree = "<group>"; };
 		9ED2947E278F931600704A82 /* purchase-made.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "purchase-made.json"; sourceTree = "<group>"; };
 		9ED29483278FA48100704A82 /* UIViewController+changeBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+changeBarColor.swift"; sourceTree = "<group>"; };
+		9EED7C5E27904490008BCF59 /* delivery-service.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "delivery-service.json"; sourceTree = "<group>"; };
+		9EED7C60279050DE008BCF59 /* String+heightWithConstrainedWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+heightWithConstrainedWidth.swift"; sourceTree = "<group>"; };
+		9EED7C6327905225008BCF59 /* TableViewSectionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSectionHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		9EED7C6427905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewSectionHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		9EED7C6827906EB4008BCF59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9EED7C6A27906F6D008BCF59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9EED7C7127907003008BCF59 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +226,7 @@
 			files = (
 				9E84C4A5278C9E3300870EB6 /* Kingfisher in Frameworks */,
 				9E84C4A2278C9E2400870EB6 /* Alamofire in Frameworks */,
+				9EED7C6C27906F72008BCF59 /* MapKit.framework in Frameworks */,
 				9ED29478278F914400704A82 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +409,7 @@
 		9E84C476278C610200870EB6 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				9EED7C62279051C6008BCF59 /* header */,
 				9E84C478278C611300870EB6 /* dynamic */,
 				9E84C477278C610E00870EB6 /* static */,
 			);
@@ -677,6 +692,7 @@
 			children = (
 				9E1530CF278EDED3009CDBDB /* String+filterFoods.swift */,
 				9E9AD0A4278ADFE8003E469A /* String+index.swift */,
+				9EED7C60279050DE008BCF59 /* String+heightWithConstrainedWidth.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -708,6 +724,7 @@
 				9E9B9986278AD5EB00C16586 /* FoodBankTests */,
 				9E9B9990278AD5EB00C16586 /* FoodBankUITests */,
 				9E9B996B278AD5E900C16586 /* Products */,
+				9EED7C6927906F6D008BCF59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -724,6 +741,7 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
+				9EED7C6F27906FE9008BCF59 /* trackorder-module */,
 				9ED29479278F917300704A82 /* animations */,
 				9ED29471278F8F4C00704A82 /* purchasemade-module */,
 				9ED2944B278F14B000704A82 /* choosecreditcard-module */,
@@ -930,6 +948,7 @@
 		9ED29479278F917300704A82 /* animations */ = {
 			isa = PBXGroup;
 			children = (
+				9EED7C5E27904490008BCF59 /* delivery-service.json */,
 				9ED2947E278F931600704A82 /* purchase-made.json */,
 				9ED2947B278F918200704A82 /* motorbike.json */,
 			);
@@ -942,6 +961,39 @@
 				9ED29483278FA48100704A82 /* UIViewController+changeBarColor.swift */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		9EED7C62279051C6008BCF59 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C6327905225008BCF59 /* TableViewSectionHeaderTableViewCell.swift */,
+				9EED7C6427905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		9EED7C6927906F6D008BCF59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C6A27906F6D008BCF59 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EED7C6F27906FE9008BCF59 /* trackorder-module */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C7027906FF4008BCF59 /* view */,
+			);
+			path = "trackorder-module";
+			sourceTree = "<group>";
+		};
+		9EED7C7027906FF4008BCF59 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C7127907003008BCF59 /* TrackOrderVC.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1064,12 +1116,14 @@
 				9ED2947F278F931600704A82 /* purchase-made.json in Resources */,
 				9E9B997D278AD5EB00C16586 /* LaunchScreen.storyboard in Resources */,
 				9ED2947D278F918200704A82 /* motorbike.json in Resources */,
+				9EED7C5F27904490008BCF59 /* delivery-service.json in Resources */,
 				9ED29470278F819800704A82 /* ChooseCreditCardTableViewCell.xib in Resources */,
 				9E84C4C7278CCAAA00870EB6 /* ShoppingCartTableViewCell.xib in Resources */,
 				9E84C48D278C677400870EB6 /* ProductTableViewCell.xib in Resources */,
 				9E84C484278C65AE00870EB6 /* CategoryWrapperTableViewCell.xib in Resources */,
 				9E327D58278E0CF000356646 /* FoodListCollectionViewCell.xib in Resources */,
 				9E9B997A278AD5EB00C16586 /* Assets.xcassets in Resources */,
+				9EED7C6627905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib in Resources */,
 				9E9B9975278AD5E900C16586 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1107,6 +1161,7 @@
 				9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */,
 				9ED29448278EFF1800704A82 /* AddSplashScreenVC.swift in Sources */,
 				9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */,
+				9EED7C6527905225008BCF59 /* TableViewSectionHeaderTableViewCell.swift in Sources */,
 				9E327D5E278E0FC100356646 /* FoodListRouter.swift in Sources */,
 				9E84C47E278C618E00870EB6 /* HeaderTableViewCell.swift in Sources */,
 				9E84C462278B72A900870EB6 /* Diaglog.swift in Sources */,
@@ -1132,6 +1187,8 @@
 				9ED29484278FA48100704A82 /* UIViewController+changeBarColor.swift in Sources */,
 				9E9AD0AB278AF0CA003E469A /* UIView+makeCircular.swift in Sources */,
 				9E84C4DA278D8BB700870EB6 /* AddFoodMapper.swift in Sources */,
+				9EED7C61279050DE008BCF59 /* String+heightWithConstrainedWidth.swift in Sources */,
+				9EED7C7227907003008BCF59 /* TrackOrderVC.swift in Sources */,
 				9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */,
 				9E84C499278C7C9F00870EB6 /* GetFoodResponse.swift in Sources */,
 				9E84C4C6278CCAAA00870EB6 /* ShoppingCartTableViewCell.swift in Sources */,
@@ -1205,6 +1262,7 @@
 			children = (
 				9E9B9974278AD5E900C16586 /* Base */,
 				9E9AD0A1278ADADA003E469A /* tr */,
+				9EED7C6827906EB4008BCF59 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

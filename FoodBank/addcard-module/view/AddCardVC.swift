@@ -33,15 +33,15 @@ class AddCardVC:UIViewController{
         addCardButton.reshapeButton()
         cardNumberTextField.attributedPlaceholder = NSAttributedString(
             string: "1234 5678 1234 5678",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray4]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
         monthTextField.attributedPlaceholder = NSAttributedString(
             string: "01",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray4]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
         yearTextField.attributedPlaceholder = NSAttributedString(
             string: "2022",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray4]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
         cardNumberTextField.delegate = self
         cardNumberTextField.addTarget(self, action: #selector(self.textChange(_:)), for: .editingChanged)

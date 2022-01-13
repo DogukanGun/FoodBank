@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 struct HeaderTableViewCellVariable{
     let wrapperCornerRadious = CGFloat(20)
@@ -13,6 +14,8 @@ struct HeaderTableViewCellVariable{
 
 class HeaderTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var animationWrapper: UIView!
+    var animationView:AnimationView?
     let variables = HeaderTableViewCellVariable()
     @IBOutlet weak var orderNowButton: UIButton!
     var delegate:HeaderTableViewCellDelegate?
@@ -22,6 +25,13 @@ class HeaderTableViewCell: UITableViewCell {
         super.awakeFromNib()
         changeColorOfText()
         wrapper.layer.cornerRadius = variables.wrapperCornerRadious
+        animationWrapper.frame.size = CGSize(width: animationWrapper.frame.width/1.2, height: animationWrapper.frame.height)
+        animationView = .init(name:"delivery-service")
+        animationView?.frame = animationWrapper.bounds
+        animationView?.backgroundColor = UIColor(named: "SecondaryColarLight")
+        animationView?.loopMode = .autoReverse
+        animationWrapper.addSubview(animationView!)
+        animationView?.play()
         orderNowButton.reshapeButton()
     }
 

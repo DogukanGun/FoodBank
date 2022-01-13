@@ -45,10 +45,7 @@ class ShoppingCartTableViewCell: UITableViewCell {
     private func editButtons(){
         decrementButton.reshapeButton()
         incrementButton.reshapeButton()
-        let path = UIBezierPath(roundedRect:deleteButton.bounds, byRoundingCorners:[.topLeft, .bottomRight], cornerRadii: CGSize(width: variables.cellRadious, height:variables.cellRadious))
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = path.cgPath
-        deleteButton.layer.mask = maskLayer
+        deleteButton.reshapeButton()
     }
     func refresh(food:ShoppingCart){
         if let totalPriceText = food.yemek_fiyat,let totalPrice = Int(totalPriceText),let totalAmountText = food.yemek_siparis_adet,let totalAmount = Int(totalAmountText){

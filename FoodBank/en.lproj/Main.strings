@@ -1,0 +1,159 @@
+
+/* Class = "UILabel"; text = "Taxes"; ObjectID = "0hH-KG-QAD"; */
+"0hH-KG-QAD.text" = "Taxes";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0qk-Qu-ApY"; */
+"0qk-Qu-ApY.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "1234 5678 1234 5678"; ObjectID = "5Ed-Wd-8dd"; */
+"5Ed-Wd-8dd.placeholder" = "1234 5678 1234 5678";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "753-MW-QaQ"; */
+"753-MW-QaQ.text" = "Login";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "9Ic-hV-Dph"; */
+"9Ic-hV-Dph.placeholder" = "Username";
+
+/* Class = "UIButton"; configuration.title = "Login Now"; ObjectID = "9dK-xg-4Zw"; */
+"9dK-xg-4Zw.configuration.title" = "Login Now";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9dK-xg-4Zw"; */
+"9dK-xg-4Zw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Aa2-eL-yZh"; */
+"Aa2-eL-yZh.text" = "0";
+
+/* Class = "UILabel"; text = "Eat Healthy food at covid-19\nand stay healthy"; ObjectID = "BlF-Ub-y0J"; */
+"BlF-Ub-y0J.text" = "Eat Healthy food at covid-19\nand stay healthy";
+
+/* Class = "UIButton"; configuration.title = "-"; ObjectID = "EIh-6R-nmB"; */
+"EIh-6R-nmB.configuration.title" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "EIh-6R-nmB"; */
+"EIh-6R-nmB.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Subtotal"; ObjectID = "FHN-KM-UzA"; */
+"FHN-KM-UzA.text" = "Subtotal";
+
+/* Class = "UIButton"; configuration.title = "Pay"; ObjectID = "Gvo-kl-9sq"; */
+"Gvo-kl-9sq.configuration.title" = "Pay";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gvo-kl-9sq"; */
+"Gvo-kl-9sq.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "+"; ObjectID = "GxK-HC-zHx"; */
+"GxK-HC-zHx.configuration.title" = "+";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GxK-HC-zHx"; */
+"GxK-HC-zHx.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "IkH-qD-cRw"; */
+"IkH-qD-cRw.text" = "/";
+
+/* Class = "UILabel"; text = "Salad Pesto Pizza"; ObjectID = "Jr5-Ml-BfZ"; */
+"Jr5-Ml-BfZ.text" = "Salad Pesto Pizza";
+
+/* Class = "UILabel"; text = " TL"; ObjectID = "KNY-NW-c71"; */
+"KNY-NW-c71.text" = " TL";
+
+/* Class = "UIButton"; configuration.title = "CALL US"; ObjectID = "LEN-Vu-lxg"; */
+"LEN-Vu-lxg.configuration.title" = "CALL US";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LEN-Vu-lxg"; */
+"LEN-Vu-lxg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "$10.55"; ObjectID = "Nfe-MA-RfT"; */
+"Nfe-MA-RfT.text" = "$10.55";
+
+/* Class = "UIButton"; configuration.title = "Add Card"; ObjectID = "O5Q-oS-WVW"; */
+"O5Q-oS-WVW.configuration.title" = "Add Card";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "O5Q-oS-WVW"; */
+"O5Q-oS-WVW.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "REGISTER"; ObjectID = "QJZ-Qf-tPi"; */
+"QJZ-Qf-tPi.configuration.title" = "REGISTER";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QJZ-Qf-tPi"; */
+"QJZ-Qf-tPi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Qjw-J6-uYb"; */
+"Qjw-J6-uYb.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "X4K-2c-Q6P"; */
+"X4K-2c-Q6P.title" = "Profile";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xiv-1m-CF4"; */
+"Xiv-1m-CF4.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Proccess to Checkout"; ObjectID = "YFd-YN-gMe"; */
+"YFd-YN-gMe.configuration.title" = "Proccess to Checkout";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YFd-YN-gMe"; */
+"YFd-YN-gMe.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = " TL"; ObjectID = "ZBh-SM-GwC"; */
+"ZBh-SM-GwC.text" = " TL";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "brO-Ck-8Lk"; */
+"brO-Ck-8Lk.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ehm-Je-j6C"; */
+"ehm-Je-j6C.text" = "0";
+
+/* Class = "UILabel"; text = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."; ObjectID = "gKg-Qs-CND"; */
+"gKg-Qs-CND.text" = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.";
+
+/* Class = "UITabBarItem"; title = "Cart"; ObjectID = "iHM-WA-lnu"; */
+"iHM-WA-lnu.title" = "Cart";
+
+/* Class = "UIButton"; configuration.title = "Add to card"; ObjectID = "iNo-9R-56z"; */
+"iNo-9R-56z.configuration.title" = "Add to card";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iNo-9R-56z"; */
+"iNo-9R-56z.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "LOGIN"; ObjectID = "iNy-F3-J91"; */
+"iNy-F3-J91.configuration.title" = "LOGIN";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "iNy-F3-J91"; */
+"iNy-F3-J91.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ibm-iz-TGS"; */
+"ibm-iz-TGS.text" = "0";
+
+/* Class = "UILabel"; text = " TL"; ObjectID = "kCX-oZ-L8C"; */
+"kCX-oZ-L8C.text" = " TL";
+
+/* Class = "UIButton"; configuration.title = "Add Card"; ObjectID = "kb1-aU-dOK"; */
+"kb1-aU-dOK.configuration.title" = "Add Card";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kb1-aU-dOK"; */
+"kb1-aU-dOK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Delivery Fee"; ObjectID = "kw2-Sq-9LM"; */
+"kw2-Sq-9LM.text" = "Delivery Fee";
+
+/* Class = "UILabel"; text = " TL"; ObjectID = "mQE-ca-q9b"; */
+"mQE-ca-q9b.text" = " TL";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ma2-sf-6Gn"; */
+"ma2-sf-6Gn.text" = "Label";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "non-lP-XLV"; */
+"non-lP-XLV.text" = "0";
+
+/* Class = "UIButton"; configuration.title = "Get  Started"; ObjectID = "sT1-ch-RJf"; */
+"sT1-ch-RJf.configuration.title" = "Get  Started";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sT1-ch-RJf"; */
+"sT1-ch-RJf.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "swo-tN-rXP"; */
+"swo-tN-rXP.title" = "Home";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "t0j-RM-ohu"; */
+"t0j-RM-ohu.text" = "Total";
+
+/* Class = "UILabel"; text = "We Provide Healthy\nFood In Covid-19"; ObjectID = "yrf-AU-Rhv"; */
+"yrf-AU-Rhv.text" = "We Provide Healthy\nFood In Covid-19";

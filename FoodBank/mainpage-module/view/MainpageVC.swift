@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 struct MainpageVariable{
     let headerCell = "HeaderTableViewCell"
@@ -18,9 +19,13 @@ struct MainpageVariable{
     let headerCellHeight = CGFloat(156)
     let categoryCellHeight = CGFloat(210)
     let productCellHeight = CGFloat(250)
+    let tableViewHeaderIdentifier = "TableViewSectionHeaderTableViewCell"
+    let tableViewNibName = "TableViewSectionHeaderTableViewCell"
     let sectionNumber = 3
     let segueIdentifierToFoodDetail = "FoodDetailVC"
     let segueIdentifierToFoodList = "FoodListVC"
+    let sectionOneTitle = "Categories"
+    let sectionTwoTitle = "Populars"
 }
 
 class MainpageVC:UIViewController{
@@ -35,44 +40,35 @@ class MainpageVC:UIViewController{
         presenter?.getData()
         changeBarColor(color: UIColor.black)
     }
-    @IBAction func logoutButtonPressed(_ sender: Any) {
-        userDefaults.removeObject(forKey: Constants.userDefaultsUsername)
-        changeRootView()
-    }
     private func delegateTableView(){
         mainpageTableView.delegate = self
         mainpageTableView.dataSource = self
+        mainpageTableView.register(UINib(nibName: variables.tableViewNibName, bundle: nil), forHeaderFooterViewReuseIdentifier: variables.tableViewHeaderIdentifier)
         mainpageTableView.register(UINib(nibName: variables.categoryWrapperCell, bundle: nil), forCellReuseIdentifier: variables.categoryWrapperNibName)
         mainpageTableView.register(UINib(nibName: variables.headerNibName, bundle: nil), forCellReuseIdentifier: variables.headerCell)
         mainpageTableView.register(UINib(nibName: variables.productNibName, bundle: nil), forCellReuseIdentifier: variables.productCell)
     }
-    private func changeRootView(){
-        let storyboard = UIStoryboard(name: Constants.mainStoryboardName, bundle: nil)
-        let mainTabBarController = storyboard.instantiateViewController(identifier: Constants.loginPageName)
-           
-          (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
-    }
+    
 }
 
 extension MainpageVC:UITableViewDelegate,UITableViewDataSource{
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0{
-            return nil
-        }else if section == 1{
-            return "Categories"
-        }else{
-            return "Populars"
+   
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let customHeader = tableView.dequeueReusableHeaderFooterView(withIdentifier: variables.tableViewHeaderIdentifier) as? TableViewSectionHeaderTableViewCell else {
+            return UITableViewHeaderFooterView()
         }
+        if section == 1{
+            customHeader.refresh(title: variables.sectionOneTitle)
+        }else if section == 2{
+            customHeader.refresh(title: variables.sectionTwoTitle)
+        }else{
+            customHeader.refresh(title:"")
+        }
+        return customHeader
+        
+
     }
     
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        if let view = view as? UITableViewHeaderFooterView {
-            let font = UIFont.boldSystemFont(ofSize: CGFloat(20))
-            view.textLabel?.font = font
-            view.textLabel?.textColor = UIColor.black
-            view.textLabel?.numberOfLines = 0
-        }
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 2{

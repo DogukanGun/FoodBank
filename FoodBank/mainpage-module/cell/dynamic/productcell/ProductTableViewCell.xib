@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -85,7 +85,7 @@
                                 <rect key="frame" x="223" y="-45" width="198" height="148"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-zY-YSy">
-                                <rect key="frame" x="368.5" y="148" width="41.5" height="33"/>
+                                <rect key="frame" x="366.5" y="148" width="43.5" height="33"/>
                                 <color key="backgroundColor" name="SecondaryColar"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
@@ -107,6 +107,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="cardColor"/>
                 <constraints>
                     <constraint firstItem="C2f-aQ-bYy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1bZ-Fe-AJb"/>
                     <constraint firstItem="NeP-Ii-dno" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="DBK-9V-iyt"/>
@@ -135,6 +136,9 @@
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="SecondaryColar">
             <color red="0.97299998998641968" green="0.45500001311302185" blue="0.16500000655651093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cardColor">
+            <color white="0.054901961237192154" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
