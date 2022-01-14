@@ -55,10 +55,7 @@ class FoodDetailVC:UIViewController{
     }
     
     private func editButton(){ 
-        let path = UIBezierPath(roundedRect:addCardButton.bounds, byRoundingCorners:[.topLeft, .topRight], cornerRadii: CGSize(width: variables.addCardButtonCornerRadious, height:variables.addCardButtonCornerRadious))
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = path.cgPath
-        addCardButton.layer.mask = maskLayer
+        addCardButton.reshapeButton()
     }
     
     @IBAction func decrementFoodAmount(_ sender: Any) {
