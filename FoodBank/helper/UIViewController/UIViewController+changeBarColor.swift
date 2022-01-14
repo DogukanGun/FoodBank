@@ -13,7 +13,7 @@ extension UIViewController{
     func changeBarColor(color:UIColor){
         let apperance = UINavigationBarAppearance()
         apperance.backgroundColor = color
-        apperance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        apperance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,NSAttributedString.Key.font:UIFont.systemFont(ofSize: CGFloat(30),weight: .bold)]
         self.navigationController?.navigationBar.standardAppearance = apperance
         self.navigationController?.navigationBar.compactAppearance = apperance
         self.navigationController?.navigationBar.scrollEdgeAppearance = apperance
@@ -22,10 +22,15 @@ extension UIViewController{
         self.navigationItem.standardAppearance = apperance
         self.navigationItem.scrollEdgeAppearance = apperance
         self.navigationItem.compactScrollEdgeAppearance = apperance
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "power"), style: .plain, target: #selector(logout), action: .none)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "power"), style: .plain, target: self, action: #selector(self.logout(_ :)))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.fill"), style: .plain,target:self , action: #selector(self.profileInfo(_ :)))
     }
     
-    @objc private func logout(){
+    @objc private func profileInfo(_ sender: UIBarButtonItem){
+        let vc = ProfileVC()
+        self.navigationController?.present(vc, animated: true, completion: nil)
+    }
+    @objc private func logout(_ sender: UIBarButtonItem){
         userDefaults.removeObject(forKey: Constants.userDefaultsUsername)
         changeRootView()
     }

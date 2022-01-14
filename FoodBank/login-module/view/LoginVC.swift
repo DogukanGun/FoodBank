@@ -16,6 +16,12 @@ struct LoginVariable{
     let registerTitleText = "Register"
     let loginButtonText = "Login Now"
     let loginTitleText = "Login"
+    struct PopupVariable{
+        let popupTitle = "Phone Number"
+        let popupButton = "Okay"
+
+    }
+    
     let numberSet = CharacterSet(["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
 
 }
@@ -23,6 +29,8 @@ struct LoginVariable{
 class LoginVC:UIViewController{
     
     var loginVariable = LoginVariable()
+    var popupVariable = LoginVariable.PopupVariable()
+
     var presenter:ViewToPresenterLoginPageProtocol? = nil
     
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
@@ -54,6 +62,11 @@ class LoginVC:UIViewController{
         loadingIndicator.startAnimating()
         let seconds = 3.0
         presenter?.saveName(name: text)
+        if loginTitle.text == loginVariable.registerTitleText{
+            userDefaults.set(false, forKey: Constants.userDefaultsFirstTime)
+            userDefaults.set(false, forKey: Constants.userDefaultsFirstTime)
+
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             self.changeRootView()
         }
@@ -65,7 +78,7 @@ class LoginVC:UIViewController{
         if UIApplication.shared.canOpenURL(telephoneNumber) {
             UIApplication.shared.open(telephoneNumber)
         } else {
-            print("Can't open url on this device")
+            confirmationDialog(title: popupVariable.popupTitle, message: Constants.telephoneNumber, okayButtonText: popupVariable.popupButton, cancelButtonText: nil, okayButtonResult: nil, dialogType: .actionSheet)
         }
     }
     

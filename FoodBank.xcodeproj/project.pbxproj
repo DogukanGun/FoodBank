@@ -100,6 +100,20 @@
 		9EED7C6627905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7C6427905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib */; };
 		9EED7C6C27906F72008BCF59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EED7C6A27906F6D008BCF59 /* MapKit.framework */; };
 		9EED7C7227907003008BCF59 /* TrackOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C7127907003008BCF59 /* TrackOrderVC.swift */; };
+		9EED7C7727916747008BCF59 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C7527916747008BCF59 /* ProfileVC.swift */; };
+		9EED7C7827916747008BCF59 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7C7627916747008BCF59 /* ProfileVC.xib */; };
+		9EED7C7C27916BF1008BCF59 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C7A27916BF1008BCF59 /* ProfileTableViewCell.swift */; };
+		9EED7C7D27916BF1008BCF59 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7C7B27916BF1008BCF59 /* ProfileTableViewCell.xib */; };
+		9EED7C7F27916D7A008BCF59 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C7E27916D7A008BCF59 /* Setting.swift */; };
+		9EED7C8527917814008BCF59 /* UserInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C8427917814008BCF59 /* UserInputType.swift */; };
+		9EED7C8727917CC5008BCF59 /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C8627917CC5008BCF59 /* ProfileProtocols.swift */; };
+		9EED7C8927917E0A008BCF59 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C8827917E0A008BCF59 /* ProfileInteractor.swift */; };
+		9EED7C8B27917E10008BCF59 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C8A27917E10008BCF59 /* ProfilePresenter.swift */; };
+		9EED7C8D27917E1A008BCF59 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C8C27917E1A008BCF59 /* ProfileRouter.swift */; };
+		9EED7C8F2791800D008BCF59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7C8E2791800D008BCF59 /* GoogleService-Info.plist */; };
+		9EED7C922791874B008BCF59 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9EED7C912791874B008BCF59 /* FirebaseDatabase */; };
+		9EED7C9427919BCB008BCF59 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C9327919BCB008BCF59 /* ViewType.swift */; };
+		9EED7C9727919DD9008BCF59 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED7C9627919DD9008BCF59 /* Gender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +231,19 @@
 		9EED7C6827906EB4008BCF59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		9EED7C6A27906F6D008BCF59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9EED7C7127907003008BCF59 /* TrackOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderVC.swift; sourceTree = "<group>"; };
+		9EED7C7527916747008BCF59 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		9EED7C7627916747008BCF59 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		9EED7C7A27916BF1008BCF59 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		9EED7C7B27916BF1008BCF59 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		9EED7C7E27916D7A008BCF59 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		9EED7C8427917814008BCF59 /* UserInputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputType.swift; sourceTree = "<group>"; };
+		9EED7C8627917CC5008BCF59 /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
+		9EED7C8827917E0A008BCF59 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		9EED7C8A27917E10008BCF59 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		9EED7C8C27917E1A008BCF59 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		9EED7C8E2791800D008BCF59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EED7C9327919BCB008BCF59 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		9EED7C9627919DD9008BCF59 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EED7C922791874B008BCF59 /* FirebaseDatabase in Frameworks */,
 				9E84C4A5278C9E3300870EB6 /* Kingfisher in Frameworks */,
 				9E84C4A2278C9E2400870EB6 /* Alamofire in Frameworks */,
 				9EED7C6C27906F72008BCF59 /* MapKit.framework in Frameworks */,
@@ -315,6 +343,9 @@
 			children = (
 				9E327D64278E12B200356646 /* FoodListFilter.swift */,
 				9ED29449278F006700704A82 /* AddType.swift */,
+				9EED7C8427917814008BCF59 /* UserInputType.swift */,
+				9EED7C9327919BCB008BCF59 /* ViewType.swift */,
+				9EED7C9627919DD9008BCF59 /* Gender.swift */,
 			);
 			path = enum;
 			sourceTree = "<group>";
@@ -487,6 +518,7 @@
 				9E84C497278C7C9300870EB6 /* response */,
 				9E84C48F278C6D6500870EB6 /* Category.swift */,
 				9ED29455278F74EB00704A82 /* CreditCard.swift */,
+				9EED7C7E27916D7A008BCF59 /* Setting.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -741,6 +773,7 @@
 		9E9B996C278AD5E900C16586 /* FoodBank */ = {
 			isa = PBXGroup;
 			children = (
+				9EED7C7327916710008BCF59 /* profile-module */,
 				9EED7C6F27906FE9008BCF59 /* trackorder-module */,
 				9ED29479278F917300704A82 /* animations */,
 				9ED29471278F8F4C00704A82 /* purchasemade-module */,
@@ -761,6 +794,7 @@
 				9E9B9979278AD5EB00C16586 /* Assets.xcassets */,
 				9E9B997B278AD5EB00C16586 /* LaunchScreen.storyboard */,
 				9E9B997E278AD5EB00C16586 /* Info.plist */,
+				9EED7C8E2791800D008BCF59 /* GoogleService-Info.plist */,
 				9E9B9976278AD5E900C16586 /* FoodBank.xcdatamodeld */,
 			);
 			path = FoodBank;
@@ -996,6 +1030,69 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		9EED7C7327916710008BCF59 /* profile-module */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C7927916BDE008BCF59 /* cell */,
+				9EED7C8327917197008BCF59 /* protocols */,
+				9EED7C822791718E008BCF59 /* router */,
+				9EED7C8127917189008BCF59 /* interactor */,
+				9EED7C8027917180008BCF59 /* presenter */,
+				9EED7C7427916721008BCF59 /* view */,
+			);
+			path = "profile-module";
+			sourceTree = "<group>";
+		};
+		9EED7C7427916721008BCF59 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C7527916747008BCF59 /* ProfileVC.swift */,
+				9EED7C7627916747008BCF59 /* ProfileVC.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9EED7C7927916BDE008BCF59 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C7A27916BF1008BCF59 /* ProfileTableViewCell.swift */,
+				9EED7C7B27916BF1008BCF59 /* ProfileTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		9EED7C8027917180008BCF59 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C8A27917E10008BCF59 /* ProfilePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		9EED7C8127917189008BCF59 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C8827917E0A008BCF59 /* ProfileInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		9EED7C822791718E008BCF59 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C8C27917E1A008BCF59 /* ProfileRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		9EED7C8327917197008BCF59 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7C8627917CC5008BCF59 /* ProfileProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1016,6 +1113,7 @@
 				9E84C4A1278C9E2400870EB6 /* Alamofire */,
 				9E84C4A4278C9E3300870EB6 /* Kingfisher */,
 				9ED29477278F914400704A82 /* Lottie */,
+				9EED7C912791874B008BCF59 /* FirebaseDatabase */,
 			);
 			productName = FoodBank;
 			productReference = 9E9B996A278AD5E900C16586 /* FoodBank.app */;
@@ -1094,6 +1192,7 @@
 				9E84C4A0278C9E2400870EB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9E84C4A3278C9E3300870EB6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				9ED29476278F914400704A82 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				9EED7C902791874B008BCF59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9E9B996B278AD5E900C16586 /* Products */;
 			projectDirPath = "";
@@ -1115,6 +1214,7 @@
 				9E84C47F278C618E00870EB6 /* HeaderTableViewCell.xib in Resources */,
 				9ED2947F278F931600704A82 /* purchase-made.json in Resources */,
 				9E9B997D278AD5EB00C16586 /* LaunchScreen.storyboard in Resources */,
+				9EED7C7827916747008BCF59 /* ProfileVC.xib in Resources */,
 				9ED2947D278F918200704A82 /* motorbike.json in Resources */,
 				9EED7C5F27904490008BCF59 /* delivery-service.json in Resources */,
 				9ED29470278F819800704A82 /* ChooseCreditCardTableViewCell.xib in Resources */,
@@ -1122,7 +1222,9 @@
 				9E84C48D278C677400870EB6 /* ProductTableViewCell.xib in Resources */,
 				9E84C484278C65AE00870EB6 /* CategoryWrapperTableViewCell.xib in Resources */,
 				9E327D58278E0CF000356646 /* FoodListCollectionViewCell.xib in Resources */,
+				9EED7C8F2791800D008BCF59 /* GoogleService-Info.plist in Resources */,
 				9E9B997A278AD5EB00C16586 /* Assets.xcassets in Resources */,
+				9EED7C7D27916BF1008BCF59 /* ProfileTableViewCell.xib in Resources */,
 				9EED7C6627905225008BCF59 /* TableViewSectionHeaderTableViewCell.xib in Resources */,
 				9E9B9975278AD5E900C16586 /* Main.storyboard in Resources */,
 			);
@@ -1152,14 +1254,20 @@
 				9E84C4D3278D841500870EB6 /* GetShoppingCartResponse.swift in Sources */,
 				9E84C4DE278DE56000870EB6 /* DeleteFoodMapper.swift in Sources */,
 				9E84C471278C604A00870EB6 /* LoginPagePresenter.swift in Sources */,
+				9EED7C8527917814008BCF59 /* UserInputType.swift in Sources */,
 				9E84C4DC278D9F2B00870EB6 /* DeleteFoodRequest.swift in Sources */,
 				9ED29456278F74EB00704A82 /* CreditCard.swift in Sources */,
+				9EED7C7F27916D7A008BCF59 /* Setting.swift in Sources */,
 				9ED29469278F7F9100704A82 /* ChooseCreditCardInteractor.swift in Sources */,
+				9EED7C8B27917E10008BCF59 /* ProfilePresenter.swift in Sources */,
 				9E84C49B278C914300870EB6 /* MainpageProtocols.swift in Sources */,
+				9EED7C9427919BCB008BCF59 /* ViewType.swift in Sources */,
 				9ED29463278F7AA400704A82 /* ChooseCreditCardVC.swift in Sources */,
+				9EED7C8927917E0A008BCF59 /* ProfileInteractor.swift in Sources */,
 				9E84C466278B7CAB00870EB6 /* MainpageVC.swift in Sources */,
 				9E84C4AD278CAFA500870EB6 /* FoodDetailVC.swift in Sources */,
 				9ED29448278EFF1800704A82 /* AddSplashScreenVC.swift in Sources */,
+				9EED7C7C27916BF1008BCF59 /* ProfileTableViewCell.swift in Sources */,
 				9E84C4A7278C9EE600870EB6 /* Network.swift in Sources */,
 				9EED7C6527905225008BCF59 /* TableViewSectionHeaderTableViewCell.swift in Sources */,
 				9E327D5E278E0FC100356646 /* FoodListRouter.swift in Sources */,
@@ -1191,9 +1299,11 @@
 				9EED7C7227907003008BCF59 /* TrackOrderVC.swift in Sources */,
 				9E84C49D278C9A9F00870EB6 /* MainpagePresenter.swift in Sources */,
 				9E84C499278C7C9F00870EB6 /* GetFoodResponse.swift in Sources */,
+				9EED7C9727919DD9008BCF59 /* Gender.swift in Sources */,
 				9E84C4C6278CCAAA00870EB6 /* ShoppingCartTableViewCell.swift in Sources */,
 				9ED29458278F759800704A82 /* AddCardRouter.swift in Sources */,
 				9ED29454278F74B700704A82 /* AddCardProtocols.swift in Sources */,
+				9EED7C8727917CC5008BCF59 /* ProfileProtocols.swift in Sources */,
 				9E84C49F278C9DEF00870EB6 /* MainpageInteractor.swift in Sources */,
 				9E84C4CF278CD44B00870EB6 /* ShoppingCartInteractor.swift in Sources */,
 				9E9B996E278AD5E900C16586 /* AppDelegate.swift in Sources */,
@@ -1207,6 +1317,7 @@
 				9E327D65278E12B200356646 /* FoodListFilter.swift in Sources */,
 				9E84C483278C65AE00870EB6 /* CategoryWrapperTableViewCell.swift in Sources */,
 				9E84C469278B7F1600870EB6 /* Constants.swift in Sources */,
+				9EED7C8D27917E1A008BCF59 /* ProfileRouter.swift in Sources */,
 				9E84C4C9278CCF8E00870EB6 /* ShoppingCartVC.swift in Sources */,
 				9ED2944E278F14C900704A82 /* AddCardVC.swift in Sources */,
 				9E327D57278E0CF000356646 /* FoodListCollectionViewCell.swift in Sources */,
@@ -1218,6 +1329,7 @@
 				9ED29475278F8F7C00704A82 /* PurchaseMadeVC.swift in Sources */,
 				9E327D5C278E0F6F00356646 /* FoodListProtocols.swift in Sources */,
 				9E84C46F278C5FAB00870EB6 /* LoginPageProtocols.swift in Sources */,
+				9EED7C7727916747008BCF59 /* ProfileVC.swift in Sources */,
 				9E84C488278C661F00870EB6 /* CategoryCollectionViewCell.swift in Sources */,
 				9E84C4B6278CC37800870EB6 /* FoodDetailProtocols.swift in Sources */,
 				9E9B9970278AD5E900C16586 /* SceneDelegate.swift in Sources */,
@@ -1609,6 +1721,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		9EED7C902791874B008BCF59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1626,6 +1746,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9ED29476278F914400704A82 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		9EED7C912791874B008BCF59 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EED7C902791874B008BCF59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 

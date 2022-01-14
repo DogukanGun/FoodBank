@@ -88,6 +88,6 @@ class FoodDetailVC:UIViewController{
 
 extension FoodDetailVC:PresenterToViewFoodDetailProtocol{
     func foodAddingResponse(response: String) {
-        confirmationDialog(title: "Food Added", message: response, okayButtonText: "Okay", cancelButtonText: nil, okayButtonResult: nil)
+        confirmationDialog(title: "Food Added", message: response, okayButtonText: "Okay", cancelButtonText: nil, okayButtonResult: nil,dialogType: .alert)
     } 
 }

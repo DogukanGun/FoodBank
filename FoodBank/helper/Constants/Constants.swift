@@ -15,4 +15,5 @@ struct Constants{
     static let telephoneNumber = "05395944673"
     static let isAddedCard = "cardAdded"
     static let userDefaultsOrderStatus = "isOrdered"
+    static let userDefaultsFirstTime = "isFirstTime"
 }
