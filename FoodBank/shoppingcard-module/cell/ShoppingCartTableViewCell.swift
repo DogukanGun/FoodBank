@@ -15,7 +15,6 @@ struct ShoppingCartTableViewCellVariable{
 
 class ShoppingCartTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var foodAmountLabel: UILabel!
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
@@ -45,7 +44,6 @@ class ShoppingCartTableViewCell: UITableViewCell {
     private func editButtons(){
         decrementButton.reshapeButton()
         incrementButton.reshapeButton()
-        deleteButton.reshapeButton()
     }
     func refresh(food:ShoppingCart){
         if let totalPriceText = food.yemek_fiyat,let totalPrice = Int(totalPriceText),let totalAmountText = food.yemek_siparis_adet,let totalAmount = Int(totalAmountText){
@@ -60,11 +58,7 @@ class ShoppingCartTableViewCell: UITableViewCell {
         } 
     }
     
-    @IBAction func deleteButtonPressed(_ sender: Any) {
-        if let food = food, let id = food.sepet_yemek_id,let indexPath = indexPath {
-            shoppingCardDelegate?.deleteButtonPressed(foodId: String(id),indexPath: indexPath)
-        }
-    }
+ 
     @IBAction func decrementButtonPressed(_ sender: Any) {
         if let amountLabelText = foodAmountLabel.text,let amount = Int(amountLabelText),let food = food, let priceText = priceLabel.text,let price = Int(priceText){
             if amount-1 != 0{
@@ -79,9 +73,7 @@ class ShoppingCartTableViewCell: UITableViewCell {
             }else{
                 guard let id = food.sepet_yemek_id,let indexPath = indexPath else{
                     return
-                }
-                
-                shoppingCardDelegate?.deleteButtonPressed(foodId: String(id),indexPath: indexPath)
+                }                
             }
         }
     }
@@ -101,6 +93,5 @@ class ShoppingCartTableViewCell: UITableViewCell {
 }
 
 protocol ShoppingCardDelegate{
-    func deleteButtonPressed(foodId:String,indexPath:IndexPath)
     func changePrice(newShoppingCart:ShoppingCart)
 }

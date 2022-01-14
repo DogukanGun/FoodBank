@@ -73,13 +73,14 @@ class ShoppingCartVC:UIViewController{
         presenter?.updateShoppingList(newShoppingList: shoppingList,oldShoppingList:stableShoppingList)
         requestData()
         isUpdate = true
-        if userDefaults.bool(forKey: Constants.isAddedCard){
-            if !shoppingList.isEmpty{
+        if shoppingList.isEmpty{
+            errorDialog(title: "Oppss", errorMessage: "Cart is empty", okayButtonText: "Okay")
+        }else{
+            if !userDefaults.bool(forKey: Constants.isAddedCard){
                 performSegue(withIdentifier: variables.segueToAddSplashScreen, sender: nil)
-            }else{
-                errorDialog(title: "Oppss", errorMessage: "Cart is empty", okayButtonText: "Okay")
-            }
+            } 
         }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -94,6 +95,18 @@ class ShoppingCartVC:UIViewController{
 }
 
 extension ShoppingCartVC:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let item = shoppingList[indexPath.row]
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { contextualAction, view, bool in
+            let deleteProductRequest = DeleteFoodRequest(productId: item.sepet_yemek_id!)
+            self.presenter?.deleteProductFromShoppingList(deleteFoodRequest: deleteProductRequest)
+            self.deletedItemIndexPath = indexPath
+        }
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shoppingList.count
     }
@@ -110,12 +123,21 @@ extension ShoppingCartVC:UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
-    private func changePrice(shoppingItem:ShoppingCart?){
-        if let shoppingItem = shoppingItem,let subtotalText = subtotalLabel.text,let subtotal = Double(subtotalText),let itemPriceText = shoppingItem.yemek_fiyat,let itemPrice = Double(itemPriceText){
-            let newPrice = Double(Double(shoppingItem.yemek_siparis_adet!)!*itemPrice)
-            var deliveryPrice = Double(newPrice*5/100)
-            let taxPrice = Double(newPrice*8/100)
-            subtotalLabel.text = "\(String(newPrice))"
+    private func changePrice(){
+        if shoppingList.isEmpty{
+            deletePrices()
+        }else{
+            var deliveryPrice = 0.0
+            var newPrice = 0.0
+            var taxPrice = 0.0
+            for shoppingItem in shoppingList{
+                if let subtotalText = subtotalLabel.text,let subtotal = Double(subtotalText),let itemPriceText = shoppingItem.yemek_fiyat,let itemPrice = Double(itemPriceText){
+                    newPrice += Double(Double(shoppingItem.yemek_siparis_adet!)!*itemPrice)
+                    deliveryPrice += Double(newPrice*5/100)
+                    taxPrice += Double(newPrice*8/100)
+                    
+                }
+            }
             if newPrice > variables.minumumDeliveryPriceForFree{
                 deliveryFeeLabel.text = "0"
                 deliveryPrice = 0
@@ -124,12 +146,10 @@ extension ShoppingCartVC:UITableViewDelegate,UITableViewDataSource{
             }
             taxLabel.text = "\(String(taxPrice))"
             totalMoneyLabel.text = "\(String(Double(newPrice)+taxPrice+deliveryPrice))"
-        }else{
-            subtotalLabel.text = "0"
-            deliveryFeeLabel.text = "0"
-            taxLabel.text = "0"
-            totalMoneyLabel.text = "0"
+            subtotalLabel.text = "\(String(newPrice))"
         }
+        
+
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -140,26 +160,27 @@ extension ShoppingCartVC:UITableViewDelegate,UITableViewDataSource{
 
 extension ShoppingCartVC:ShoppingCardDelegate{
     func changePrice(newShoppingCart: ShoppingCart) {
-        changePrice(shoppingItem: newShoppingCart)
+        for i in shoppingList{
+            if i.sepet_yemek_id == newShoppingCart.sepet_yemek_id{
+                i.yemek_siparis_adet = newShoppingCart.yemek_siparis_adet
+            }
+        }
+        changePrice()
         for index in 0...shoppingList.count-1{
             if shoppingList[index].yemek_adi ?? "" == newShoppingCart.yemek_adi ?? ""{
                 shoppingList[index] = newShoppingCart
             }
         }
     }
-    
-    func deleteButtonPressed(foodId: String,indexPath:IndexPath) {
-        changePrice(shoppingItem: nil)
-        self.deletedItemIndexPath = indexPath
-        let deleteProductRequest = DeleteFoodRequest(productId: foodId)
-        presenter?.deleteProductFromShoppingList(deleteFoodRequest: deleteProductRequest)
-    } 
 }
 extension ShoppingCartVC:PresenterToViewShoppingCartProtocol{
     func returnDeleteResponse(response: Bool) {
         if response,let indexPath = deletedItemIndexPath{
-            shoppingList.remove(at: indexPath.row)
-            shoppingListTableView.reloadData()
+            self.shoppingListTableView.beginUpdates()
+            self.shoppingList.remove(at: indexPath.row)
+            self.shoppingListTableView.deleteRows(at: [indexPath], with: .left)
+            self.shoppingListTableView.endUpdates()
+            changePrice()
         }else{
             errorDialog(title: "Oppss", errorMessage: "Food couldn't be deleted", okayButtonText: "Okay")
         }
@@ -175,9 +196,7 @@ extension ShoppingCartVC:PresenterToViewShoppingCartProtocol{
         if shoppingList.isEmpty{
             deletePrices()
         }
-        for i in shoppingList{
-            changePrice(shoppingItem: i)
-        }
+        changePrice()
         DispatchQueue.main.async {
             self.shoppingListTableView.reloadData()
         }

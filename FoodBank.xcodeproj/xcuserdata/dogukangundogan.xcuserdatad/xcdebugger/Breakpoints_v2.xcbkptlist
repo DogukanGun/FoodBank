@@ -190,8 +190,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "returnShoppingList(shoppingList:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "returnShoppingList(shoppingList:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "returnShoppingList(shoppingList:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,8 +254,8 @@
             filePath = "FoodBank/shoppingcard-module/cell/ShoppingCartTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "refresh(food:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,90 +270,10 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "returnDeleteResponse(response:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "21353C2A-C80C-4A83-8043-4E086E1E861C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "deleteButtonPressed(foodId:indexPath:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "02E81C50-1565-4511-A715-78B6DCF3C574"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoodBank/shoppingcard-module/cell/ShoppingCartTableViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "deleteButtonPressed(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3E7D660C-E76E-4787-B049-1524910DB809"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "changePrice(shoppingItem:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3E7D660C-E76E-4787-B049-1524910DB809 - 88d128f68673196b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoodBank.ShoppingCartVC.changePrice(shoppingItem: Swift.Optional&lt;FoodBank.ShoppingCart&gt;) -&gt; ()"
-                  moduleName = "FoodBank"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dogukangundogan/Documents/FoodBank/FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  uuid = "3E7D660C-E76E-4787-B049-1524910DB809 - 88d128f68673196b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoodBank.ShoppingCartVC.changePrice(shoppingItem: Swift.Optional&lt;FoodBank.ShoppingCart&gt;) -&gt; ()"
-                  moduleName = "FoodBank"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dogukangundogan/Documents/FoodBank/FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "244">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -366,9 +286,9 @@
             filePath = "FoodBank/shoppingcard-module/cell/ShoppingCartTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "incerementButtonPressed(_:)"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "decrementButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -382,9 +302,9 @@
             filePath = "FoodBank/shoppingcard-module/cell/ShoppingCartTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "decrementButtonPressed(_:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "deleteButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -398,8 +318,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "changePrice(newShoppingCart:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -414,8 +334,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "changePrice(newShoppingCart:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -494,8 +414,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -510,8 +430,8 @@
             filePath = "FoodBank/shoppingcard-module/cell/ShoppingCartTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "refresh(food:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -862,8 +782,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "returnShoppingList(shoppingList:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -894,8 +814,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1022,8 +942,8 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "returnShoppingList(shoppingList:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1090,22 +1010,6 @@
                   offsetFromSymbolStart = "408">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0F9B6813-B007-4FC0-999E-53DF15F068F1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
-            landmarkName = "returnShoppingList(shoppingList:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1214,25 +1118,9 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "cardAdded()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "789E127B-E84D-4467-9C09-D2351FFBB0C0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "procudeToCheckoutButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1246,9 +1134,73 @@
             filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "procudeToCheckoutButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED4EB054-F4FF-4549-8A0E-BE91564B9352"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "procudeToCheckoutButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD097DAB-AD71-400D-AAE2-0D9ABE0247DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "tableView(_:trailingSwipeActionsConfigurationForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE32F2E2-1426-4C0E-9B54-83020FB4ACFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "returnShoppingList(shoppingList:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74D13146-5F70-4D1F-9EED-A62765D987BF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodBank/shoppingcard-module/view/ShoppingCartVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "changePrice()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

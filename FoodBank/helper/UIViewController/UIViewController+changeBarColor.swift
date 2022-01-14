@@ -13,12 +13,15 @@ extension UIViewController{
     func changeBarColor(color:UIColor){
         let apperance = UINavigationBarAppearance()
         apperance.backgroundColor = color
-        
+        apperance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         self.navigationController?.navigationBar.standardAppearance = apperance
         self.navigationController?.navigationBar.compactAppearance = apperance
         self.navigationController?.navigationBar.scrollEdgeAppearance = apperance
-        self.navigationController?.title = "Food Bank"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        self.navigationItem.title = "Food Bank"
+        self.navigationItem.compactAppearance = apperance
+        self.navigationItem.standardAppearance = apperance
+        self.navigationItem.scrollEdgeAppearance = apperance
+        self.navigationItem.compactScrollEdgeAppearance = apperance
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "power"), style: .plain, target: #selector(logout), action: .none)
     }
     
